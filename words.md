@@ -1,0 +1,59 @@
+# Word list
+
+- account support team - Account-Support-Team
+- ban - dauerhafte Sperre
+- Beat Snap Divisor - Taktteiler
+- beatmap carousel - Beatmap-Karussell
+- beatmap category - Beatmap-Kategorie
+- beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap
+- beatmap listing - Beatmap-Auflistung
+- Beatmap packs - Beatmap-Pakete
+- branch - Branch
+- button - Button/Schaltfläche
+- collection - Sammlung
+- combo - Combo
+- commit (to commit) - Commit (in die Versionshistorie aufnehmen)
+- contest - Wettbewerb
+- contribution guide - Beitragsleitfaden
+- contributor covenant code of conduct - Verhaltenskodex für Mitwirkende
+- cooldown - Auszeit
+- custom - benutzerdefiniert, eigene(s), selbst erstellt
+- (to) dash - dashen
+- fork - Verzweigung
+- forum post - Forumsbeitrag
+- game modifier (mod) - Spielmodifikation (Mod)
+- gameplay - Spielverlauf
+- grade - Note
+- guidelines - Richtlinien
+- highlight - Erwähnung, Highlight
+- help centre - Hilfecenter
+- issue - Issue
+- keyboard bindings - Tastenbelegung
+- keyboard shortcuts - Tastenkürzel
+- maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung) 
+- maintainer - Verantwortlicher, Betreuer
+- me! page - ich!-Seite
+- medal - Medaille
+- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren
+- mod select screen - modauswahl
+- modding - Modding (Verb lautet gemoddet)
+- offset wizard - Offset-Assistent
+- osu! privacy policy - osu!-Datenschutzrichtlinie
+- osu! staff - osu!-Belegschaft, Mitarbeiter, Personal
+- overall difficulty - Allgemeine Schwierigkeit
+- pass rate - Erfolgsquote
+- pattern - Muster, Pattern
+- play area (tablet) - Bereich zum Spielen
+- play field - Spielfeld
+- playcount - Spielanzahl
+- pull request - Änderungsvorschlag, Anfrage, Antrag
+- ranking procedure - Ranking-Verfahren, Einreichungsprozess
+- release stream - Updatequelle
+- Repository - Verzeichnis, Repository
+- restriction - Einschränkung oder Sperre
+- result screen - Ergebnisanzeige (oder -bildschirm)
+- rules - Regeln
+- silence - Stummschaltung oder Silence (Verb lautet stummgeschaltet)
+- song select - Songauswahl
+- support team - Support-Team
+- tournament - Turnier
