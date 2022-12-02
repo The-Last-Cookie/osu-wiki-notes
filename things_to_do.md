@@ -23,6 +23,7 @@
 
 ## fix
 
+- ASC: add Sie usage for legal pages
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
 - Guides/Getting_Your_Map_Modded
 - users with unique titles Ranlistensystems
