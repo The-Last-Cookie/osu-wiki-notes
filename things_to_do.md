@@ -23,13 +23,16 @@
 
 ## fix
 
-- ASC: add Sie usage for legal pages
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
 - Guides/Getting_Your_Map_Modded
 - users with unique titles Ranlistensystems
 - performance points großtenteils, offiziel
 - Storyboard/Scripting/osu!_File_Toggles hinzugefügt werden können
-- People/The_Team#benutzergruppen Fehler beheben, Chat im Spiel, Auszeichnen der Beatmaps
+- Eleminierung --> Eliminierung
+  - Tournaments\Official_support\de.md
+  - Tournaments\OWC\2014\de.md
+  - Tournaments\OWC\2015\de.md
+- People/The_Team#benutzergruppen Fehler beheben, Spiel-Chat, Auszeichnen/Kennzeichnen der Beatmaps
 
 ## dash stuff
 
