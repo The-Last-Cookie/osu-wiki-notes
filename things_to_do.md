@@ -37,6 +37,7 @@
   - Tournaments\OWC\2014\de.md
   - Tournaments\OWC\2015\de.md
 - People/The_Team#benutzergruppen Fehler beheben, Spiel-Chat, Auszeichnen/Kennzeichnen der Beatmaps
+- Gameplay/Grade 85.00 %
 
 ## dash stuff
 
