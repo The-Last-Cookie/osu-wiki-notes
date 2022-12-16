@@ -4,11 +4,15 @@
 
 - judgement - Beurteilung
 - Health - Gesundheit, Leben
+- HP drain rate - HP-Drain-Rate
+- Health Drain - Gesundheitsverlust
 - Distance Snap - Abstandshalter? (very unsure)
 - compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
 - snapping - einrasten?
 - (un)ranked - (nicht) bewertet? --> nicht gerankte Beatmap --> nicht bewertete Beatmap
 - fruits - Früchte (catch) und Notes - Noten (mania)? (was ist mit Hold-Notes?)
+- score difference ratio - Punktedifferenz
+- slider reverse arrow - Slider-Umkehrpfeil
 
 ## add
 
