@@ -13,6 +13,11 @@
 
 </b>
 
+- eine 50 bekommen/erreichen
+- Anzahl der 50er
+
+</b>
+
 - das universale Offset
 
 </b>
