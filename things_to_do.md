@@ -13,6 +13,7 @@
 - fruits - Früchte (catch) und Notes - Noten (mania)? (was ist mit Hold-Notes?)
 - score difference ratio - Punktedifferenz
 - slider reverse arrow - Slider-Umkehrpfeil
+- nat subgroup - Untergruppe
 
 ## add
 
@@ -38,6 +39,16 @@
   - Tournaments\OWC\2015\de.md
 - People/The_Team#benutzergruppen Fehler beheben, Spiel-Chat, Auszeichnen/Kennzeichnen der Beatmaps
 - Gameplay/Grade 85.00 %
+- gebe --> gib
+  - Client\Options
+  - Community\Internet_Relay_Chat
+  - osu!_wiki\Contribution_guide\GitHub_Desktop
+  - osu!_wiki\Contribution_guide\GitHub_web-based_editor
+  - Reporting_bad_behaviour\Handling_foul_play
+- lese --> lies
+  - Guides/OpenGL_Support_Issues
+  - main page
+- Guides/OpenGL_Support_Issues veröffentlich
 
 ## dash stuff
 
