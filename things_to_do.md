@@ -30,6 +30,7 @@
 
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
 - Guides/Getting_Your_Map_Modded
+- add rule on using generisches Maskulinum in ASC (and rework section `Perspektive`)
 - users with unique titles Ranlistensystems
 - performance points großtenteils, offiziel
 - Storyboard/Scripting/osu!_File_Toggles hinzugefügt werden können
