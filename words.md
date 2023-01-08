@@ -30,8 +30,8 @@
 - issue - Issue
 - keyboard bindings - Tastenbelegung
 - keyboard shortcuts - Tastenkürzel
-- maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung) 
-- maintainer - Verantwortlicher, Betreuer
+- maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung)
+- maintainer - Verantwortlicher, Betreuer (eventuell Instandhalter [Vorschlag von RockRoller])
 - me! page - ich!-Seite
 - medal - Medaille
 - merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren
