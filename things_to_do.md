@@ -26,27 +26,9 @@
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
 - Guides/Getting_Your_Map_Modded
 - add rule on using generisches Maskulinum in ASC (and rework section `Perspektive`)
-- performance points großtenteils, offiziel
-- Storyboard/Scripting/osu!_File_Toggles hinzugefügt werden können
-- Eleminierung --> Eliminierung
-  - Tournaments\OWC\2014\de.md
-  - Tournaments\OWC\2015\de.md
-- People/The_Team#benutzergruppen Fehler beheben, Spiel-Chat, Auszeichnen/Kennzeichnen der Beatmaps
-- Gameplay/Grade 85.00 %
-- gebe --> gib
-  - Client\Options
-  - Community\Internet_Relay_Chat
-  - osu!_wiki\Contribution_guide\GitHub_Desktop
-  - osu!_wiki\Contribution_guide\GitHub_web-based_editor
-  - Reporting_bad_behaviour\Handling_foul_play
-- lese --> lies
-  - Guides/OpenGL_Support_Issues
-  - main page
-- Guides/OpenGL_Support_Issues veröffentlich
 
 articles that need an update besides a grammar fix:
 
-- users with unique titles Ranlistensystems
 - Eleminierung --> Eliminierung
   - Tournaments\Official_support\de.md (also has an open PR!)
 
