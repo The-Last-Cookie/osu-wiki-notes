@@ -26,8 +26,12 @@
 - grade - Note
 - guidelines - Richtlinien
 - highlight - Erwähnung, Highlight
+- health - Gesundheit, Leben
+- health drain - Gesundheitsverlust
 - help centre - Hilfecenter
+- HP drain rate - HP-Drain-Rate
 - issue - Issue
+- judgement - Beurteilung
 - keyboard bindings - Tastenbelegung
 - keyboard shortcuts - Tastenkürzel
 - maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung) 
@@ -54,6 +58,7 @@
 - result screen - Ergebnisanzeige (oder -bildschirm)
 - rules - Regeln
 - silence - Stummschaltung oder Silence (Verb lautet stummgeschaltet)
+- slider reverse arrow - Slider-Umkehrpfeil
 - song select - Songauswahl
 - support team - Support-Team
 - tournament - Turnier
