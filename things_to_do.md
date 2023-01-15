@@ -2,17 +2,12 @@
 
 ## Neue Wörter
 
-- judgement - Beurteilung
-- Health - Gesundheit, Leben
-- HP drain rate - HP-Drain-Rate
-- Health Drain - Gesundheitsverlust
 - Distance Snap - Abstandshalter? (very unsure)
 - compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
 - snapping - einrasten?
 - (un)ranked - (nicht) bewertet? --> nicht gerankte Beatmap --> nicht bewertete Beatmap
 - fruits - Früchte (catch) und Notes - Noten (mania)? (was ist mit Hold-Notes?)
 - score difference ratio - Punktedifferenz
-- slider reverse arrow - Slider-Umkehrpfeil
 - nat subgroup - Untergruppe
 
 ## add
@@ -31,11 +26,9 @@
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
 - Guides/Getting_Your_Map_Modded
 - add rule on using generisches Maskulinum in ASC (and rework section `Perspektive`)
-- users with unique titles Ranlistensystems
 - performance points großtenteils, offiziel
 - Storyboard/Scripting/osu!_File_Toggles hinzugefügt werden können
 - Eleminierung --> Eliminierung
-  - Tournaments\Official_support\de.md
   - Tournaments\OWC\2014\de.md
   - Tournaments\OWC\2015\de.md
 - People/The_Team#benutzergruppen Fehler beheben, Spiel-Chat, Auszeichnen/Kennzeichnen der Beatmaps
@@ -50,6 +43,12 @@
   - Guides/OpenGL_Support_Issues
   - main page
 - Guides/OpenGL_Support_Issues veröffentlich
+
+articles that need an update besides a grammar fix:
+
+- users with unique titles Ranlistensystems
+- Eleminierung --> Eliminierung
+  - Tournaments\Official_support\de.md (also has an open PR!)
 
 ## dash stuff
 
