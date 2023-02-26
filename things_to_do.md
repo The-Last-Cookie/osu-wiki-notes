@@ -14,7 +14,7 @@
 
 - Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren
 - ranking kriterien
-- Gameplay/Hit-Objects/...
+- History_of_osu!/April_Fools and documented years
 - gameplay/score - original --> ursprünglich
 - rules/Content_Voting_Process - Verfahren zur Abstimmung über den Inhalt
 - code of conduct for modding and mapping - Verhaltenskodex für Modding und Mapping
@@ -24,13 +24,7 @@
 ## fix
 
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
-- Guides/Getting_Your_Map_Modded
-- add rule on using generisches Maskulinum in ASC (and rework section `Perspektive`)
-
-articles that need an update besides a grammar fix:
-
-- Eleminierung --> Eliminierung
-  - Tournaments\Official_support\de.md (also has an open PR!)
+- ermutigt/ermutigen --> sind/werden dazu angehalten?
 
 ## dash stuff
 
