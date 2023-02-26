@@ -1,10 +1,16 @@
 # Expressions
 
+## Gameplay
+
+- das universale Offset
+
+### Score
+
 - score multiplier - Score-Multiplikator (bei Mods)
 - score multiplier - Punktemultiplikator (im Sinne der Combo)
 - combo multiplier effect - Multiplikatoreffekt
 
-</b>
+### Hit objects
 
 - spinner drehen
 - slider schieben, halten --> (Sliderend - Sliderende?)
@@ -13,23 +19,23 @@
 
 </b>
 
+- fruits - Fruits
+- juice stream - Juice-Stream
+- hold notes - Hold-Notes
+- hit object - Hit-Objekt
+
+</b>
+
 - eine 50 bekommen/erreichen
 - Anzahl der 50er
 
 </b>
 
-- das universale Offset
+## Online
 
-</b>
+- silence > restriction > (tournament) ban
 
-- restriction > silence > (tournament) ban
-
-</b>
-
-- fruits - Fruits
-- juice stream - Juice-Stream
-- hold notes - Hold-Notes
-- hit object - Hit-Objekt
+Siehe beispielsweise Einkäufe im Shop.
 
 </b>
 
