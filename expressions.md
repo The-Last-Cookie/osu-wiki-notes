@@ -4,6 +4,19 @@
 
 - das universale Offset
 
+### Health
+
+- health - Gesundheit, Leben
+
+Mögliche Übersetzungen für `health drain (rate)`:
+
+- Health-Drain(-Rate)
+- (Rate des) Gesundheitsverlust
+- Lebensverlust
+- Lebensleiste leert sich (um eine stetige Rate)
+- Verringerung der Lebensleiste
+- Gesundheit sinkt
+
 ### Score
 
 - score multiplier - Score-Multiplikator (bei Mods)
@@ -33,9 +46,9 @@
 
 ## Online
 
-- silence > restriction > (tournament) ban
+Es gibt einen feinen Unterschied zwischen Stummschaltung und Sperrung. Einkäufe im Shop beispielsweise sind nur bei einer Sperrung betroffen.
 
-Siehe beispielsweise Einkäufe im Shop.
+- silence > restriction > (tournament) ban
 
 </b>
 
