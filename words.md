@@ -60,3 +60,4 @@
 - song select - Songauswahl
 - support team - Support-Team
 - tournament - Turnier
+- (un)inherited timing point - (nicht) vererbter Timing-Point
