@@ -17,6 +17,21 @@
 - osu!taiko ranking criteria
 - History_of_osu!/20xx
 
+- en/History?
+  - news posts
+  - issues/pulls on github
+  - old history articles
+  - existing history articles
+  - history of osu! <https://www.youtube.com/watch?v=tHBZaT8vjaM> <https://www.youtube.com/watch?v=VNCVIWrqWGA> <https://www.youtube.com/watch?v=KJ1mFC3w4D8>
+  - changelogs
+  - forum threads by peppy, smoogi and ephmeral
+  - maybe osu! recap videos
+  - only official osu! events
+  - examples
+    - e.g. discord server was opened to the public (no verification required)
+    - bbcode inline code
+    - website redesigns
+
 - Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren
 - ranking kriterien
 - gameplay/score - original --> ursprünglich
