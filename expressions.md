@@ -19,7 +19,7 @@ Mögliche Übersetzungen für `health drain (rate)`:
 
 ### Score
 
-- score multiplier - Score-Multiplikator (bei Mods)
+- mod multiplier - (Score-Multiplikator?) Mod-Multiplikator (bei Mods)
 - score multiplier - Punktemultiplikator (im Sinne der Combo)
 - combo multiplier effect - Multiplikatoreffekt
 
@@ -55,3 +55,8 @@ Es gibt einen feinen Unterschied zwischen Stummschaltung und Sperrung. Einkäufe
 - osu!web - osu!web
 - osu! website - osu!-Webseite
 - osu!news - osu!news (where applicable)
+
+</b>
+
+- profile badge - Profilabzeichen
+- (user) group badge - Gruppenabzeichen

@@ -3,24 +3,21 @@
 ## Neue Wörter
 
 - Distance Snap - Abstandshalter? (very unsure)
-- compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
+- distance spacing - Abstandausrichtung
 - snapping - einrasten?, Taktteilung auch möglich
+- compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
 - (un)ranked - (nicht) bewertet? --> nicht gerankte Beatmap --> nicht bewertete Beatmap
-- fruits - Früchte (catch) und Notes - Noten (mania)? (was ist mit Hold-Notes?)
 - score difference ratio - Punktedifferenz
 - nat subgroup - Untergruppe
 - featured artists - Featured Artists/gesponserte Künstler
 - beatmap spotlights - Beatmaps im Spotlight
+- Level statt Schwierigkeit(sstufe)? (very unsure)
 
 ## add
-
-- osu!taiko ranking criteria
-- History_of_osu!/20xx
 
 - en/History?
   - news posts
   - issues/pulls on github
-  - old history articles
   - existing history articles
   - history of osu! <https://www.youtube.com/watch?v=tHBZaT8vjaM> <https://www.youtube.com/watch?v=VNCVIWrqWGA> <https://www.youtube.com/watch?v=KJ1mFC3w4D8>
   - changelogs
@@ -28,9 +25,9 @@
   - maybe osu! recap videos
   - only official osu! events
   - examples
-    - e.g. discord server was opened to the public (no verification required)
-    - bbcode inline code
-    - website redesigns
+    - bbcode additions
+    - download page redesign (lazer download)
+    - osu!stream on android
 
 - Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren
 - ranking kriterien
@@ -42,25 +39,17 @@
 
 ## fix
 
+- BBCode:
+  - eine eine
+  - spoiler box --> Spoiler in notice under "Box", erstellt keine [spoilerbox] oder [spoiler], Großschreibung
 - ranking criteria/osu!mania missing ** at Gelegentliche Hands
-- Bancho server Codename --> Spitzname
-- BBCode eine eine
-- Wiki history:
-  - is -> ist
-  - Ein Suchdienst für das osu!-Wiki wird in osu-web implementiert?
-- silence remove comma in "," ist nicht gegen die Regeln
-- Help centre/Account:
-  - Komma nach möglich, unmöglich
-  - Plays --> Spiele/gespielt?
-- ermutigt/ermutigen --> werden dazu angehalten/werden (dazu) aufgefordert?
-- outdated (translations) --> veraltete (Übersetzungen) anstatt nicht mehr aktuell for more word variety?
-- Buttonbeschreibungen groß?
+- reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
 
-- reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch
+- Help centre/Account: Plays --> Spiele/gespielt?
+- Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
+- Melden von schlechtem Verhalten --> Schlechtes Verhalten melden
 
 ## dash stuff
 
-- help centre account em dash instead of hyphen
-- reporting_bad_behaviour space between em dashes
 - maybe-one-day branch implement where appropriate?
 - wiki/Client/Installation styling like in the dash pr (!, remove dash and remove comma in the same line)

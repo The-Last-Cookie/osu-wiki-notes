@@ -19,6 +19,8 @@
 - cooldown - Auszeit
 - custom - benutzerdefiniert, eigene(s), selbst erstellt
 - (to) dash - dashen
+- (to) encourage - ermutigen, auffordern, angehalten (zu etwas … sein)
+- entry - Beitrag, Einsendung
 - fork - Verzweigung
 - forum post - Forumsbeitrag
 - game modifier (mod) - Spielmodifikation (Mod)
@@ -36,11 +38,12 @@
 - me! page - ich!-Seite
 - medal - Medaille
 - merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren
-- mod select screen - modauswahl
+- mod select screen - Modauswahl
 - modding - Modding (Verb lautet gemoddet)
 - offset wizard - Offset-Assistent
 - osu! privacy policy - osu!-Datenschutzrichtlinie
 - osu! staff - osu!-Belegschaft, Mitarbeiter, Personal
+- outdated - veraltet, nicht mehr aktuell
 - overall difficulty - Allgemeine Schwierigkeit
 - pass rate - Erfolgsquote
 - pattern - Muster, Pattern
@@ -60,4 +63,4 @@
 - song select - Songauswahl
 - support team - Support-Team
 - tournament - Turnier
-- (un)inherited timing point - (nicht) vererbter Timing-Point
+- (un)inherited timing point - (nicht) vererbter Timing-Punkt
