@@ -44,6 +44,10 @@ Mögliche Übersetzungen für `health drain (rate)`:
 
 </b>
 
+- [Accuracy and precision](https://en.wikipedia.org/wiki/Accuracy_and_precision)
+- accuracy - Genauigkeit (wie nah sind die Punkte im Durchschnitt einem wahren Wert)
+- precision - Präzision (Streufaktor)
+
 ## Online
 
 Es gibt einen feinen Unterschied zwischen Stummschaltung und Sperrung. Einkäufe im Shop beispielsweise sind nur bei einer Sperrung betroffen.
@@ -60,3 +64,10 @@ Es gibt einen feinen Unterschied zwischen Stummschaltung und Sperrung. Einkäufe
 
 - profile badge - Profilabzeichen
 - (user) group badge - Gruppenabzeichen
+
+### Tournaments
+
+- to seed sb./sth. - jdn./etw. setzen (für eine Turnierauslosung einstufen)
+- seeding - Platzierung
+- bracket - Turnierbaum
+- Double-Elimination - Doppel-K.-o.-System

@@ -30,20 +30,32 @@
     - osu!stream on android
 
 - Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren
-- ranking kriterien
 - gameplay/score - original --> ursprünglich
 - rules/Content_Voting_Process - Verfahren zur Abstimmung über den Inhalt
 - code of conduct for modding and mapping - Verhaltenskodex für Modding und Mapping
 - overmapping - overmapping
-- Storyboard/Scripting/General_Rules
+- Badge weighted seeding/Technical --> Technischer Hintergrund, Potential drawbacks --> Mögliche Nachteile
+- game mode osu! - coloured circles with numbers on top of them - gefärbte Kreise mit Nummern darauf
+- Storyboard/Scripting/General_Rules deutsch und englisch
+
+Feature requests:
+ihre Funktionswünsche äußern, bewerben sounds ass (promote anywhere else used in this context?)
+
+Online rankings history catch, taiko, mania
+
+Beatmap/Song compilation:
+(komplett/gesamt oder teilweise), ein Genre gemeinsam haben
+
+während + genitiv und nicht dativ, z. B. Easy mod oder Storyboard Scripting
+Siehe duden
+probably fine to leave it like that, as it is defined to be colloquial
 
 ## fix
 
-- BBCode:
-  - eine eine
-  - spoiler box --> Spoiler in notice under "Box", erstellt keine [spoilerbox] oder [spoiler], Großschreibung
-- ranking criteria/osu!mania missing ** at Gelegentliche Hands
+- Help centre/Installation and Registration --> Abschhnitt
+- osu! wiki (dash stuff)
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
+- match winner string Blaues Team wins mit ... (#17945)
 
 - Help centre/Account: Plays --> Spiele/gespielt?
 - Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
