@@ -1,5 +1,7 @@
 # Expressions
 
+This article explains words that are very similar to each other and that need a specific distinction.
+
 ## Gameplay
 
 - das universale Offset
@@ -45,7 +47,7 @@ Mögliche Übersetzungen für `health drain (rate)`:
 </b>
 
 - [Accuracy and precision](https://en.wikipedia.org/wiki/Accuracy_and_precision)
-- accuracy - Genauigkeit (wie nah sind die Punkte im Durchschnitt einem wahren Wert)
+- accuracy - Genauigkeit (wie nah sind die Punkte im Durchschnitt an einem wahren Wert)
 - precision - Präzision (Streufaktor)
 
 ## Online
