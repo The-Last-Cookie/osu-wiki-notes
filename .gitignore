@@ -1,1 +1,7 @@
-data
+/data/*
+
+!/data/bbcode
+
+!/data/stable
+/data/stable/*
+!/data/stable/lang
