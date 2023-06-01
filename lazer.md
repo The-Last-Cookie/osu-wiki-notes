@@ -1,4 +1,6 @@
-# Tasks when lazer gets implemented in the wiki
+# Lazer migration
+
+Tasks to do when lazer gets implemented in the wiki:
 
 - performance_troubleshooting automatischer modus meint mod autoplay (lazer)/auto (stable)
   - autoplay/auto meint dasselbe, die andere ähnlich klingende Mod ist Autopilot

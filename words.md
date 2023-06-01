@@ -1,5 +1,7 @@
 # Word list
 
+A list meant as a translation guideline to make translations more consistent and sound more natural.
+
 - account support team - Account-Support-Team
 - ban - dauerhafte Sperre
 - Beat Snap Divisor - Taktteiler
@@ -19,10 +21,12 @@
 - cooldown - Auszeit
 - custom - benutzerdefiniert, eigene(s), selbst erstellt
 - (to) dash - dashen
-- (to) encourage - ermutigen, auffordern, angehalten (zu etwas … sein)
+- (to) encourage - ermutigen, auffordern, angehalten (zu etwas … werden)
 - entry - Beitrag, Einsendung
+- follower - Follower
 - fork - Verzweigung
 - forum post - Forumsbeitrag
+- friends - Freunde
 - game modifier (mod) - Spielmodifikation (Mod)
 - gameplay - Spielverlauf
 - grade - Note
@@ -53,7 +57,8 @@
 - pull request - Änderungsvorschlag, Anfrage, Antrag
 - ranking procedure - Ranking-Verfahren, Einreichungsprozess
 - release stream - Updatequelle
-- Repository - Verzeichnis, Repository
+- replay - Replay
+- repository - Verzeichnis, Repository
 - restriction - Einschränkung oder Sperre
 - result screen - Ergebnisanzeige (oder -bildschirm)
 - rules - Regeln
@@ -64,3 +69,4 @@
 - support team - Support-Team
 - tournament - Turnier
 - (un)inherited timing point - (nicht) vererbter Timing-Punkt
+- watchlist - Merkliste
