@@ -29,6 +29,8 @@
 
 - Help centre/Installation and Registration --> Abschhnitt
 - osu! file formats "zu produzieren" --> anzulegen
+- osu!stream Hintergrundfrabe
+- privacy zu können fehlendes Komma
 - osu! wiki (dash stuff)
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
 - match winner string Blaues Team wins mit ... (#17945, https://osu.ppy.sh/community/matches/107987149)
