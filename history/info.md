@@ -23,3 +23,11 @@ These resources might include stuff not worth mentioning but may still be a good
   - <https://www.youtube.com/watch?v=tHBZaT8vjaM>
   - <https://www.youtube.com/watch?v=VNCVIWrqWGA>
   - <https://www.youtube.com/watch?v=KJ1mFC3w4D8>
+
+## Editorial rules
+
+*For the full set of rules for wiki articles, see: [Article styling criteria](https://osu.ppy.sh/wiki/en/Article_styling_criteria)*
+
+Keep in mind to put history articles in the past tense.
+
+Additionally, the descriptions should be succinct and only contain essential descriptions of circumstances. Too many embellishments like often seen in news posts are not allowed.
