@@ -22,8 +22,6 @@
 - overmapping - overmapping
 - game mode osu! - coloured circles with numbers on top of them - gefärbte Kreise mit Nummern darauf
 - Storyboard/Scripting/General_Rules deutsch und englisch
-- Badge weighted seeding/Technical --> Technischer Hintergrund, Potential drawbacks --> Mögliche Nachteile
-- Client/Program_files seems easy
 
 ## fix
 
@@ -31,9 +29,17 @@
 - osu! file formats "zu produzieren" --> anzulegen
 - osu!stream Hintergrundfrabe
 - privacy zu können fehlendes Komma
-- osu! wiki (dash stuff)
+- Beatmap/HP_drain_rate rundum --> rund um
+- panel --> Dialog(-feld)
+- Video-Link --> Videolink?
+- jpeg compress argumente Eingabedatei Ausgabedatei
+- dash stuff
+  - osu! wiki
+  - Client/Installation styling like in the dash pr (!, remove dash and remove comma in the same line)
+  - other dash stuff for Client/Installation from 000-maybe-one-day
+  - beatmapping
+- reporting behaviour vorerst nur text verbessern<!--PR: Eventually, I want to add German images, translate the button texts to German, and maybe rename the title to `Schlechtes Verhalten melden`, but that's for another PR-->
 - reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
-- match winner string Blaues Team wins mit ... (#17945, https://osu.ppy.sh/community/matches/107987149)
 
 - Help centre/Account: Plays --> Spiele/gespielt?
 - Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
@@ -41,5 +47,9 @@
 
 ## dash stuff
 
-- maybe-one-day branch implement where appropriate?
-- wiki/Client/Installation styling like in the dash pr (!, remove dash and remove comma in the same line)
+- maybe-one-day branch (chat console) implement where appropriate?
+
+## writing ideas for natural sounding sentences
+
+- Take a screenshot by hitting `F12`. --> Mit `F12` kannst du einen Screenshot machen.
+- Press F9 to toggle song select. --> Drücke F9 für die Songauswahl.
