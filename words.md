@@ -10,6 +10,7 @@ A list meant as a translation guideline to make translations more consistent and
 - beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap
 - beatmap listing - Beatmap-Auflistung
 - Beatmap packs - Beatmap-Pakete
+- bracket - Turnierbaum, Platzierung
 - branch - Branch
 - button - Button/Schaltfläche
 - collection - Sammlung
@@ -37,6 +38,7 @@ A list meant as a translation guideline to make translations more consistent and
 - judgement - Beurteilung
 - keyboard bindings - Tastenbelegung
 - keyboard shortcuts - Tastenkürzel
+- leaderboard - Rangliste, Bestenliste
 - maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung)
 - maintainer - Verantwortlicher, Betreuer
 - me! page - ich!-Seite
@@ -62,11 +64,14 @@ A list meant as a translation guideline to make translations more consistent and
 - restriction - Einschränkung oder Sperre
 - result screen - Ergebnisanzeige (oder -bildschirm)
 - rules - Regeln
+- seed - Turniereinstufung auslosen, Platzierung, Seed
 - silence - Stummschaltung oder Silence (Verb lautet stummgeschaltet)
 - slider reverse arrow - Slider-Umkehrpfeil
 - snaking in/out slider - einziehende/ausziehende Slider
 - song select - Songauswahl
+- submit - einreichen, einsenden, hochladen
 - support team - Support-Team
+- toolbar - Toolbar, Symbolleiste
 - tournament - Turnier
 - (un)inherited timing point - (nicht) vererbter Timing-Punkt
 - watchlist - Merkliste
