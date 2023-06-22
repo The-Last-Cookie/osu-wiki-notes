@@ -25,24 +25,25 @@
 
 ## fix
 
+- ASC/Formatting (single update PR): jpeg compress argumente Eingabedatei Ausgabedatei
+
 - Help centre/Installation and Registration --> Abschhnitt
 - osu! file formats "zu produzieren" --> anzulegen
 - osu!stream Hintergrundfrabe
-- privacy zu können fehlendes Komma
-- Beatmap/HP_drain_rate rundum --> rund um
+- privacy zu können fehlendes Komma<!--no native review of article-->
+- Beatmap/HP_drain_rate rundum --> rund um<!--no native review of article-->
 - panel --> Dialog(-feld)
 - Video-Link --> Videolink?
-- jpeg compress argumente Eingabedatei Ausgabedatei
 - dash stuff
   - osu! wiki
   - Client/Installation styling like in the dash pr (!, remove dash and remove comma in the same line)
   - other dash stuff for Client/Installation from 000-maybe-one-day
   - beatmapping
 - reporting behaviour vorerst nur text verbessern<!--PR: Eventually, I want to add German images, translate the button texts to German, and maybe rename the title to `Schlechtes Verhalten melden`, but that's for another PR-->
-- reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
 
 - Help centre/Account: Plays --> Spiele/gespielt?
 - Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
+- reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
 - Melden von schlechtem Verhalten --> Schlechtes Verhalten melden
 
 ## dash stuff
