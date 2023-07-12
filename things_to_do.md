@@ -2,7 +2,7 @@
 
 ## Neue Wörter
 
-- Distance Snap - Abstandshalter? (very unsure)
+- Distance Snap - Abstandshalter? (very unsure), Distanzraster(ung)?
 - distance spacing - Abstandausrichtung
 - snapping - einrasten?, Taktteilung auch möglich
 - compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
@@ -15,6 +15,9 @@
 
 ## add
 
+- people/centurion
+- history 2022
+
 - Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren
 - gameplay/score - original --> ursprünglich
 - rules/Content_Voting_Process - Verfahren zur Abstimmung über den Inhalt
@@ -25,21 +28,11 @@
 
 ## fix
 
-- ASC/Formatting (single update PR): jpeg compress argumente Eingabedatei Ausgabedatei
+Help_centre/Upgrading_to_lazer
 
-- Help centre/Installation and Registration --> Abschhnitt
-- osu! file formats "zu produzieren" --> anzulegen
-- osu!stream Hintergrundfrabe
-- privacy zu können fehlendes Komma<!--no native review of article-->
-- Beatmap/HP_drain_rate rundum --> rund um<!--no native review of article-->
+history of 2022 sound design of lazer?
+
 - panel --> Dialog(-feld)
-- Video-Link --> Videolink?
-- dash stuff
-  - osu! wiki
-  - Client/Installation styling like in the dash pr (!, remove dash and remove comma in the same line)
-  - other dash stuff for Client/Installation from 000-maybe-one-day
-  - beatmapping
-- reporting behaviour vorerst nur text verbessern<!--PR: Eventually, I want to add German images, translate the button texts to German, and maybe rename the title to `Schlechtes Verhalten melden`, but that's for another PR-->
 
 - Help centre/Account: Plays --> Spiele/gespielt?
 - Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
