@@ -28,7 +28,7 @@
 
 ## fix
 
-Help_centre/Upgrading_to_lazer
+client/menu_tips Verlassen --> Verlassen des Spiels
 
 history of 2022 sound design of lazer?
 
