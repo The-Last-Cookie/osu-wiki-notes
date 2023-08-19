@@ -1,4 +1,4 @@
-# Website / changelog
+# Website
 
 Interesting sources:
 
@@ -11,14 +11,6 @@ Interesting sources:
 - design from 2018
   - [PR #3381](https://github.com/ppy/osu-web/pull/3381)
 
-Things to update:
+changelog:
 
 - no rss feed anymore
-- nothing about the new design and its new features
-- new image
-
-## Draft
-
-Today's version of the osu! website has no RSS feed anymore. Matching the design proposed by flyte, the changelog received a visual overhaul. Furthermore, it is now possible to visualise certain features with images and videos.
-
-(Screenshot of the changelog)
