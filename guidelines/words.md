@@ -7,7 +7,7 @@ A list meant as a translation guideline to make translations more consistent and
 - Beat Snap Divisor - Taktteiler
 - beatmap carousel - Beatmap-Karussell
 - beatmap category - Beatmap-Kategorie
-- beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap
+- beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap, auch Level
 - beatmap listing - Beatmap-Auflistung
 - Beatmap packs - Beatmap-Pakete
 - bracket - Turnierbaum, Platzierung
@@ -51,6 +51,7 @@ A list meant as a translation guideline to make translations more consistent and
 - osu! staff - osu!-Belegschaft, Mitarbeiter, Personal
 - outdated - veraltet, nicht mehr aktuell
 - overall difficulty - Allgemeine Schwierigkeit
+- overlay - Overlay, Menü
 - pass rate - Erfolgsquote
 - pattern - Muster, Pattern
 - play area (tablet) - Bereich zum Spielen
