@@ -27,6 +27,7 @@ A list meant as a translation guideline to make translations more consistent and
 - follower - Follower
 - fork - Verzweigung
 - forum post - Forumsbeitrag
+- forum thread - Forenthema (selten: -thread)
 - friends - Freunde
 - game modifier (mod) - Spielmodifikation (Mod)
 - gameplay - Spielverlauf
