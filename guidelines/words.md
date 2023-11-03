@@ -2,6 +2,8 @@
 
 A list meant as a translation guideline to make translations more consistent and sound more natural.
 
+It is important to note that these translations should not be seen as fixed, immutable rules. Depending on the context, translations can be wrong, so it is essential to consider the surrounding context.
+
 - account support team - Account-Support-Team
 - ban - dauerhafte Sperre
 - Beat Snap Divisor - Taktteiler
