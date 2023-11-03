@@ -1,5 +1,9 @@
 # Wiki
 
+## To include
+
+- CI check script provided as a Docker container
+
 ## 2019
 
 - [outdated tag](https://github.com/ppy/osu-web/pull/4725)
