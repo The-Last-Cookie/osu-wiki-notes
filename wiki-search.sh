@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# remove .sh extension when using script on path
+
 # inspired by:
 # https://www.redhat.com/sysadmin/arguments-options-bash-scripts
 # https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
