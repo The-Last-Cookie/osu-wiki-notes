@@ -22,9 +22,11 @@ while getopts ":hs:l:q:" option; do
     l)
         echo "lang"
         LANGUAGE=$OPTARG
+        ;;
     q)
         echo "query"
         QUERY=$OPTARG
+        ;;
     \?)
         echo "Error: Invalid option"
         exit;;
@@ -35,7 +37,10 @@ while getopts ":hs:l:q:" option; do
    esac
 done
 
-# TODO: if query empty, exit
+if [[ -z "$QUERY" ]]; then
+  echo "Query is empty. Exiting."
+  exit 0
+fi
 
 search
 
