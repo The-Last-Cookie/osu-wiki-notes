@@ -1,23 +1,27 @@
 #!/bin/bash
 
-# inspired by https://www.redhat.com/sysadmin/arguments-options-bash-scripts
+# inspired by:
+# https://www.redhat.com/sysadmin/arguments-options-bash-scripts
+# https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
 
+BASE="" # base path to the wiki
 LANGUAGE="en"
 QUERY=""
 
-search () {
-  local file_type="*\${LANGUAGE}.md"
-  grep --include=${file_type} -Rl ./ -e ${QUERY} | sort
+help () {
+  echo "print help"
 }
 
-while getopts ":hs:l:q:" option; do
+search () {
+  local file_type="*\\${LANGUAGE}.md"
+  local matches=$(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort)
+  echo "$matches"
+}
+
+while getopts ":hl:q:" option; do
   case $option in
     h)
-        echo "help"
-        exit;;
-    s)
-        echo "set"
-        link=$OPTARG
+        help
         exit;;
     l)
         echo "lang"
@@ -37,7 +41,7 @@ while getopts ":hs:l:q:" option; do
    esac
 done
 
-if [[ -z "$QUERY" ]]; then
+if [ -z "$QUERY" ]; then
   echo "Query is empty. Exiting."
   exit 0
 fi
