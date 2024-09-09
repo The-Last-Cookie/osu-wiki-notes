@@ -7,11 +7,12 @@
 # https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
 
 BASE="" # base path to the wiki
-LANGUAGE="en"
-QUERY=""
+LANGUAGE="en" # default language
 
-# TODO
+QUERY=""
 VERBOSE=false
+EXCLUDE=""
+REGEX=false
 
 help () {
   echo "print help"
@@ -19,15 +20,27 @@ help () {
 
 search () {
   local file_type="*\\${LANGUAGE}.md"
-  local matches=$(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort)
-  
-  # if verbose
-  echo "$matches"
-  
-  # else: cut base url from each string  
+
+  if REGEX; then
+    local matches=$(grep --include=${file_type} -Rl "$BASE" -G "$QUERY" | sort)
+  else
+    local matches=$(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort)
+
+  if [ ! -z $EXCLUDE ]; then
+    matches=$(grep -v $EXCLUDE $matches)
+
+  if $VERBOSE; then
+    echo "$matches"
+    return
+
+  # cut base url from each string
+  len_base=${#BASE}
+  for match in $matches; do
+    echo ${match:len_base}
+  done
 }
 
-while getopts ":hvl:q:r:e:" option; do
+while getopts ":hvl:q:re:" option; do
   case $option in
     h)
         help
@@ -42,6 +55,7 @@ while getopts ":hvl:q:r:e:" option; do
         ;;
     r)
         echo "regex"
+        REGEX=true
         ;;
     v)
         echo "verbose"
@@ -49,6 +63,7 @@ while getopts ":hvl:q:r:e:" option; do
         ;;
     e)
         echo "exclude"
+        EXCLUDE=$OPTARG
         ;;
     \?)
         echo "Error: Invalid option"
@@ -67,31 +82,20 @@ fi
 
 search
 
-# Search for file contents in the osu! wiki.
-#
-# Usage: [OPTIONS] QUERY
-#
-# Maintenance:
-#   -h, --help                   Print this view.
-#
-# Search options:
+# TODO help display
+printf "Search for file contents in the osu! wiki."
+printf "\n"
+printf "Usage: [-h] [-v] [-l <lang>] [-r] [-e <exclude>] -q QUERY"
+printf "\n"
+printf "Maintenance:"
+printf "\t-h, --help\t\t\tPrint this view."
+printf "\n"
+printf "Search options:"
 #   -d, --dirs                   Search only in directory names.
-#                                Notice: On Windows, you need to use '\' if you want to search via
-#                                folder paths.
-#   -l, --language [language]    Set specific language. Can be any
-#                                language the wiki supports (two-letter country code).
-#   -r, --regex [regex]          Search with a regex pattern
-#   > grep -G
-#
-# Output options:
-#   -e, --exclude [query]        Exclude a query from the search. Use
-#   > exclude refers to paths    this parameter several times if you want to exclude several terms.
-#                                If the -r argument is set, the value here must be valid regex.
-#                                Notice: On Windows, you need to use '\' if you want to exclude
-#                                specific folder paths.
-# it's probably possible to search again after the main search with grep "main search" | grep -v "exclude pattern"
-# also: this exclusion would work line-based, not for the whole file
-# https://stackoverflow.com/questions/18468716/how-to-grep-excluding-some-patterns
-
-#   -v, --verbose                Output of the entire link to found
-#                                files.
+printf "\t-l, --language [language]\t\tUse language other than the default one."
+printf "\t-r, --regex [regex]\t\tSearch with a regex pattern."
+printf "\n"
+printf "\n"
+printf "Output options:"
+printf "\t-e, --exclude [query]\t\tExclude any line from the results that contains query."
+printf "\t-v, --verbose\t\tOutput of the entire link to found files."
