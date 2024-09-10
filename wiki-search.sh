@@ -15,7 +15,29 @@ EXCLUDE=""
 REGEX=false
 
 help () {
-  echo "print help"
+  printf "Search for file contents in the osu! wiki."
+  printf "\n"
+  printf "Usage: [-h] [-v] [-l <lang>] [-r] [-e <exclude>] -q QUERY"
+  printf "\n"
+  printf "\n"
+  printf "Maintenance:"
+  printf "\n"
+  printf "\t-h\t\tPrint this view."
+  printf "\n"
+  printf "\n"
+  printf "Search options:"
+  printf "\n"
+  #   -d, --dirs                   Search only in directory names.
+  printf "\t-l [language]\tUse language other than the default one."
+  printf "\n"
+  printf "\t-r [regex]\tSearch with a regex pattern."
+  printf "\n"
+  printf "\n"
+  printf "Output options:"
+  printf "\n"
+  printf "\t-e [query]\tExclude any path from the results that contains query."
+  printf "\n"
+  printf "\t-v\t\tOutput of the entire link to found files."
 }
 
 search () {
@@ -81,21 +103,3 @@ if [ -z "$QUERY" ]; then
 fi
 
 search
-
-# TODO help display
-printf "Search for file contents in the osu! wiki."
-printf "\n"
-printf "Usage: [-h] [-v] [-l <lang>] [-r] [-e <exclude>] -q QUERY"
-printf "\n"
-printf "Maintenance:"
-printf "\t-h, --help\t\t\tPrint this view."
-printf "\n"
-printf "Search options:"
-#   -d, --dirs                   Search only in directory names.
-printf "\t-l, --language [language]\t\tUse language other than the default one."
-printf "\t-r, --regex [regex]\t\tSearch with a regex pattern."
-printf "\n"
-printf "\n"
-printf "Output options:"
-printf "\t-e, --exclude [query]\t\tExclude any line from the results that contains query."
-printf "\t-v, --verbose\t\tOutput of the entire link to found files."
