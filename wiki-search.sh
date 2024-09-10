@@ -47,13 +47,16 @@ search () {
     local matches=$(grep --include=${file_type} -Rl "$BASE" -G "$QUERY" | sort)
   else
     local matches=$(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort)
+  fi
 
   if [ ! -z $EXCLUDE ]; then
     matches=$(grep -v $EXCLUDE $matches)
+  fi
 
   if $VERBOSE; then
     echo "$matches"
     return
+  fi
 
   # cut base url from each string
   len_base=${#BASE}
