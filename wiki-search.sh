@@ -38,6 +38,7 @@ help () {
   printf "\t-e [query]\tExclude any path from the results that contains query."
   printf "\n"
   printf "\t-v\t\tOutput of the entire link to found files."
+  printf "\n"
 }
 
 search () {
