@@ -43,7 +43,7 @@ help () {
 search () {
   local file_type="*\\${LANGUAGE}.md"
 
-  if REGEX; then
+  if $REGEX; then
     local matches=$(grep --include=${file_type} -Rl "$BASE" -G "$QUERY" | sort)
   else
     local matches=$(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort)
