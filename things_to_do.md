@@ -6,37 +6,40 @@
 - distance spacing - Abstandausrichtung
 - snapping - einrasten?, Taktteilung auch möglich
 - compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
-- (un)ranked - (nicht) bewertet? --> nicht gerankte Beatmap --> nicht bewertete Beatmap
-- score difference ratio - Punktedifferenz
+- (un)ranked play - (nicht) gewertet? nicht gewertetes Spiel --> ranked Beatmap kann nicht mit gewertet übersetzt werden
 - nat subgroup - Untergruppe
 - featured artists - Featured Artists/gesponserte Künstler
 - beatmap spotlights - Beatmaps im Spotlight
-- Level statt Schwierigkeit(sstufe)? (very unsure)
+
+### Beatmap category
+
+Übersetzungen noch nicht abschließend geklärt:
+
+- graveyard - Friedhof
+- qualified - qualified, qualifiziert
+- pending - ausstehend
+- WIP - WIP, in Arbeit
+- loved - loved, (in der Community) beliebt, (von der Community) gewürdigt/geliebt
+- approved - approved, angenommen, zugelassen
+- ranked - ranked, gerankt, freigegeben
+- unranked - nicht freigegeben, nicht gerankt
 
 ## add
 
-- people/centurion
-- history 2022
-
-- Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren
+- Beatmap ranking procedure - Ranking-Verfahren für Beatmaps/Beatmap-Ranking-Verfahren/Verfahren für das Beatmap-Ranking
 - gameplay/score - original --> ursprünglich
 - rules/Content_Voting_Process - Verfahren zur Abstimmung über den Inhalt
 - code of conduct for modding and mapping - Verhaltenskodex für Modding und Mapping
 - overmapping - overmapping
 - game mode osu! - coloured circles with numbers on top of them - gefärbte Kreise mit Nummern darauf
-- Storyboard/Scripting/General_Rules deutsch und englisch
 
 ## fix
 
-client/menu_tips Verlassen --> Verlassen des Spiels
-
-history of 2022 sound design of lazer?
-
-- panel --> Dialog(-feld)
-
 - Help centre/Account: Plays --> Spiele/gespielt?
 - Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
-- reporting_bad_behaviour deutsche bildversionen und Button beschreibungen auf deutsch (das, was geht)
+
+- panel --> Dialog(-feld)
+- reporting_bad_behaviour deutsche bildversionen und Buttonbeschreibungen auf deutsch (das, was geht)
 - Melden von schlechtem Verhalten --> Schlechtes Verhalten melden
 
 ## dash stuff
@@ -47,3 +50,4 @@ history of 2022 sound design of lazer?
 
 - Take a screenshot by hitting `F12`. --> Mit `F12` kannst du einen Screenshot machen.
 - Press F9 to toggle song select. --> Drücke F9 für die Songauswahl.
+- Language can be changed by clicking the pencil icon. --> Die Sprache kann geändert werden, indem man auf das Bleistiftsymbol klickt.
