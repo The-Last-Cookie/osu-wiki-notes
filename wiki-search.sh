@@ -54,16 +54,20 @@ search () {
     matches=$(grep -v $EXCLUDE $matches)
   fi
 
-  if $VERBOSE; then
-    echo "$matches"
-    return
-  fi
-
-  # cut base url from each string
   len_base=${#BASE}
+  counter=0
   for match in $matches; do
-    echo ${match:len_base}
+    if $VERBOSE; then
+      echo $match
+    else
+      # cut base url from each string
+      echo ${match:len_base}
+    fi
+
+    let "counter+=1"
   done
+
+  printf "\nNumber of matches: $counter\n"
 }
 
 while getopts ":hvl:q:re:" option; do
@@ -72,23 +76,18 @@ while getopts ":hvl:q:re:" option; do
         help
         exit;;
     l)
-        echo "lang"
         LANGUAGE=$OPTARG
         ;;
     q)
-        echo "query"
         QUERY=$OPTARG
         ;;
     r)
-        echo "regex"
         REGEX=true
         ;;
     v)
-        echo "verbose"
         VERBOSE=$OPTARG
         ;;
     e)
-        echo "exclude"
         EXCLUDE=$OPTARG
         ;;
     \?)
