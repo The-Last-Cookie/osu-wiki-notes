@@ -44,48 +44,38 @@ help () {
 }
 
 exclude () {
-  new_matches=()
-  for match in $1; do
+  all_matches=("$@")
+  for match in "${matches[@]}"; do
     if ! substring "$EXCLUDE" "$match"; then
-      new_matches+=($match)
+      echo "${match}"
     fi
   done
-  echo $new_matches
 }
 
 search () {
   local file_type="*\\${LANGUAGE}.md"
 
   if $REGEX; then
-    local matches=$(grep --include=${file_type} -Rl "$BASE" -G "$QUERY" | sort)
+    local matches=( $(grep --include=${file_type} -Rl "$BASE" -G "$QUERY" | sort) )
   else
-    local matches=$(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort)
+    local matches=( $(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort) )
   fi
 
   if [ ! -z $EXCLUDE ]; then
-    local allowed_matches=()
-    for match in $matches; do
-      if ! substring "$EXCLUDE" "$match"; then
-        allowed_matches+=("$match")
-      fi
-    done
-    matches=$allowed_matches
+    matches=( $(exclude "${matches[@]}") )
   fi
 
   len_base=${#BASE}
-  counter=0
-  for match in $matches; do
+  for match in "${matches[@]}"; do
     if $VERBOSE; then
       echo $match
     else
       # cut base url from each string
       echo ${match:len_base}
     fi
-
-    let "counter+=1"
   done
 
-  printf "\nNumber of matches: $counter\n"
+  printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
 while getopts ":hvl:q:re:" option; do
