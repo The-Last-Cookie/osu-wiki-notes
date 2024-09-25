@@ -14,6 +14,8 @@ VERBOSE=false
 EXCLUDE=""
 REGEX=false
 
+substring() { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
+
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
@@ -41,6 +43,16 @@ help () {
   printf "\n"
 }
 
+exclude () {
+  new_matches=()
+  for match in $1; do
+    if ! substring "$EXCLUDE" "$match"; then
+      new_matches+=($match)
+    fi
+  done
+  echo $new_matches
+}
+
 search () {
   local file_type="*\\${LANGUAGE}.md"
 
@@ -51,7 +63,13 @@ search () {
   fi
 
   if [ ! -z $EXCLUDE ]; then
-    matches=$(grep -v $EXCLUDE $matches)
+    local allowed_matches=()
+    for match in $matches; do
+      if ! substring "$EXCLUDE" "$match"; then
+        allowed_matches+=("$match")
+      fi
+    done
+    matches=$allowed_matches
   fi
 
   len_base=${#BASE}
@@ -76,19 +94,19 @@ while getopts ":hvl:q:re:" option; do
         help
         exit;;
     l)
-        LANGUAGE=$OPTARG
+        LANGUAGE="$OPTARG"
         ;;
     q)
-        QUERY=$OPTARG
+        QUERY="$OPTARG"
         ;;
     r)
         REGEX=true
         ;;
     v)
-        VERBOSE=$OPTARG
+        VERBOSE=true
         ;;
     e)
-        EXCLUDE=$OPTARG
+        EXCLUDE="$OPTARG"
         ;;
     \?)
         echo "Error: Invalid option"
