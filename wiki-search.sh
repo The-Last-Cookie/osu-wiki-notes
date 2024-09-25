@@ -45,7 +45,7 @@ help () {
 
 exclude () {
   all_matches=("$@")
-  for match in "${matches[@]}"; do
+  for match in "${all_matches[@]}"; do
     if ! substring "$EXCLUDE" "$match"; then
       echo "${match}"
     fi
