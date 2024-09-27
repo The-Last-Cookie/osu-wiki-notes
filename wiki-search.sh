@@ -8,6 +8,13 @@
 
 # TODO: directly show result from specific file? argument -r 1
 
+# TODO Exclude: filter can be implemented on different layers
+# (filter file list, filter the matches grep found, filter files independently from the matches)
+# Filter the matches grep found: -e $(grep --include="*\\en.md" -R ./osu-wiki/wiki -e "Music theory" | grep -v "Main article" | sort)
+# (mind the missing -l here)
+# danach müssen die Dateipfade manuell rausgefischt werden
+# ist so eine Anwendung sinnvoll?
+
 BASE="" # base path to the wiki
 LANGUAGE="en" # default language
 
@@ -27,21 +34,23 @@ help () {
   printf "\n"
   printf "Maintenance:"
   printf "\n"
-  printf "\t-h\t\tPrint this view."
+  printf "  -h\t\tPrint this view."
   printf "\n"
   printf "\n"
   printf "Search options:"
   printf "\n"
-  printf "\t-l [language]\tUse language other than the default one."
+  printf "  -l [language]\tUse language other than the default one."
   printf "\n"
-  printf "\t-r [regex]\tSearch with a regex pattern."
+  printf "  -r [regex]\tSearch with a regex pattern."
   printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
-  printf "\t-e [query]\tExclude any path from the results which contains [query]. Does NOT use regex pattern matching."
+  printf "  -e [query]\tExclude any path from the results which contains [query]."
   printf "\n"
-  printf "\t-v\t\tDisplay the absolute path to found files."
+  printf "\t\tDoes NOT use regex pattern matching."
+  printf "\n"
+  printf "  -v\t\tDisplay the absolute path to found files."
   printf "\n"
 }
 
