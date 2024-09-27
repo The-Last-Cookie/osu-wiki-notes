@@ -6,13 +6,16 @@
 # https://www.redhat.com/sysadmin/arguments-options-bash-scripts
 # https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
 
+# TODO: directly show result from specific file? argument -r 1
+
 BASE="" # base path to the wiki
 LANGUAGE="en" # default language
 
 QUERY=""
 VERBOSE=false
-EXCLUDE=""
+EXCLUDE=()
 REGEX=false
+
 
 substring() { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
 
@@ -29,7 +32,6 @@ help () {
   printf "\n"
   printf "Search options:"
   printf "\n"
-  #   -d, --dirs                   Search only in directory names.
   printf "\t-l [language]\tUse language other than the default one."
   printf "\n"
   printf "\t-r [regex]\tSearch with a regex pattern."
@@ -37,16 +39,25 @@ help () {
   printf "\n"
   printf "Output options:"
   printf "\n"
-  printf "\t-e [query]\tExclude any path from the results that contains query."
+  printf "\t-e [query]\tExclude any path from the results which contains [query]. Does NOT use regex pattern matching."
   printf "\n"
-  printf "\t-v\t\tOutput of the entire link to found files."
+  printf "\t-v\t\tDisplay the absolute path to found files."
   printf "\n"
 }
 
 exclude () {
-  all_matches=("$@")
+  local all_matches=("$@")
   for match in "${all_matches[@]}"; do
-    if ! substring "$EXCLUDE" "$match"; then
+    local disabled=false
+    for disallowed in "${EXCLUDE[@]}"; do
+        if substring "$disallowed" "$match"; then
+          # Skip match entirely
+          disabled=true
+          break
+      fi
+    done
+
+    if ! $disabled; then
       echo "${match}"
     fi
   done
@@ -96,7 +107,7 @@ while getopts ":hvl:q:re:" option; do
         VERBOSE=true
         ;;
     e)
-        EXCLUDE="$OPTARG"
+        EXCLUDE+=("$OPTARG")
         ;;
     \?)
         echo "Error: Invalid option"
