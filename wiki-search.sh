@@ -9,7 +9,7 @@
 # TODO: directly show result from specific file? argument -r 1
 
 # TODO Exclude: filter can be implemented on different layers
-# (filter file list, filter the matches grep found, filter files independently from the matches)
+# (filter file list [list based], filter the matches grep found [match based], filter files independently from the matches [file based])
 # Filter the matches grep found: -e $(grep --include="*\\en.md" -R ./osu-wiki/wiki -e "Music theory" | grep -v "Main article" | sort)
 # (mind the missing -l here)
 # danach müssen die Dateipfade manuell rausgefischt werden
