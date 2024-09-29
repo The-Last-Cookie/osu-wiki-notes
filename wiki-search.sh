@@ -150,7 +150,8 @@ search () {
   mapfile -t matches < <( "${grep_cmd[@]}" | sort )
 
   if [ ! -z $EXCLUDE ]; then
-    matches=( $(exclude "${matches[@]}") )
+    # TODO: Does not read great
+    mapfile -t matches < <( exclude "${matches[@]}" )
   fi
 
   len_base=${#BASE}
