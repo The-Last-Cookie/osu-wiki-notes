@@ -124,10 +124,10 @@ search () {
   len_base=${#BASE}
   for match in "${matches[@]}"; do
     if $VERBOSE; then
-      echo $match
+      echo "${match}"
     else
       # cut base url from each string
-      echo ${match:len_base}
+      echo "${match:len_base}"
     fi
   done
 
