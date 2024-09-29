@@ -10,8 +10,6 @@
 # TODO: directly show result from file? argument -r
 # TODO: is coloring the exact match in the result possible?
 
-# TODO: -i ignore case with grep
-
 # TODO Exclude: filter can be implemented on different layers
 # (filter file list [list based], filter the matches grep found [match based], filter files independently from the matches [file based])
 # Filter the matches grep found: -e $(grep --include="*\\en.md" -R ./osu-wiki/wiki -e "Music theory" | grep -v "Main article" | sort)
@@ -26,10 +24,11 @@ QUERY=""
 VERBOSE=false
 EXCLUDE=()
 REGEX=false
+CASE=false
 
-set -e # otherwise script will exit on error
+set -e # otherwise the script will exit on error
 
-substring() { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
+substring () { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
 
 containsElement () {
   local match="$1"
@@ -55,6 +54,8 @@ help () {
   printf "  -l [language]\tUse language other than the default one."
   printf "\n"
   printf "  -r [regex]\tSearch with a regex pattern."
+  printf "\n"
+  printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
   printf "\n"
   printf "Output options:"
@@ -82,6 +83,10 @@ build_grep () {
   else
     cmd+=(-e)
     cmd+=("$QUERY")
+  fi
+
+  if $CASE; then
+    cmd+=(-i)
   fi
 
   echo "${cmd[@]}"
@@ -129,18 +134,18 @@ search () {
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvl:q:re:" option; do
+while getopts ":hvil:q:re:" option; do
   case $option in
     h)
         help
         exit;;
     l)
-        allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
+        allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh")
         if containsElement "$OPTARG" "${allowed_codes[@]}"; then
-          LANGUAGE="$OPTARG"
-        else
-          printf "Language is not valid. Using default language.\n\n"
-        fi
+	  LANGUAGE="$OPTARG"
+	else
+	  printf "Language is not valid. Using default language.\n\n"
+	fi
         ;;
     q)
         QUERY="$OPTARG"
@@ -151,6 +156,9 @@ while getopts ":hvl:q:re:" option; do
     v)
         VERBOSE=true
         ;;
+    i)
+	CASE=true
+	;;
     e)
         EXCLUDE+=("$OPTARG")
         ;;
