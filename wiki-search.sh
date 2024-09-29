@@ -5,8 +5,12 @@
 # inspired by:
 # https://www.redhat.com/sysadmin/arguments-options-bash-scripts
 # https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
+# https://stackoverflow.com/a/71600549
 
-# TODO: directly show result from specific file? argument -r 1
+# TODO: directly show result from file? argument -r
+# TODO: is coloring the exact match in the result possible?
+
+# TODO: -i case insensitive with grep
 
 # TODO Exclude: filter can be implemented on different layers
 # (filter file list [list based], filter the matches grep found [match based], filter files independently from the matches [file based])
