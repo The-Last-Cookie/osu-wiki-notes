@@ -7,6 +7,7 @@
 
 # TODO Exclude: filter can be implemented on different layers
 # (filter file list [list based], filter the matches grep found [match based], filter files independently from the matches [file based])
+# the first two are already in (see paramater -c)
 # Filter the matches grep found: -e $(grep --include="*\\en.md" -R ./osu-wiki/wiki -e "Music theory" | grep -v "Main article" | sort)
 # (mind the missing -l here)
 # danach müssen die Dateipfade manuell rausgefischt werden
@@ -72,7 +73,7 @@ help () {
   printf "\n"
   printf "  -c\t\tShow comprehensive results for each match."
   printf "\n"
-  printf "  -e [query]\tExclude any path from the results which contains [query]."
+  printf "  -e [query]\tExclude anything from the results which contains [query]."
   printf "\n"
   printf "\t\tDoes NOT use regex pattern matching."
   printf "\n"
