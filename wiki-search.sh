@@ -5,9 +5,6 @@
 # resources:
 # https://www.redhat.com/sysadmin/arguments-options-bash-scripts
 
-# TODO: directly show result from file? argument -r
-# TODO: is coloring the exact match in the result possible?
-
 # TODO Exclude: filter can be implemented on different layers
 # (filter file list [list based], filter the matches grep found [match based], filter files independently from the matches [file based])
 # Filter the matches grep found: -e $(grep --include="*\\en.md" -R ./osu-wiki/wiki -e "Music theory" | grep -v "Main article" | sort)
@@ -106,6 +103,20 @@ build_grep () {
   echo "${cmd[@]}"
 }
 
+grep_color () {
+  # https://stackoverflow.com/a/4332530
+  local bold_red=$(tput setaf 1 bold)
+  local normal=$(tput sgr0)
+
+  local haystack="$1"
+  local needle="$2"
+
+  local match_start=$(strpos "${haystack}" "${needle}")
+  local match_end=$((match_start + "${#needle}"))
+
+  echo "${haystack:0:match_start}${bold_red}${needle}${normal}${haystack:match_end}"
+}
+
 exclude () {
   local all_matches=("$@")
   for match in "${all_matches[@]}"; do
@@ -155,7 +166,9 @@ search () {
     local file_path="${edited_match:0:delimiter_pos}"
     local paragraph="${edited_match:delimiter_pos}"
 
-    printf "${file_path}\n${paragraph}\n\n"
+    printf "${file_path}\n"
+    local colored_match=$(grep_color "${paragraph}" "$QUERY")
+    printf "${colored_match}\n\n"
   done
 
   printf "\nNumber of matches: ${#matches[@]}\n"
