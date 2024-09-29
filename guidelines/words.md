@@ -6,7 +6,8 @@ It is important to note that these translations should not be seen as fixed, imm
 
 - account support team - Account-Support-Team
 - ban - dauerhafte Sperre
-- Beat Snap Divisor - Taktteiler
+- beat snap divisor - Taktteiler
+- beat snapping - Beat-Positionierung
 - beatmap carousel - Beatmap-Karussell
 - beatmap category - Beatmap-Kategorie
 - beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap, auch Level
@@ -75,6 +76,7 @@ It is important to note that these translations should not be seen as fixed, imm
 - slider reverse arrow - Slider-Umkehrpfeil
 - snaking in/out slider - einziehende/ausziehende Slider
 - song select - Songauswahl
+- stack leniency - Stackzuordnung
 - submit - einreichen, einsenden, hochladen
 - support team - Support-Team
 - toolbar - Toolbar, Symbolleiste
