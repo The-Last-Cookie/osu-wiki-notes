@@ -27,8 +27,17 @@ VERBOSE=false
 EXCLUDE=()
 REGEX=false
 
+set -e # otherwise script will exit on error
 
 substring() { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
+
+containsElement () {
+  local match="$1"
+  local e
+  shift
+  for e; do [[ "$e" == "$match" ]] && return 0; done
+  return 1
+}
 
 help () {
   printf "Search for file contents in the osu! wiki."
@@ -108,7 +117,12 @@ while getopts ":hvl:q:re:" option; do
         help
         exit;;
     l)
-        LANGUAGE="$OPTARG"
+        allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
+        if containsElement "$OPTARG" "${allowed_codes[@]}"; then
+          LANGUAGE="$OPTARG"
+        else
+          printf "Language is not valid. Using default language.\n\n"
+        fi
         ;;
     q)
         QUERY="$OPTARG"
