@@ -47,7 +47,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-r] [-e <exclude>] -q QUERY"
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-r] [-e <exclude>] [-c] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -58,6 +58,8 @@ help () {
   printf "Search options:"
   printf "\n"
   printf "  -l [language]\tUse language other than the default one."
+  printf "\n"
+  printf "\t\tValid language codes are listed in the article styling criteria."
   printf "\n"
   printf "  -r [regex]\tSearch with a regex pattern."
   printf "\n"
