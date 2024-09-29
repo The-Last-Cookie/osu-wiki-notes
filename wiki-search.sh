@@ -146,7 +146,7 @@ search () {
     fi
 
     if ! $RESULTS; then
-      printf "${edited_match}"
+      printf "${edited_match}\n"
       continue
     fi
 
