@@ -10,7 +10,7 @@
 # TODO: directly show result from file? argument -r
 # TODO: is coloring the exact match in the result possible?
 
-# TODO: -i case insensitive with grep
+# TODO: -i ignore case with grep
 
 # TODO Exclude: filter can be implemented on different layers
 # (filter file list [list based], filter the matches grep found [match based], filter files independently from the matches [file based])
@@ -67,6 +67,26 @@ help () {
   printf "\n"
 }
 
+build_grep () {
+  # final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
+  local cmd=(
+    --include="$1"
+    -R
+    -l
+    "$BASE"
+  )
+
+  if $REGEX; then
+    cmd+=(-G)
+    cmd+=("$QUERY")
+  else
+    cmd+=(-e)
+    cmd+=("$QUERY")
+  fi
+
+  echo "${cmd[@]}"
+}
+
 exclude () {
   local all_matches=("$@")
   for match in "${all_matches[@]}"; do
@@ -88,11 +108,9 @@ exclude () {
 search () {
   local file_type="*\\${LANGUAGE}.md"
 
-  if $REGEX; then
-    local matches=( $(grep --include=${file_type} -Rl "$BASE" -G "$QUERY" | sort) )
-  else
-    local matches=( $(grep --include=${file_type} -Rl "$BASE" -e "$QUERY" | sort) )
-  fi
+  grep_cmd=( grep $(build_grep "${file_type}") )
+  # echo "${grep_cmd[@]}"
+  local matches=( $("${grep_cmd[@]}" | sort) )
 
   if [ ! -z $EXCLUDE ]; then
     matches=( $(exclude "${matches[@]}") )
