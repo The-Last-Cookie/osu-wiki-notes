@@ -2,10 +2,8 @@
 
 # remove .sh extension when using script on path
 
-# inspired by:
+# resources:
 # https://www.redhat.com/sysadmin/arguments-options-bash-scripts
-# https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
-# https://stackoverflow.com/a/71600549
 
 # TODO: directly show result from file? argument -r
 # TODO: is coloring the exact match in the result possible?
@@ -25,17 +23,28 @@ VERBOSE=false
 EXCLUDE=()
 REGEX=false
 CASE=false
+RESULTS=false
 
 set -e # otherwise the script will exit on error
 
+# https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
 substring () { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
 
+# https://stackoverflow.com/a/71600549
 containsElement () {
   local match="$1"
   local e
   shift
   for e; do [[ "$e" == "$match" ]] && return 0; done
   return 1
+}
+
+# https://stackoverflow.com/a/69960043
+strpos () {
+  haystack="$1"
+  needle="$2"
+  x="${haystack%%"$needle"*}"
+  [[ "$x" = "$haystack" ]] && { echo -1; return 1; } || echo "${#x}"
 }
 
 help () {
@@ -60,6 +69,8 @@ help () {
   printf "\n"
   printf "Output options:"
   printf "\n"
+  printf "  -c\t\tShow comprehensive results for each match."
+  printf "\n"
   printf "  -e [query]\tExclude any path from the results which contains [query]."
   printf "\n"
   printf "\t\tDoes NOT use regex pattern matching."
@@ -73,7 +84,6 @@ build_grep () {
   local cmd=(
     --include="$1"
     -R
-    -l
     "$BASE"
   )
 
@@ -83,6 +93,10 @@ build_grep () {
   else
     cmd+=(-e)
     cmd+=("$QUERY")
+  fi
+
+  if ! $RESULTS; then
+    cmd+=(-l)
   fi
 
   if $CASE; then
@@ -115,7 +129,10 @@ search () {
 
   grep_cmd=( grep $(build_grep "${file_type}") )
   # echo "${grep_cmd[@]}"
-  local matches=( $("${grep_cmd[@]}" | sort) )
+
+  # Map results from grep command to array
+  # Normal array syntax () can't be used because detailed results have spaces in them
+  mapfile -t matches < <( "${grep_cmd[@]}" | sort )
 
   if [ ! -z $EXCLUDE ]; then
     matches=( $(exclude "${matches[@]}") )
@@ -123,24 +140,34 @@ search () {
 
   len_base=${#BASE}
   for match in "${matches[@]}"; do
-    if $VERBOSE; then
-      echo "${match}"
-    else
-      # cut base url from each string
-      echo "${match:len_base}"
+    local edited_match="${match}"
+    if ! $VERBOSE; then
+      edited_match="${edited_match:len_base}"
     fi
+
+    if ! $RESULTS; then
+      printf "${edited_match}"
+      continue
+    fi
+
+    local delimiter_pos=$(strpos "${edited_match}" ":")
+    ((delimiter_pos++)) # move one to the right
+    local file_path="${edited_match:0:delimiter_pos}"
+    local paragraph="${edited_match:delimiter_pos}"
+
+    printf "${file_path}\n${paragraph}\n\n"
   done
 
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:re:" option; do
+while getopts ":hvil:q:cre:" option; do
   case $option in
     h)
         help
         exit;;
     l)
-        allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh")
+        allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
         if containsElement "$OPTARG" "${allowed_codes[@]}"; then
 	  LANGUAGE="$OPTARG"
 	else
@@ -158,6 +185,9 @@ while getopts ":hvil:q:re:" option; do
         ;;
     i)
 	CASE=true
+	;;
+    c)
+	RESULTS=true
 	;;
     e)
         EXCLUDE+=("$OPTARG")
