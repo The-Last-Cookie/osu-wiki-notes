@@ -63,6 +63,8 @@ help () {
   printf "\n"
   printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
+  printf "\t\tDoes NOT color output compared to normal output."
+  printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
@@ -167,8 +169,19 @@ search () {
     local paragraph="${edited_match:delimiter_pos}"
 
     printf "${file_path}\n"
+
+    # TODO: Coloring doesn't work with -i due to strpos not supporting this
+    if $CASE; then
+      echo "${paragraph}"
+      printf "\n"
+      continue
+    fi
+
+    # Using printf would return error on - at the start of the line
+    # printf "%q" would print the color codes instead of the colored text
     local colored_match=$(grep_color "${paragraph}" "$QUERY")
-    printf "${colored_match}\n\n"
+    echo "${colored_match}"
+    printf "\n"
   done
 
   printf "\nNumber of matches: ${#matches[@]}\n"
