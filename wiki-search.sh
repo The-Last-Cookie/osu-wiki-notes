@@ -150,7 +150,7 @@ search () {
   # Normal array syntax () can't be used because detailed results have spaces in them
   mapfile -t matches < <( "${grep_cmd[@]}" | sort )
 
-  if [ ! -z $EXCLUDE ]; then
+  if [ ! -z "$EXCLUDE" ]; then
     # TODO: Does not read great
     mapfile -t matches < <( exclude "${matches[@]}" )
   fi
