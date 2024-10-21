@@ -73,3 +73,21 @@ Es gibt einen feinen Unterschied zwischen Stummschaltung und Sperrung. Einkäufe
 - seeding - Platzierung
 - bracket - Turnierbaum
 - Double-Elimination - Doppel-K.-o.-System
+
+## Music theory
+
+| Englisches Original | Deutsche Verwendung/Übersetzung |
+| :-: | :-- |
+| Beat | Beat, Grundschlag |
+| Time signature | Taktart |
+| Measure | Takt |
+| Rhythm | Rhythmus |
+
+- Metrum: gleichmäßiges Wiederkehren eines Schlages (Verlauf des Grundschlags)
+- Takt: Gewichtungen des Metrums in regelmäßigen Abständen
+- Rhythmus: Verschiebungen der Schläge entgegen des Metrums
+
+## User interface
+
+- https://www.officemanager.de/glossar/gui.html
+- https://de.wikipedia.org/wiki/Grafische_Benutzeroberfl%C3%A4che

@@ -2,6 +2,8 @@
 
 A list meant as a translation guideline to make translations more consistent and sound more natural.
 
+It is important to note that these translations should not be seen as fixed, immutable rules. Depending on the context, translations can be wrong, so it is essential to consider the surrounding context.
+
 - account support team - Account-Support-Team
 - ban - dauerhafte Sperre
 - Beat Snap Divisor - Taktteiler
@@ -41,7 +43,7 @@ A list meant as a translation guideline to make translations more consistent and
 - keyboard shortcuts - Tastenkürzel
 - leaderboard - Rangliste, Bestenliste
 - maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung)
-- maintainer - Verantwortlicher, Betreuer
+- maintainer - Verantwortlicher, Betreuer, Administrator, Leiter
 - me! page - ich!-Seite
 - medal - Medaille
 - merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren
@@ -66,6 +68,8 @@ A list meant as a translation guideline to make translations more consistent and
 - restriction - Einschränkung oder Sperre
 - result screen - Ergebnisanzeige (oder -bildschirm)
 - rules - Regeln
+- score difference ratio - Punktedifferenz
+- scoring (system) - Bewertungssystem, Punktesystem
 - seed - Turniereinstufung auslosen, Platzierung, Seed
 - silence - Stummschaltung oder Silence (Verb lautet stummgeschaltet)
 - slider reverse arrow - Slider-Umkehrpfeil
