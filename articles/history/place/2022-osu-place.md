@@ -86,16 +86,48 @@ Link: https://www.youtube.com/watch?v=Jv0mANE7lA8
 | 04:12 | Many people wanted the osu! logo gone and posted memes about it (e.g. convert osu! logo into kirby) |
 | 04:35 | Mizkif told his community to draw over the osu! logo with black pixels. |
 | 05:30 | osu! community attacked the frog of mizkif, some back and forth between them |
-| 06:00 | *undocumented* |
-<!-- chrome extension script-->
+| 06:00 | they agreed upon a peace treaty |
+| 06:10 | Chrome extension script to see where which colour needs to be placed |
+| 06:30 | Lots of attacks on the logo, though also lots of alliances |
+| 06:38 | On April 2, the canvas doubled in size to the right |
+| 06:50 | Triangles were added to the logo template (more depth in general) |
+| 07:30 | Planning of the image of peppy |
+| 09:30 | War with xQc. he would eventually attack other communities and osu! could recover |
+| 10:00 | Day 3: canvas doubled again to the bottom |
+| 10:20 | New images: wysi and a hit circle, and a "taskbar tab" |
+| 11:56 | French streamer attacked osu! logo on "whiteout", which lead people to believe the osu! community was botting |
+
+Comment by Kris-od3sj on the xQc canvas invasion:
+
+- Mizkiff was scared of osu, because of how poorly he ended up after messing with osu; he tells xQc to not mess with osu
+- xQc attacks Turks
+- he starts building tentacles to ruin the canvas
+- attacks Hololive, which was defended by osu, despite not being an official ally at that point in time yet
+- goes past osu cookie, unaware that he stomped pxls space, osu's ally
+- decides to settle with a Twitch logo on pxls space land
+- osu helps them get their land back
+- xQc in response attacks osu
+- he gets confused, and thinks it was actually Turkey attacking him, leaves osu and attacks turkey
+- osu recovers
+- xQc decides to build his logo over peppy, unaware it's osu's land
+- osu tries to defend peppy
+- xQc at some point finds out osu defended Hololive as well
+- BTMC vs xQc negotiations happen
+- xQc, because of wherever he goes osu defends it, assumes osu either claims a huge part of the canvas or is allied with it
+- negotiations fail, xQc attacks osu cookie
+- some more negotiations happen, in the meantime osu rebuilds the cookie, also puts a clown nose on xQc's logo
+- xQc ends up leaving osu alone under the condition osu doesn't attack him and stops with the clown nose, also moves his logo to the blue corner
+- peppy is rebuilt
+From this point I didn't participate, so less details here:
+- some more purple tentacles happened
+- xQc covered Star Wars (another osu ally) with his logo, someone gives it a clown nose, he writes xQcL over the osu cookie
+- Star Wars and osu cookie recover
 
 #### r/place Osu!
 
 Link: https://www.youtube.com/watch?v=Ppit47TdwFs
 
-| Timestamp | Description |
-| :-: | :-- |
-| - | *undocumented* |
+Timelapse
 
 #### The True Power of the osu! Community
 
@@ -133,17 +165,15 @@ Link: https://www.youtube.com/watch?v=gi-lJMEPTro
 
 Link: https://www.youtube.com/watch?v=kxBQH_ePxYA
 
-| Timestamp | Description |
-| :-: | :-- |
-| - | *undocumented* |
+Timelapse
 
 #### "osu! is botting in /r/place"
 
 Link: https://www.youtube.com/watch?v=PeppwxIdew0
 
-| Timestamp | Description |
-| :-: | :-- |
-| - | *undocumented* |
+Showcase of the sheer will and coordination that was present throughout r/place
+
+---
 
 any note-worthy posts in r/osugame and r/osuplace?
 
@@ -175,7 +205,7 @@ Example structure for a separate article:
 
 Things to find on the final canvas and their history (management plan by BTMC and r/osuplace; griefing by xQc etc.)
 
-## Efforts by community members
+## Community efforts
 
 Stuff like the 3d animation
 
