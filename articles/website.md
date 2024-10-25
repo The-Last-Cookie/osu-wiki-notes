@@ -10,7 +10,3 @@ Interesting sources:
   - [PR #1175](https://github.com/ppy/osu-web/pull/1175)
 - design from 2018
   - [PR #3381](https://github.com/ppy/osu-web/pull/3381)
-
-changelog:
-
-- no rss feed anymore
