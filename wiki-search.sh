@@ -106,9 +106,16 @@ grep_color () {
   local needle="$2"
 
   local match_start=$(strpos "${haystack}" "${needle}")
-  local match_end=$((match_start + "${#needle}"))
 
-  echo "${haystack:0:match_start}${bold_red}${needle}${normal}${haystack:match_end}"
+  # Return plaintext when searching with regex
+  if [[ match_start -eq -1 ]]; then
+    echo "${haystack}"
+    return
+  fi
+
+  local match_len="${#needle}"
+  local match_end=$((match_start + match_len))
+  echo "${haystack:0:match_start}${bold_red}${haystack:match_start:match_len}${normal}${haystack:match_end}"
 }
 
 exclude () {
