@@ -19,7 +19,6 @@ LANGUAGE="en" # default language
 QUERY=""
 VERBOSE=false
 EXCLUDE=()
-REGEX=false
 CASE=false
 RESULTS=false
 
@@ -48,7 +47,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-r] [-e <exclude>] [-c] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-c] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -62,11 +61,9 @@ help () {
   printf "\n"
   printf "\t\tValid language codes are listed in the article styling criteria."
   printf "\n"
-  printf "  -r [regex]\tSearch with a regex pattern."
-  printf "\n"
   printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
-  printf "\t\tDoes NOT color output compared to normal output."
+  printf "\t\tThe output is NOT colored when used together with the -c option."
   printf "\n"
   printf "\n"
   printf "Output options:"
@@ -75,7 +72,7 @@ help () {
   printf "\n"
   printf "  -e [query]\tExclude anything from the results which contains [query]."
   printf "\n"
-  printf "\t\tDoes NOT use regex pattern matching."
+  printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
   printf "  -v\t\tDisplay the absolute path to found files."
   printf "\n"
@@ -86,16 +83,8 @@ build_grep () {
   local cmd=(
     --include="$1"
     -R
-    "$BASE"
+    "${BASE}"
   )
-
-  if $REGEX; then
-    cmd+=(-G)
-    cmd+=("$QUERY")
-  else
-    cmd+=(-e)
-    cmd+=("$QUERY")
-  fi
 
   if ! $RESULTS; then
     cmd+=(-l)
@@ -144,7 +133,10 @@ search () {
   local file_type="*\\${LANGUAGE}.md"
 
   grep_cmd=( grep $(build_grep "${file_type}") )
-  # echo "${grep_cmd[@]}"
+
+  # Adding queries containing spaces inside build_grep is not possible
+  grep_cmd+=(-e)
+  grep_cmd+=("${QUERY}")
 
   # Map results from grep command to array
   # Normal array syntax () can't be used because detailed results have spaces in them
@@ -191,7 +183,7 @@ search () {
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:cre:" option; do
+while getopts ":hvil:q:ce:" option; do
   case $option in
     h)
         help
@@ -206,9 +198,6 @@ while getopts ":hvil:q:cre:" option; do
         ;;
     q)
         QUERY="$OPTARG"
-        ;;
-    r)
-        REGEX=true
         ;;
     v)
         VERBOSE=true
