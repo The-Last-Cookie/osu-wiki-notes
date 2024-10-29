@@ -79,9 +79,10 @@ help () {
 }
 
 build_grep () {
+  local file_pattern="$1"
   # final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
-    --include="$1"
+    --include="${file_pattern}"
     -R
     "${BASE}"
   )
