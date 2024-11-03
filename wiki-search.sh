@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # remove .sh extension when using script on path
+# make the file executable with chmod +x [file]
 
 # resources:
 # https://www.redhat.com/sysadmin/arguments-options-bash-scripts
