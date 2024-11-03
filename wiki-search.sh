@@ -13,14 +13,21 @@
 # danach müssen die Dateipfade manuell rausgefischt werden
 # ist so eine Anwendung sinnvoll?
 
-BASE="" # base path to the wiki
-LANGUAGE="en" # default language
+BASE="/osu-wiki"
+# base path to the repository folder
+# MUST NOT contain any spaces
+
+LANGUAGE="en"
 
 QUERY=""
 VERBOSE=false
 EXCLUDE=()
 CASE=false
 RESULTS=false
+NEWS=false
+
+# Print debug information
+DEBUG=false
 
 set -e # otherwise the script will exit on error
 
@@ -65,6 +72,8 @@ help () {
   printf "\n"
   printf "\t\tThe output is NOT colored when used together with the -c option."
   printf "\n"
+  printf "  -n\t\tSearch /news instead of /wiki."
+  printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
@@ -80,11 +89,13 @@ help () {
 
 build_grep () {
   local file_pattern="$1"
+  local base_folder="$2"
+
   # final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
     --include="${file_pattern}"
     -R
-    "${BASE}"
+    "${base_folder}"
   )
 
   if ! $RESULTS; then
@@ -139,12 +150,22 @@ exclude () {
 
 search () {
   local file_type="*\\${LANGUAGE}.md"
+  local base_folder="${BASE}/wiki"
 
-  grep_cmd=( grep $(build_grep "${file_type}") )
+  if $NEWS; then
+    file_type="*.md"
+    base_folder="${BASE}/news"
+  fi
+
+  grep_cmd=( grep $(build_grep "${file_type}" "${base_folder}") )
 
   # Adding queries containing spaces inside build_grep is not possible
   grep_cmd+=(-e)
   grep_cmd+=("${QUERY}")
+
+  if $DEBUG; then
+    echo "${grep_cmd[@]}"
+  fi
 
   # Map results from grep command to array
   # Normal array syntax () can't be used because detailed results have spaces in them
@@ -155,7 +176,9 @@ search () {
     mapfile -t matches < <( exclude "${matches[@]}" )
   fi
 
-  len_base=${#BASE}
+  len_base=$((${#BASE}+6))
+  # Add 6 to remove /wiki/ or /news/ as well
+
   for match in "${matches[@]}"; do
     local edited_match="${match}"
     if ! $VERBOSE; then
@@ -191,7 +214,7 @@ search () {
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:ce:" option; do
+while getopts ":hvil:q:ce:n" option; do
   case $option in
     h)
         help
@@ -219,6 +242,9 @@ while getopts ":hvil:q:ce:" option; do
     e)
         EXCLUDE+=("$OPTARG")
         ;;
+    n)
+	NEWS="$OPTARG"
+	;;
     \?)
         echo "Error: Invalid option"
         exit;;
