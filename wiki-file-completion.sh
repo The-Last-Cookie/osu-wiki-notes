@@ -1,5 +1,10 @@
 # put in /etc/bash_completion.d/wiki-file-completion (no .sh)
 
+# inspired by:
+# https://web.archive.org/web/20190328055722/https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1
+# https://web.archive.org/web/20140405211529/http://www.debian-administration.org/article/317/An_introduction_to_bash_completion_part_2
+# https://linuxsimply.com/bash-scripting-tutorial/string/split-string/
+
 BASE="/osu-wiki/wiki/"
 
 _wiki_completion()
