@@ -7,11 +7,15 @@
 
 BASE="/osu-wiki/wiki/"
 
-_escape_exclamation_mark()
+# TODO: Fix escaping single quote ' correctly (e.g. cavoe's_osu!_event)
+# could it be that this needs to be added after find?
+
+_escape_characters()
 {
-    # When printing to console, ! must be escaped as bash would interpret the character
-    # Find command however would not find folders with !
-    echo $(echo "${1}" | sed -e 's/\\!/\!/g')
+    # When printing to console, ! and () must be escaped as bash would interpret the character
+    # Find command however would not find folders with ! and ()
+    # sed: s/ORIGINAL/REPLACEMENT/g
+    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g' -e 's/\\\x27s/\\x27s/g')
 }
 
 _wiki_completion()
@@ -28,13 +32,13 @@ _wiki_completion()
         root="${BASE}"
     elif [[ ${cur} == */ ]]; then
         # whole folder name with / is given in cur
-        escaped_path=$( _escape_exclamation_mark "${cur}")
+        escaped_path=$( _escape_characters "${cur}")
         root="${BASE}${escaped_path}"
     else
         # only part of folder name is given
         # remove last folder fragment for find command
         current_path="${cur%/*}"
-        escaped_path=$( _escape_exclamation_mark "${current_path}")
+        escaped_path=$( _escape_characters "${current_path}")
         root="${BASE}${escaped_path}/"
     fi
 
