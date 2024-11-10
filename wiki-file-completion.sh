@@ -7,6 +7,13 @@
 
 BASE="/osu-wiki/wiki/"
 
+_escape_exclamation_mark()
+{
+    # When printing to console, ! must be escaped as bash would interpret the character
+    # Find command however would not find folders with !
+    echo $(echo "${1}" | sed -e 's/\\!/\!/g')
+}
+
 _wiki_completion()
 {
     local cur prev opts
@@ -21,13 +28,13 @@ _wiki_completion()
         root="${BASE}"
     elif [[ ${cur} == */ ]]; then
         # whole folder name with / is given in cur
-        escaped_path=$(echo "$cur" | sed -e 's/\\!/\!/g')
+        escaped_path=$( _escape_exclamation_mark "${cur}")
         root="${BASE}${escaped_path}"
     else
         # only part of folder name is given
         # remove last folder fragment for find command
         current_path="${cur%/*}"
-        escaped_path=$(echo "$current_path" | sed -e 's/\\!/\!/g')
+        escaped_path=$( _escape_exclamation_mark "${current_path}")
         root="${BASE}${escaped_path}/"
     fi
 
