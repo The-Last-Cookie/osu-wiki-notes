@@ -7,15 +7,12 @@
 
 BASE="/osu-wiki/wiki/"
 
-# TODO: Fix escaping single quote ' correctly (e.g. cavoe's_osu!_event)
-# could it be that this needs to be added after find?
-
-_escape_characters()
+_remove_escape_characters()
 {
     # When printing to console, ! and () must be escaped as bash would interpret the character
     # Find command however would not find folders with ! and ()
     # sed: s/ORIGINAL/REPLACEMENT/g
-    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g' -e 's/\\\x27s/\\x27s/g')
+    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g')
 }
 
 _wiki_completion()
@@ -32,23 +29,33 @@ _wiki_completion()
         root="${BASE}"
     elif [[ ${cur} == */ ]]; then
         # whole folder name with / is given in cur
-        escaped_path=$( _escape_characters "${cur}")
+        local escaped_path=$( _remove_escape_characters "${cur}")
         root="${BASE}${escaped_path}"
     else
         # only part of folder name is given
         # remove last folder fragment for find command
-        current_path="${cur%/*}"
-        escaped_path=$( _escape_characters "${current_path}")
+        local current_path="${cur%/*}"
+        local escaped_path=$( _remove_escape_characters "${current_path}")
         root="${BASE}${escaped_path}/"
     fi
 
-    local directories=( $(find "${root}" -mindepth 1 -maxdepth 1 -type d ! -name img | sort) )
+    mapfile -t folders < <( find "${root}" -mindepth 1 -maxdepth 1 -type d ! -name img | sort )
+
     local len_base="${#BASE}"
-    for i in "${!directories[@]}"; do
-        directories[$i]="${directories[$i]:len_base}"
+    for i in "${!folders[@]}"; do
+        local current_folder="${folders[$i]}"
+
+        # cut BASE path from string
+        # Variable cur contains the path without BASE
+        current_folder="${current_folder:len_base}"
+
+        # escape single quotes
+        current_folder="${current_folder@Q}"
+
+        folders[$i]="${current_folder}"
     done
 
-    opts="${directories[*]}"
+    opts="${folders[*]}"
 
     COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
     return 0
