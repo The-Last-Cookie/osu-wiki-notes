@@ -63,7 +63,27 @@ local_mode () {
 }
 
 online_mode () {
-  echo "Online"
+  # TODO: offer other browsers as alternative
+
+  local domain="https://osu.ppy.sh/wiki/"
+
+  if [[ "${ARTICLE}" = *"/" ]] || [[ "${ARTICLE}" != *"/"* ]]; then
+    firefox "${domain}${ARTICLE}"
+    return
+  fi
+
+  # https://linuxsimply.com/bash-scripting-tutorial/string/split-string/
+  local lang="${ARTICLE##*/}"
+  local valid_path="${ARTICLE%/*}"
+
+  allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
+  if containsElement "${lang}" "${allowed_codes[@]}"; then
+    firefox "${domain}${lang}/${valid_path}"
+    return
+  fi
+
+  echo "Language is not valid. Opening parent folder."
+  code "${domain}${valid_path}"
 }
 
 get_all_wiki_links () {
