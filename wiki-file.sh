@@ -49,9 +49,8 @@ local_mode () {
   fi
 
   # https://linuxsimply.com/bash-scripting-tutorial/string/split-string/
-  local full_path="${ARTICLE}"
   local lang="${ARTICLE##*/}"
-  local valid_path="${ARTICLE%%/*}"
+  local valid_path="${ARTICLE%/*}"
 
   allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
   if containsElement "${lang}" "${allowed_codes[@]}"; then
@@ -93,13 +92,17 @@ while getopts ":hp:oa" option; do
         echo "Error: Invalid option"
         exit;;
     :)
-      echo "Option -$OPTARG requires an argument." >&2
-      exit 1
-      ;;
+	echo "Option -$OPTARG requires an argument." >&2
+	exit 1
+	;;
    esac
 done
 
-if [ ! -z "$ARTICLE" ] && $ONLINE; then
+if [ -z "${ARTICLE}" ]; then
+  echo "No parameter -p found. Redirecting to the root folder."
+fi
+
+if $ONLINE; then
   online_mode
   exit 0
 fi
