@@ -8,6 +8,8 @@
 # Must have slash at the end
 BASE="/osu-wiki/wiki/"
 
+# TODO Remove escape for single quote on find
+
 _remove_escape_characters()
 {
     # When printing to console, ! and () must be escaped as bash would interpret the character
@@ -50,7 +52,7 @@ _wiki_completion()
         # Variable cur contains the path without BASE
         current_folder="${current_folder:len_base}"
 
-        # escape single quotes
+        # escape single quotes in console tab completion
         current_folder="${current_folder@Q}"
 
         folders[$i]="${current_folder}"
@@ -62,4 +64,4 @@ _wiki_completion()
     return 0
 }
 
-complete -o nospace -o filenames -S / -F _wiki_completion wiki-file
+complete -o nospace -o filenames -F _wiki_completion wiki-file
