@@ -8,3 +8,8 @@ With additional information on:
 - the influence of streamers like btmc
 - community efforts like pixel placement helper tools, heatmaps and the 3d animation of the pixel placement
 - other trivia knowledge like the 5-monitor setup or peppy being called pewdiepie presented in an amusing way
+
+## General sources
+
+- [The war on osu! in r/place](https://www.youtube.com/watch?v=gLO2aoBnv9A)
+
