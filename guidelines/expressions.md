@@ -21,8 +21,8 @@ Mögliche Übersetzungen für `health drain (rate)`:
 
 ### Score
 
-- mod multiplier - (Score-Multiplikator?) Mod-Multiplikator (bei Mods)
-- score multiplier - Punktemultiplikator (im Sinne der Combo)
+- score multiplier (combo) - Punktemultiplikator (im Sinne der Combo)
+- mod multiplier - Schwierigkeitsmultiplikator, Mod-Multiplikator (bei Mods)[^score-multiplier]
 - combo multiplier effect - Multiplikatoreffekt
 
 ### Hit objects
@@ -91,3 +91,7 @@ Es gibt einen feinen Unterschied zwischen Stummschaltung und Sperrung. Einkäufe
 
 - https://www.officemanager.de/glossar/gui.html
 - https://de.wikipedia.org/wiki/Grafische_Benutzeroberfl%C3%A4che
+
+## Annotations
+
+[^score-multiplier]: In den Wikiseiten zu den Spielmodifikationen wird dies auch *score multiplier* (Score-Multiplikator) genannt. In osu!(lazer) wiederum heißt es *difficulty multiplier*. Siehe als Vergleich *combo score multiplier* weiter oben.
