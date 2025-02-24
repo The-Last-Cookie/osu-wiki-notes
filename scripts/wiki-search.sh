@@ -223,10 +223,10 @@ while getopts ":hvil:q:ce:n" option; do
     l)
         allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
         if containsElement "$OPTARG" "${allowed_codes[@]}"; then
-	  LANGUAGE="$OPTARG"
-	else
-	  printf "Language is not valid. Using default language.\n\n"
-	fi
+    	  LANGUAGE="$OPTARG"
+    	else
+    	  printf "Language is not valid. Using default language.\n\n"
+    	fi
         ;;
     q)
         QUERY="$OPTARG"
@@ -235,25 +235,25 @@ while getopts ":hvil:q:ce:n" option; do
         VERBOSE=true
         ;;
     i)
-	CASE=true
-	;;
+    	CASE=true
+    	;;
     c)
-	RESULTS=true
-	;;
+    	RESULTS=true
+    	;;
     e)
         EXCLUDE+=("$OPTARG")
         ;;
     n)
-	NEWS="$OPTARG"
-	;;
+        NEWS="$OPTARG"
+        ;;
     \?)
         echo "Error: Invalid option"
         exit;;
     :)
-      echo "Option -$OPTARG requires an argument." >&2
-      exit 1
-      ;;
-   esac
+        echo "Option -$OPTARG requires an argument." >&2
+        exit 1
+        ;;
+    esac
 done
 
 if [ -z "$QUERY" ]; then
