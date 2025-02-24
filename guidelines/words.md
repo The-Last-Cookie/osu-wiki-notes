@@ -47,7 +47,7 @@ It is important to note that these translations should not be seen as fixed, imm
 - maintainer - Verantwortlicher, Betreuer, Administrator, Leiter
 - me! page - ich!-Seite
 - medal - Medaille
-- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren
+- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren, in `master` migrieren
 - mod select screen - Modauswahl
 - modding - Modding (Verb lautet gemoddet)
 - offset wizard - Offset-Assistent
@@ -77,7 +77,8 @@ It is important to note that these translations should not be seen as fixed, imm
 - snaking in/out slider - einziehende/ausziehende Slider
 - song select - Songauswahl
 - stack leniency - Stackzuordnung
-- submit - einreichen, einsenden, hochladen
+- submission - Veröffentlichung, Einreichung
+- submit - einreichen, einsenden, hochladen, veröffentlichen
 - support team - Support-Team
 - toolbar - Toolbar, Symbolleiste
 - tournament - Turnier
