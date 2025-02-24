@@ -38,7 +38,6 @@
 
 ### Weniger wichtig
 
-- gameplay/score - original --> ursprünglich
 - Help centre/Account: Plays --> Spiele/gespielt?
 - Buttonbeschreibungen groß? --> osu-wiki-search -l de `[a-z] -r
 
@@ -46,7 +45,6 @@
 
 - panel --> Dialog(-feld)
 - reporting_bad_behaviour deutsche bildversionen und Buttonbeschreibungen auf deutsch (das, was geht)
-- Melden von schlechtem Verhalten --> Schlechtes Verhalten melden
 - Beatmapping/Beatmap submission
   - Titel: Beatmap hochladen/veröffentlichen
   - Schwierigkeitslimit: Erwähnung Sterneanzahl
