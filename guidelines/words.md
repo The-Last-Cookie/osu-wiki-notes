@@ -6,7 +6,8 @@ It is important to note that these translations should not be seen as fixed, imm
 
 - account support team - Account-Support-Team
 - ban - dauerhafte Sperre
-- Beat Snap Divisor - Taktteiler
+- beat snap divisor - Taktteiler
+- beat snapping - Beat-Positionierung
 - beatmap carousel - Beatmap-Karussell
 - beatmap category - Beatmap-Kategorie
 - beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap, auch Level
@@ -46,7 +47,7 @@ It is important to note that these translations should not be seen as fixed, imm
 - maintainer - Verantwortlicher, Betreuer, Administrator, Leiter
 - me! page - ich!-Seite
 - medal - Medaille
-- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren
+- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren, in `master` migrieren
 - mod select screen - Modauswahl
 - modding - Modding (Verb lautet gemoddet)
 - offset wizard - Offset-Assistent
@@ -75,7 +76,9 @@ It is important to note that these translations should not be seen as fixed, imm
 - slider reverse arrow - Slider-Umkehrpfeil
 - snaking in/out slider - einziehende/ausziehende Slider
 - song select - Songauswahl
-- submit - einreichen, einsenden, hochladen
+- stack leniency - Stackzuordnung
+- submission - Veröffentlichung, Einreichung
+- submit - einreichen, einsenden, hochladen, veröffentlichen
 - support team - Support-Team
 - toolbar - Toolbar, Symbolleiste
 - tournament - Turnier
