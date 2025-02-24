@@ -23,6 +23,7 @@ These resources might include stuff not worth mentioning but may still be a good
   - <https://www.youtube.com/watch?v=tHBZaT8vjaM>
   - <https://www.youtube.com/watch?v=VNCVIWrqWGA>
   - <https://www.youtube.com/watch?v=KJ1mFC3w4D8>
+  - <https://www.youtube.com/watch?v=VNCVIWrqWGA>
 
 ## Editorial rules
 
