@@ -23,6 +23,7 @@ It is important to note that these translations should not be seen as fixed, imm
 - contribution guide - Beitragsleitfaden
 - contributor covenant code of conduct - Verhaltenskodex für Mitwirkende
 - cooldown - Auszeit
+- cover - Titelbild oder Cover
 - custom - benutzerdefiniert, eigene(s), selbst erstellt
 - (to) dash - dashen
 - (to) encourage - ermutigen, auffordern, angehalten (zu etwas … werden)
