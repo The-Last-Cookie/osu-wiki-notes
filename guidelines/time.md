@@ -1,5 +1,7 @@
 # Zeitangaben
 
+<!--TODO: It might be worth checking out the osu-web source code for documenting the usages here, however, this is a lot of work.-->
+
 Hier werden zur besseren Übersicht beispielhaft Texte aus Crowdin gelistet, die variable Zeitangaben verwenden.
 
 | ID | Text | Zeitangabe |
