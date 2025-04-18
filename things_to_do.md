@@ -26,7 +26,7 @@
 - approved - approved, angenommen, zugelassen
 - ranked - ranked, gerankt, freigegeben
 - unranked - nicht freigegeben, nicht gerankt
-  - - (un)ranked play - (nicht) gewertet? nicht gewertetes Spiel --> ranked Beatmap kann nicht mit gewertet übersetzt werden
+  - (un)ranked play - (nicht) gewertet? nicht gewertetes Spiel --> ranked Beatmap kann nicht mit gewertet übersetzt werden
 
 ## add
 
