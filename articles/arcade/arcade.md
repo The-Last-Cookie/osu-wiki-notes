@@ -1,10 +1,10 @@
 # osu!arcade
 
-Prototype with built-in osu!stream working as an arcade machine.
+The **osu!arcade** was a prototype arcade machine running [osu!stream](/wiki/osu!stream), a touch-based version of osu!(stable).
 
-Phrasing from `History of osu! 2010` for general direction:
+It was originally developed in 2010 and contained custom-made hardware as well as a built-in touchscreen.
 
-> The Wai-con anime convention in Perth had osu!arcade, a fully self-contained arcade machine running a touch-based version of osu!. Although playing too much on it could lead to sore fingers as some people had criticised, the prototype containing custom-made hardware and a built-in touchscreen was well received by the community.
+At the time, it received positive feedback from the community.
 
 ## Technical overview/features
 
@@ -27,7 +27,6 @@ Phrasing from `History of osu! 2010` for general direction:
 - [What happened to the osu!arcade?](https://www.youtube.com/watch?v=86-XlW0_Amg)
 - is there something on [ppy's' dev blog](https://blog.ppy.sh/)?
 - something on [ppy's twitter](https://twitter.com/ppy)?
-- something in osu!monthly editions?
 - old youtube videos?
   - [osu! at Waicon 2010](https://www.youtube.com/watch?v=WKvm975bmj0&)
   - [osu!arcade with a straw](https://www.youtube.com/watch?v=RyyBXYmBv04)
