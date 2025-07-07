@@ -23,3 +23,4 @@ Hier werden zur besseren Übersicht beispielhaft Texte aus Crowdin gelistet, die
 | [11176](https://crowdin.com/editor/osu-web/all/en-de?#11176) | :time left | *Undokumentiert* |
 | [633](https://crowdin.com/editor/osu-web/all/en-de?#633) | Last edited by :user :when, edited :count_delimited time in total.\|Last edited by :user :when, edited :count_delimited times in total. | Nur relativ |
 | [189](https://crowdin.com/editor/osu-web/all/en-de?#189) | Last edited by :editor :update_time. | Nur relativ |
+| [19524](https://crowdin.com/editor/osu-web/all/en-de?#19524) | resets :ends | Nur relativ |
