@@ -28,30 +28,6 @@
 - unranked - nicht freigegeben, nicht gerankt
   - (un)ranked play - (nicht) gewertet? nicht gewertetes Spiel --> ranked Beatmap kann nicht mit gewertet übersetzt werden
 
-### Difficulty
-
-Wurde bisher mit Schwierigkeitsgrad/-stufe übersetzt. Insbesondere "Gast-Schwierigkeitsgrade" ist ein schwer verständlicher Begriff. Auf lange Sicht würde ich davon gerne Abstand nehmen und schlage folgenden Standard vor:
-
-- mapset (multiple difficulties in one beatmap): Beatmap
-  - Nicht zu verwechseln mit Paket (mehrere Beatmaps)
-- beatmap difficulty (one playable level): (Beatmap-)Level
-
-Unklarheiten/Probleme:
-
-- Schwierigkeitsstufe/-grad/-level im eigentlichen Sinne meint eine Kennung, um zu beschreiben, wie viel Talent benötigt wird, um das Spiel spielen zu können --> Anzahl der Sterne
-- Unterscheidung "difficulty level" und "difficulty": ersteres meint die Schwierigkeitsebenen (easy, normal, hard, extra usw.) oder die oben genannte Kennung, letzteres bezeichnet ein einzelnes, spielbares Level
-
-Daran anknüpfend:
-
-- guest difficulty: Kollaborationslevel
-- difficulty owner: ?
-- difficulty spread (Bereich von Sternen, z. B. 3 bis 5): Schwierigkeitsverteilung?
-- difficulty graph (Graph in der Fortschrittsleiste): Schwierigkeitsverlauf
-
-Dies soll keine feststehende Übersetzung sein. Es soll eine Inspiration für weitere Diskussion sein.
-
-*Im Artikel "Beatmap" sollte der Begriff "difficulty" erwähnt werden.*
-
 ## add
 
 - rules/Content_Voting_Process - Verfahren zur Abstimmung über den Inhalt
