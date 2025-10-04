@@ -83,6 +83,8 @@ help () {
   printf "\n"
   printf "  -r\t\tInterpret query as regular expression."
   printf "\n"
+  printf "\t\tUses basic regular expressions (BRE)."
+  printf "\n"
   printf "\t\tThe output will not be colored when using this option."
   printf "\n"
   printf "  -e [query]\tExclude results containing [query] in file paths or article lines."
