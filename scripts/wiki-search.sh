@@ -83,7 +83,9 @@ help () {
   printf "\n"
   printf "  -r\t\tInterpret query as regular expression."
   printf "\n"
-  printf "  -e [query]\tExclude anything from the results which contains [query]."
+  printf "  -e [query]\tExclude results containing [query] in file paths or article lines."
+  printf "\n"
+  printf "\t\tArgument can be used multiple times to exclude several terms."
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
@@ -223,7 +225,7 @@ while getopts ":hvil:q:rce:n" option; do
         if containsElement "$OPTARG" "${allowed_codes[@]}"; then
     	  LANGUAGE="$OPTARG"
     	else
-    	  printf "Language is not valid. Using default language.\n\n"
+          printf "Language is not valid. Using default language '$LANGUAGE'.\n\n"
     	fi
         ;;
     q)
