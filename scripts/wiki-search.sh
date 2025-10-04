@@ -117,18 +117,41 @@ grep_color () {
 
   local haystack="$1"
   local needle="$2"
+  local match_len="${#needle}"
 
-  local match_start=$(strpos "${haystack}" "${needle}")
+  local match_indexes=()
+  local previous_match_end=0
+  while true; do
+    local match_start=$(strpos "${haystack:previous_match_end}" "${needle}")
 
-  # Return plaintext when searching with regex
-  if [[ match_start -eq -1 ]]; then
+    if [[ match_start -ne -1 ]]; then
+      match_start=$((match_start + previous_match_end))
+      match_indexes+=($match_start)
+
+      local match_end=$((match_start + match_len))
+      previous_match_end=${match_end}
+    else
+      break
+    fi
+  done
+
+  # Return raw string if no matches were found
+  if [[ -z match_indexes ]]; then
     echo "${haystack}"
     return
   fi
 
-  local match_len="${#needle}"
-  local match_end=$((match_start + match_len))
-  echo "${haystack:0:match_start}${bold_red}${haystack:match_start:match_len}${normal}${haystack:match_end}"
+  local colored_text=""
+  local last_match_end=0
+  for match_start in "${match_indexes[@]}"; do
+    local match_end=$((match_start + match_len))
+    local next_match=$((match_start - last_match_end))
+    colored_text+="${normal}${haystack:last_match_end:next_match}${bold_red}${haystack:match_start:match_len}"
+    last_match_end=$((match_end))
+  done
+
+  colored_text+="${normal}${haystack:last_match_end}"
+  echo "${colored_text}"
 }
 
 exclude () {
