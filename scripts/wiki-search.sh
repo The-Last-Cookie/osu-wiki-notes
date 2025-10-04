@@ -25,7 +25,7 @@ VERBOSE=false
 EXCLUDE=()
 CASE=false
 REGEX=false
-RESULTS=false
+SUCCINCT=false
 NEWS=false
 
 # Print debug information
@@ -72,22 +72,24 @@ help () {
   printf "\n"
   printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
+  printf "\t\tThe output will not be colored when using this option."
+  printf "\n"
   printf "  -n\t\tSearch /news instead of /wiki."
   printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
-  printf "  -c\t\tShow comprehensive results for each match."
-  printf "\n"
-  printf "\t\tIf used together with -r or -i, the output is not colored."
+  printf "  -f\t\tList files with matches instead of detailing each match."
   printf "\n"
   printf "  -r\t\tInterpret query as regular expression."
+  printf "\n"
+  printf "\t\tThe output will not be colored when using this option."
   printf "\n"
   printf "  -e [query]\tExclude results containing [query] in file paths or article lines."
   printf "\n"
   printf "\t\tArgument can be used multiple times to exclude several terms."
   printf "\n"
-  printf "\t\tIf using the succinct file view, file paths will be excluded instead."
+  printf "\t\tIf using the succinct file view (-f), file paths will be excluded instead."
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
@@ -106,7 +108,7 @@ build_grep () {
     "${base_folder}"
   )
 
-  if ! $RESULTS; then
+  if $SUCCINCT; then
     cmd+=(-l)
   fi
 
@@ -188,7 +190,7 @@ search () {
       edited_match="${edited_match:len_base}"
     fi
 
-    if ! $RESULTS; then
+    if $SUCCINCT; then
       printf "${edited_match}\n"
       continue
     fi
@@ -217,7 +219,7 @@ search () {
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:rce:n" option; do
+while getopts ":hvil:q:rfe:n" option; do
   case $option in
     h)
         help
@@ -242,8 +244,8 @@ while getopts ":hvil:q:rce:n" option; do
     r)
         REGEX=true
         ;;
-    c)
-    	RESULTS=true
+    f)
+        SUCCINCT=true
     	;;
     e)
         EXCLUDE+=("$OPTARG")
