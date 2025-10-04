@@ -104,20 +104,20 @@ build_grep () {
   # e.g. final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
     --include="${file_pattern}"
-    -R
+    --recursive
     "${base_folder}"
   )
 
   if $SUCCINCT; then
-    cmd+=(-l)
+    cmd+=(--files-with-matches)
   fi
 
   if ! $REGEX; then
-    cmd+=(-F)
+    cmd+=(--fixed-strings)
   fi
 
   if $CASE; then
-    cmd+=(-i)
+    cmd+=(--ignore-case)
   fi
 
   echo "${cmd[@]}"
