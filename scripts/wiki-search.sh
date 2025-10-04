@@ -254,7 +254,7 @@ while getopts ":hvil:q:rfe:n" option; do
         NEWS="$OPTARG"
         ;;
     \?)
-        echo "Error: Invalid option"
+        echo "Error: Invalid option -$OPTARG"
         exit;;
     :)
         echo "Option -$OPTARG requires an argument." >&2
