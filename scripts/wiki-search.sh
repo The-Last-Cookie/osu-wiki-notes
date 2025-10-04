@@ -87,6 +87,8 @@ help () {
   printf "\n"
   printf "\t\tArgument can be used multiple times to exclude several terms."
   printf "\n"
+  printf "\t\tIf using the succinct file view, file paths will be excluded instead."
+  printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
   printf "  -v\t\tDisplay the absolute path to found files."
