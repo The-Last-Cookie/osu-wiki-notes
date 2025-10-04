@@ -24,6 +24,7 @@ QUERY=""
 VERBOSE=false
 EXCLUDE=()
 CASE=false
+REGEX=false
 RESULTS=false
 NEWS=false
 
@@ -55,7 +56,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-c] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-c] [-r] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -71,14 +72,16 @@ help () {
   printf "\n"
   printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
-  printf "\t\tThe output is NOT colored when used together with the -c option."
-  printf "\n"
   printf "  -n\t\tSearch /news instead of /wiki."
   printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
   printf "  -c\t\tShow comprehensive results for each match."
+  printf "\n"
+  printf "\t\tIf used together with -r or -i, the output is not colored."
+  printf "\n"
+  printf "  -r\t\tInterpret query as regular expression."
   printf "\n"
   printf "  -e [query]\tExclude anything from the results which contains [query]."
   printf "\n"
@@ -92,7 +95,7 @@ build_grep () {
   local file_pattern="$1"
   local base_folder="$2"
 
-  # final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
+  # e.g. final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
     --include="${file_pattern}"
     -R
@@ -101,6 +104,10 @@ build_grep () {
 
   if ! $RESULTS; then
     cmd+=(-l)
+  fi
+
+  if ! $REGEX; then
+    cmd+=(-F)
   fi
 
   if $CASE; then
@@ -221,8 +228,8 @@ search () {
 
     printf "${file_path}\n"
 
-    # TODO: Coloring doesn't work with -i due to strpos not supporting this
-    if $CASE; then
+    # Supporting -i or regex search in strpos is difficult
+    if $CASE || $REGEX ; then
       echo "${paragraph}"
       printf "\n"
       continue
@@ -238,7 +245,7 @@ search () {
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:ce:n" option; do
+while getopts ":hvil:q:rce:n" option; do
   case $option in
     h)
         help
@@ -260,6 +267,9 @@ while getopts ":hvil:q:ce:n" option; do
     i)
     	CASE=true
     	;;
+    r)
+        REGEX=true
+        ;;
     c)
     	RESULTS=true
     	;;
