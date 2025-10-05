@@ -56,7 +56,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-c] [-r] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
