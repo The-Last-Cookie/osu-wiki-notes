@@ -1,6 +1,6 @@
 # Zeitangaben
 
-<!--TODO: It might be worth checking out the osu-web source code for documenting the usages here (where those strings can be found exactly), however, this is a lot of work.-->
+<!--TODO: It might be worth checking out the osu-web source code for documenting the usages here (where those strings can be found exactly and maybe also translations), however, this is a lot of work.-->
 
 Hier werden zur besseren Übersicht beispielhaft Texte aus Crowdin gelistet, die variable Zeitangaben verwenden, so z. B.:
 
@@ -11,6 +11,10 @@ Hier werden zur besseren Übersicht beispielhaft Texte aus Crowdin gelistet, die
 | ID | Text | Zeitangabe |
 | :-: | :-- | :-- |
 | [189](https://crowdin.com/editor/osu-web/all/en-de?#189) | Last edited by :editor :update_time. | Nur relativ |
+| [233](https://crowdin.com/editor/osu-web/all/en-de?#233) | This beatmap was approved on :date! | absolut |
+| [234](https://crowdin.com/editor/osu-web/all/en-de?#234) | This beatmap wasn't updated since :date so it was graveyarded... | absolut |
+| [235](https://crowdin.com/editor/osu-web/all/en-de?#235) | This beatmap was added to loved on :date! | absolut |
+| [236](https://crowdin.com/editor/osu-web/all/en-de?#236) | This beatmap was ranked on :date! | absolut |
 | [263](https://crowdin.com/editor/osu-web/all/en-de?#263) | Nomination process reset :time_ago by :user with new problem :discussion (:message). | Scheinbar nur relativ |
 | [264](https://crowdin.com/editor/osu-web/all/en-de?#264) | Disqualified :time_ago by :user with new problem :discussion (:message). | Scheinbar nur relativ |
 | [530](https://crowdin.com/editor/osu-web/all/en-de?#530) | Your current osu!supporter tag is valid until :date! | absolut (this had been relative in the past as well) |
@@ -26,10 +30,11 @@ Hier werden zur besseren Übersicht beispielhaft Texte aus Crowdin gelistet, die
 | [10564](https://crowdin.com/editor/osu-web/all/en-de?#10564) | ranked :timeago | Kann absolut und relativ sein |
 | [10566](https://crowdin.com/editor/osu-web/all/en-de?#10566) | submitted :timeago | Kann absolut und relativ sein |
 | [10568](https://crowdin.com/editor/osu-web/all/en-de?#10568) | last updated :timeago | Kann absolut und relativ sein |
-| [10890](https://crowdin.com/editor/osu-web/all/en-de?#10890) | This map is estimated to be ranked :date if no issues are found. It is #:position in the :queue. | *Undokumentiert* (2x "am" vorhanden) |
+| [10890](https://crowdin.com/editor/osu-web/all/en-de?#10890) | This map is estimated to be ranked :date if no issues are found. It is #:position in the :queue. | *Undokumentiert* (2x "am" vorhanden), seems to be connected to 17923 |
 | [10944](https://crowdin.com/editor/osu-web/all/en-de?#10944) | :time by :username | *Undokumentiert* |
 | [11164](https://crowdin.com/editor/osu-web/all/en-de?#11164) | deleted :timeago by :user | *Undokumentiert* |
 | [11176](https://crowdin.com/editor/osu-web/all/en-de?#11176) | :time left | *Undokumentiert* |
+| [17923](https://crowdin.com/editor/osu-web/all/en-de?#17923) | on :date | *Undokumentiert* |
 | [19524](https://crowdin.com/editor/osu-web/all/en-de?#19524) | resets :ends | Nur relativ |
 | [19638](https://crowdin.com/editor/osu-web/all/en-de?#19638) | Thank you for your ongoing support! So far, you've contributed a total of :dollars, earning you the "Supporter" tag for :duration. | Zeitspanne |
 | [19640](https://crowdin.com/editor/osu-web/all/en-de?#19640) | Out of your total contributions, you’ve gifted :dollars worth of tags to :users covering :duration. That’s incredibly generous! | Zeitspanne |
