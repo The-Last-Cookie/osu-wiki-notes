@@ -30,7 +30,6 @@
 
 ## add
 
-- code of conduct for modding and mapping - Verhaltenskodex für Modding und Mapping
 - game mode osu! - coloured circles with numbers on top of them - gefärbte Kreise mit Nummern darauf
 
 ## fix
