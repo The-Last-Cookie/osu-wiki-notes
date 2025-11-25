@@ -46,7 +46,7 @@ Mögliche Übersetzungen für `health drain (rate)`:
 
 </b>
 
-- [Accuracy and precision](https://en.wikipedia.org/wiki/Accuracy_and_precision)
+- [Accuracy and precision](https://en.wikipedia.org/wiki/Accuracy_and_precision), see also [Reddit thread](https://www.reddit.com/r/coolguides/comments/dqnzz2/the_difference_between_accuracy_and_precision/)
 - accuracy - Genauigkeit (wie nah sind die Punkte im Durchschnitt an einem wahren Wert)
 - precision - Präzision (Streufaktor)
 
