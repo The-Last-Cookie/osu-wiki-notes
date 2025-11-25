@@ -24,7 +24,8 @@ QUERY=""
 VERBOSE=false
 EXCLUDE=()
 CASE=false
-RESULTS=false
+REGEX=false
+SUCCINCT=false
 NEWS=false
 
 # Print debug information
@@ -55,7 +56,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-c] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -71,16 +72,26 @@ help () {
   printf "\n"
   printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
-  printf "\t\tThe output is NOT colored when used together with the -c option."
+  printf "\t\tThe output will not be colored when using this option."
   printf "\n"
   printf "  -n\t\tSearch /news instead of /wiki."
   printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
-  printf "  -c\t\tShow comprehensive results for each match."
+  printf "  -f\t\tList files with matches instead of detailing each match."
   printf "\n"
-  printf "  -e [query]\tExclude anything from the results which contains [query]."
+  printf "  -r\t\tInterpret query as regular expression."
+  printf "\n"
+  printf "\t\tUses basic regular expressions (BRE)."
+  printf "\n"
+  printf "\t\tThe output will not be colored when using this option."
+  printf "\n"
+  printf "  -e [query]\tExclude results containing [query] in file paths or article lines."
+  printf "\n"
+  printf "\t\tArgument can be used multiple times to exclude several terms."
+  printf "\n"
+  printf "\t\tIf using the succinct file view (-f), file paths will be excluded instead."
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
@@ -92,19 +103,23 @@ build_grep () {
   local file_pattern="$1"
   local base_folder="$2"
 
-  # final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
+  # e.g. final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
     --include="${file_pattern}"
-    -R
+    --recursive
     "${base_folder}"
   )
 
-  if ! $RESULTS; then
-    cmd+=(-l)
+  if $SUCCINCT; then
+    cmd+=(--files-with-matches)
+  fi
+
+  if ! $REGEX; then
+    cmd+=(--fixed-strings)
   fi
 
   if $CASE; then
-    cmd+=(-i)
+    cmd+=(--ignore-case)
   fi
 
   echo "${cmd[@]}"
@@ -118,17 +133,8 @@ grep_color () {
   local haystack="$1"
   local needle="$2"
 
-  local match_start=$(strpos "${haystack}" "${needle}")
-
-  # Return plaintext when searching with regex
-  if [[ match_start -eq -1 ]]; then
-    echo "${haystack}"
-    return
-  fi
-
-  local match_len="${#needle}"
-  local match_end=$((match_start + match_len))
-  echo "${haystack:0:match_start}${bold_red}${haystack:match_start:match_len}${normal}${haystack:match_end}"
+  local colored_needle="${bold_red}${needle}${normal}"
+  echo "${haystack//$needle/$colored_needle}"
 }
 
 exclude () {
@@ -186,7 +192,7 @@ search () {
       edited_match="${edited_match:len_base}"
     fi
 
-    if ! $RESULTS; then
+    if $SUCCINCT; then
       printf "${edited_match}\n"
       continue
     fi
@@ -198,8 +204,8 @@ search () {
 
     printf "${file_path}\n"
 
-    # TODO: Coloring doesn't work with -i due to strpos not supporting this
-    if $CASE; then
+    # Supporting -i or regex search in strpos is difficult
+    if $CASE || $REGEX ; then
       echo "${paragraph}"
       printf "\n"
       continue
@@ -215,7 +221,7 @@ search () {
   printf "\nNumber of matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:ce:n" option; do
+while getopts ":hvil:q:rfe:n" option; do
   case $option in
     h)
         help
@@ -225,7 +231,7 @@ while getopts ":hvil:q:ce:n" option; do
         if containsElement "$OPTARG" "${allowed_codes[@]}"; then
     	  LANGUAGE="$OPTARG"
     	else
-    	  printf "Language is not valid. Using default language.\n\n"
+          printf "Language is not valid. Using default language '$LANGUAGE'.\n\n"
     	fi
         ;;
     q)
@@ -237,8 +243,11 @@ while getopts ":hvil:q:ce:n" option; do
     i)
     	CASE=true
     	;;
-    c)
-    	RESULTS=true
+    r)
+        REGEX=true
+        ;;
+    f)
+        SUCCINCT=true
     	;;
     e)
         EXCLUDE+=("$OPTARG")
@@ -247,7 +256,7 @@ while getopts ":hvil:q:ce:n" option; do
         NEWS="$OPTARG"
         ;;
     \?)
-        echo "Error: Invalid option"
+        echo "Error: Invalid option -$OPTARG"
         exit;;
     :)
         echo "Option -$OPTARG requires an argument." >&2
