@@ -218,7 +218,7 @@ search () {
     printf "\n"
   done
 
-  printf "\nNumber of matches: ${#matches[@]}\n"
+  printf "\nNumber of line matches: ${#matches[@]}\n"
 }
 
 while getopts ":hvil:q:rfe:n" option; do
