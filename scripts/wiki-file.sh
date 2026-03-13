@@ -10,6 +10,8 @@ set -e # otherwise the script will exit on error
 ARTICLE=""
 ONLINE=false
 
+allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
+
 # https://stackoverflow.com/a/71600549
 containsElement () {
   local match="$1"
@@ -52,7 +54,6 @@ local_mode () {
   local lang="${ARTICLE##*/}"
   local valid_path="${ARTICLE%/*}"
 
-  allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
   if containsElement "${lang}" "${allowed_codes[@]}"; then
     code "${BASE}${valid_path}/${lang}.md"
     return
@@ -76,7 +77,6 @@ online_mode () {
   local lang="${ARTICLE##*/}"
   local valid_path="${ARTICLE%/*}"
 
-  allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
   if containsElement "${lang}" "${allowed_codes[@]}"; then
     firefox "${domain}${lang}/${valid_path}"
     return
@@ -94,7 +94,39 @@ get_all_wiki_links () {
   done
 }
 
-while getopts ":hp:oa" option; do
+convert_date_single () {
+  local article="$1"
+  sed 's/(\d{4})-(\d{2})-(\d{2})/$3.$2.$1/g' -i $article
+}
+
+convert_date_all () {
+  local article="$1"
+  sed 's/(\d{4})-(\d{2})-(\d{2})/$3.$2.$1/g' $article
+}
+
+convert_mode () {
+  local mode="$1"
+  local abs_path=""
+
+  # https://linuxsimply.com/bash-scripting-tutorial/string/split-string/
+  local lang="${ARTICLE##*/}"
+  local valid_path="${ARTICLE%/*}"
+
+  if containsElement "${lang}" "${allowed_codes[@]}"; then
+    abs_path="${BASE}${valid_path}/${lang}.md"
+  else
+    echo "Valid language not found. The syntax for the p argument is {Article}/{language code}."
+    exit
+  fi
+
+  case $mode in
+    "date") convert_date_single $abs_path ;;
+    "date-all") convert_date_all $abs_path ;;
+    *) echo "Unknown mode '$mode'. Refer to the documentation for usage details." ;;
+  esac
+}
+
+while getopts ":hp:oac:" option; do
   case $option in
     h)
         help
@@ -103,18 +135,21 @@ while getopts ":hp:oa" option; do
         ARTICLE="${OPTARG}"
         ;;
     o)
-	ONLINE=true
+        ONLINE=true
         ;;
     a)
         get_all_wiki_links
+        exit;;
+    c)
+        convert_mode "${OPTARG}"
         exit;;
     \?)
         echo "Error: Invalid option"
         exit;;
     :)
-	echo "Option -$OPTARG requires an argument." >&2
-	exit 1
-	;;
+        echo "Option -$OPTARG requires an argument." >&2
+        exit 1
+        ;;
    esac
 done
 
