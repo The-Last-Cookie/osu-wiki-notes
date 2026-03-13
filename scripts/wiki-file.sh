@@ -94,14 +94,13 @@ get_all_wiki_links () {
   done
 }
 
-convert_date_single () {
-  local article="$1"
-  sed 's/(\d{4})-(\d{2})-(\d{2})/$3.$2.$1/g' -i $article
-}
+convert_date () {
+  # https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html
+  # https://www.gnu.org/software/sed/manual/html_node/Extended-regexps.html
+  local file="$1"
+  sed 's/\([0-9]\{4\}\)-\([0-9]\{2\}\)-\([0-9]\{2\}\)/\3.\2.\1/g' -i $file
 
-convert_date_all () {
-  local article="$1"
-  sed 's/(\d{4})-(\d{2})-(\d{2})/$3.$2.$1/g' $article
+  # TODO: diff view?
 }
 
 convert_mode () {
@@ -115,13 +114,12 @@ convert_mode () {
   if containsElement "${lang}" "${allowed_codes[@]}"; then
     abs_path="${BASE}${valid_path}/${lang}.md"
   else
-    echo "Valid language not found. The syntax for the p argument is {Article}/{language code}."
+    echo "Valid language not found. The syntax for the -p argument is {Article}/{language code}."
     exit
   fi
 
   case $mode in
-    "date") convert_date_single $abs_path ;;
-    "date-all") convert_date_all $abs_path ;;
+    "date") convert_date $abs_path ;;
     *) echo "Unknown mode '$mode'. Refer to the documentation for usage details." ;;
   esac
 }
