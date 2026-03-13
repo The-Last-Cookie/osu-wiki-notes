@@ -10,6 +10,9 @@ set -e # otherwise the script will exit on error
 ARTICLE=""
 ONLINE=false
 
+COUNTRIES_EN=()
+COUNTRIES_DE=()
+
 allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
 
 # https://stackoverflow.com/a/71600549
@@ -105,6 +108,21 @@ convert_date () {
   # TODO: diff view?
 }
 
+convert_countries () {
+  local file="$1"
+
+  local pwd="${0%/*}"
+  mapfile -t COUNTRIES_EN < "${pwd}/en.txt"
+  mapfile -t COUNTRIES_DE < "${pwd}/de.txt"
+
+  local max_index=$((${#COUNTRIES_EN[@]}-1))
+  for i in $(seq 0 $max_index); do
+    local country="${COUNTRIES_EN[$i]:0:-1}"
+    local country_de="${COUNTRIES_DE[$i]:0:-1}"
+    sed "s/::{ flag=\([A-Z]\{2\}\) }:: $country/::{ flag=\1 }:: $country_de/g" -i $file
+  done
+}
+
 convert_mode () {
   local mode="$1"
   local abs_path=""
@@ -122,6 +140,7 @@ convert_mode () {
 
   case $mode in
     "date") convert_date $abs_path ;;
+    "country") convert_countries $abs_path ;;
     *) echo "Unknown mode '$mode'. Refer to the documentation for usage details." ;;
   esac
 }
