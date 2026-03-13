@@ -24,7 +24,7 @@ containsElement () {
 help () {
   printf "Quickly access a folder or file in the osu! wiki by tab-completing the path."
   printf "\n"
-  printf "Usage: [-h|-a] -p PATH [-o]"
+  printf "Usage: [-h|-a] -p PATH [-o] [-c <mode>]"
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -37,6 +37,8 @@ help () {
   printf "  -p\t\tThe article to retrieve."
   printf "\n"
   printf "  -o\t\tAccess the article in its online version instead."
+  printf "\n"
+  printf "  -c <mode>\tUse a converter for the selected file. <mode> can be 'date' or 'country'."
   printf "\n"
   printf "  -a\t\tOutput every wiki path line per line."
   printf "\n"
