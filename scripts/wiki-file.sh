@@ -10,6 +10,11 @@ set -e # otherwise the script will exit on error
 ARTICLE=""
 ONLINE=false
 
+COUNTRIES_EN=()
+COUNTRIES_DE=()
+
+allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
+
 # https://stackoverflow.com/a/71600549
 containsElement () {
   local match="$1"
@@ -22,7 +27,7 @@ containsElement () {
 help () {
   printf "Quickly access a folder or file in the osu! wiki by tab-completing the path."
   printf "\n"
-  printf "Usage: [-h|-a] -p PATH [-o]"
+  printf "Usage: [-h|-a] -p PATH [-o] [-c <mode>]"
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -35,6 +40,8 @@ help () {
   printf "  -p\t\tThe article to retrieve."
   printf "\n"
   printf "  -o\t\tAccess the article in its online version instead."
+  printf "\n"
+  printf "  -c <mode>\tUse a converter for the selected file. <mode> can be 'date' or 'country'."
   printf "\n"
   printf "  -a\t\tOutput every wiki path line per line."
   printf "\n"
@@ -52,7 +59,6 @@ local_mode () {
   local lang="${ARTICLE##*/}"
   local valid_path="${ARTICLE%/*}"
 
-  allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
   if containsElement "${lang}" "${allowed_codes[@]}"; then
     code "${BASE}${valid_path}/${lang}.md"
     return
@@ -76,7 +82,6 @@ online_mode () {
   local lang="${ARTICLE##*/}"
   local valid_path="${ARTICLE%/*}"
 
-  allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
   if containsElement "${lang}" "${allowed_codes[@]}"; then
     firefox "${domain}${lang}/${valid_path}"
     return
@@ -94,7 +99,53 @@ get_all_wiki_links () {
   done
 }
 
-while getopts ":hp:oa" option; do
+convert_date () {
+  # https://www.gnu.org/software/sed/manual/html_node/Regular-Expressions.html
+  # https://www.gnu.org/software/sed/manual/html_node/Extended-regexps.html
+  local file="$1"
+  sed 's/\([0-9]\{4\}\)-\([0-9]\{2\}\)-\([0-9]\{2\}\)/\3.\2.\1/g' -i $file
+
+  # TODO: diff view?
+}
+
+convert_countries () {
+  local file="$1"
+
+  local pwd="${0%/*}"
+  mapfile -t COUNTRIES_EN < "${pwd}/en.txt"
+  mapfile -t COUNTRIES_DE < "${pwd}/de.txt"
+
+  local max_index=$((${#COUNTRIES_EN[@]}-1))
+  for i in $(seq 0 $max_index); do
+    local country="${COUNTRIES_EN[$i]:0:-1}"
+    local country_de="${COUNTRIES_DE[$i]:0:-1}"
+    sed "s/::{ flag=\([A-Z]\{2\}\) }:: $country/::{ flag=\1 }:: $country_de/g" -i $file
+  done
+}
+
+convert_mode () {
+  local mode="$1"
+  local abs_path=""
+
+  # https://linuxsimply.com/bash-scripting-tutorial/string/split-string/
+  local lang="${ARTICLE##*/}"
+  local valid_path="${ARTICLE%/*}"
+
+  if containsElement "${lang}" "${allowed_codes[@]}"; then
+    abs_path="${BASE}${valid_path}/${lang}.md"
+  else
+    echo "Valid language not found. The syntax for the -p argument is {Article}/{language code}."
+    exit
+  fi
+
+  case $mode in
+    "date") convert_date $abs_path ;;
+    "country") convert_countries $abs_path ;;
+    *) echo "Unknown mode '$mode'. Refer to the documentation for usage details." ;;
+  esac
+}
+
+while getopts ":hp:oac:" option; do
   case $option in
     h)
         help
@@ -103,18 +154,21 @@ while getopts ":hp:oa" option; do
         ARTICLE="${OPTARG}"
         ;;
     o)
-	ONLINE=true
+        ONLINE=true
         ;;
     a)
         get_all_wiki_links
+        exit;;
+    c)
+        convert_mode "${OPTARG}"
         exit;;
     \?)
         echo "Error: Invalid option"
         exit;;
     :)
-	echo "Option -$OPTARG requires an argument." >&2
-	exit 1
-	;;
+        echo "Option -$OPTARG requires an argument." >&2
+        exit 1
+        ;;
    esac
 done
 
