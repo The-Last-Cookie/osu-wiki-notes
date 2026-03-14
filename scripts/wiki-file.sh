@@ -15,6 +15,18 @@ COUNTRIES_DE=()
 
 allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
 
+grep_color () {
+  # https://stackoverflow.com/a/4332530
+  local bold_red=$(tput setaf 1 bold)
+  local normal=$(tput sgr0)
+
+  local haystack="$1"
+  local needle="$2"
+
+  local colored_needle="${bold_red}${needle}${normal}"
+  echo "${haystack//$needle/$colored_needle}"
+}
+
 # https://stackoverflow.com/a/71600549
 containsElement () {
   local match="$1"
@@ -27,7 +39,7 @@ containsElement () {
 help () {
   printf "Quickly access a folder or file in the osu! wiki by tab-completing the path."
   printf "\n"
-  printf "Usage: [-h|-a] -p PATH [-o] [-c <mode>]"
+  printf "Usage: [-h|-a] -p PATH [-o] [-c <mode>] [-s <query>]"
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -44,6 +56,8 @@ help () {
   printf "  -c <mode>\tUse a converter for the selected file. <mode> can be 'date' or 'country'."
   printf "\n"
   printf "  -a\t\tOutput every wiki path line per line."
+  printf "\n"
+  printf "  -s <query>\tSearch wiki paths with basic full-text matching."
   printf "\n"
 }
 
@@ -149,7 +163,9 @@ search () {
   local query="$1"
   local paths=$(get_all_wiki_links)
 
-  echo "$paths"
+  local result=$(echo "$paths" | grep --fixed-strings -e "${query}")
+  local colored_match=$(grep_color "${result[*]}" "${query}")
+  echo "${colored_match}"
 }
 
 while getopts ":hp:oac:s:" option; do
