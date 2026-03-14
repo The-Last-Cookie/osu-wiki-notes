@@ -145,7 +145,14 @@ convert_mode () {
   esac
 }
 
-while getopts ":hp:oac:" option; do
+search () {
+  local query="$1"
+  local paths=$(get_all_wiki_links)
+
+  echo "$paths"
+}
+
+while getopts ":hp:oac:s:" option; do
   case $option in
     h)
         help
@@ -161,6 +168,9 @@ while getopts ":hp:oac:" option; do
         exit;;
     c)
         convert_mode "${OPTARG}"
+        exit;;
+    s)
+        search "${OPTARG}"
         exit;;
     \?)
         echo "Error: Invalid option"
