@@ -9,14 +9,12 @@
 # Must have slash at the end
 BASE="/osu-wiki/wiki/"
 
-# TODO: Remove escape for single quote on find
-
 _remove_escape_characters()
 {
-    # When printing to console, ! and () must be escaped as bash would interpret the character
-    # Find command however would not find folders with ! and ()
+    # When printing to console, ! and () as well as single quotes must be escaped as bash would interpret the character
+    # Find command however would not find folders with these escaped characters: ! () '
     # sed: s/ORIGINAL/REPLACEMENT/g
-    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g')
+    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g' -e 's/\\\x27/\x27/g')
 }
 
 _wiki_completion()
