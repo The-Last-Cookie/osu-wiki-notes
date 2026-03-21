@@ -30,12 +30,7 @@ _wiki_completion()
     if [[ ${current} != *"/"* ]]; then
         # first layer where no slashes are present
         root="${BASE}"
-    elif [[ ${current} == */ ]]; then
-        # whole folder name with / at the end is given in current
-        local escaped_path=$( _remove_escape_characters "${current}")
-        root="${BASE}${escaped_path}"
     else
-        # only part of folder name is given
         # remove last folder fragment for find command
         local current_path="${current%/*}"
         local escaped_path=$( _remove_escape_characters "${current_path}")
