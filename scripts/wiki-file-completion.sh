@@ -63,4 +63,4 @@ _wiki_completion()
     return 0
 }
 
-complete -o nospace -o filenames -F _wiki_completion wiki-file
+complete -o nospace -o filenames -S / -F _wiki_completion wiki-file
