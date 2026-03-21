@@ -27,10 +27,7 @@ _wiki_completion()
 
     local root="${BASE}"
 
-    if [[ ${current} != *"/"* ]]; then
-        # first layer where no slashes are present
-        root="${BASE}"
-    else
+    if [[ ${current} == *"/"* ]]; then
         # remove last folder fragment for find command
         local current_path="${current%/*}"
         local escaped_path=$( _remove_escape_characters "${current_path}")
