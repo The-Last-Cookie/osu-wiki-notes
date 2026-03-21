@@ -25,6 +25,10 @@ _wiki_completion()
     local previous="${COMP_WORDS[COMP_CWORD-1]}"
     #local cursor_pos="${COMP_POINT}"
 
+    if [[ ${previous} != "-p" ]]; then
+        return 0
+    fi
+
     local root="${BASE}"
 
     if [[ ${current} == *"/"* ]]; then
