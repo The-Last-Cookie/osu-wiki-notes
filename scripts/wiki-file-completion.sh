@@ -1,4 +1,5 @@
 # put in /etc/bash_completion.d/wiki-file-completion (no .sh)
+# source the completion script in the session where wiki-file is executed --> otherwise bash script is not loaded
 
 # inspired by:
 # https://web.archive.org/web/20190328055722/https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1
@@ -8,7 +9,7 @@
 # Must have slash at the end
 BASE="/osu-wiki/wiki/"
 
-# TODO Remove escape for single quote on find
+# TODO: Remove escape for single quote on find
 
 _remove_escape_characters()
 {
@@ -20,24 +21,23 @@ _remove_escape_characters()
 
 _wiki_completion()
 {
-    local cur prev opts
-    COMPREPLY=()
-    cur="${COMP_WORDS[COMP_CWORD]}"
-    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    local current="${COMP_WORDS[COMP_CWORD]}"
+    local previous="${COMP_WORDS[COMP_CWORD-1]}"
+    #local cursor_pos="${COMP_POINT}"
 
     local root="${BASE}"
 
-    if [[ ${cur} != *"/"* ]]; then
+    if [[ ${current} != *"/"* ]]; then
         # first layer where no slashes are present
         root="${BASE}"
-    elif [[ ${cur} == */ ]]; then
-        # whole folder name with / is given in cur
-        local escaped_path=$( _remove_escape_characters "${cur}")
+    elif [[ ${current} == */ ]]; then
+        # whole folder name with / at the end is given in current
+        local escaped_path=$( _remove_escape_characters "${current}")
         root="${BASE}${escaped_path}"
     else
         # only part of folder name is given
         # remove last folder fragment for find command
-        local current_path="${cur%/*}"
+        local current_path="${current%/*}"
         local escaped_path=$( _remove_escape_characters "${current_path}")
         root="${BASE}${escaped_path}/"
     fi
@@ -48,8 +48,7 @@ _wiki_completion()
     for i in "${!folders[@]}"; do
         local current_folder="${folders[$i]}"
 
-        # cut BASE path from string
-        # Variable cur contains the path without BASE
+        # cut BASE path from current_folder
         current_folder="${current_folder:len_base}"
 
         # escape single quotes in console tab completion
@@ -58,9 +57,9 @@ _wiki_completion()
         folders[$i]="${current_folder}"
     done
 
-    opts="${folders[*]}"
+    local suggestions="${folders[*]}"
 
-    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+    COMPREPLY=( $(compgen -W "${suggestions}" -- ${current}) )
     return 0
 }
 
