@@ -1,4 +1,5 @@
 # put in /etc/bash_completion.d/wiki-file-completion (no .sh)
+# source the completion script in the session where wiki-file is executed --> otherwise bash script is not loaded
 
 # inspired by:
 # https://web.archive.org/web/20190328055722/https://debian-administration.org/article/316/An_introduction_to_bash_completion_part_1
@@ -8,36 +9,38 @@
 # Must have slash at the end
 BASE="/osu-wiki/wiki/"
 
-# TODO Remove escape for single quote on find
-
 _remove_escape_characters()
 {
-    # When printing to console, ! and () must be escaped as bash would interpret the character
-    # Find command however would not find folders with ! and ()
+    # When printing to console, ! and () as well as single quotes must be escaped as bash would interpret the character
+    # Find command however would not find folders with these escaped characters: ! () '
     # sed: s/ORIGINAL/REPLACEMENT/g
-    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g')
+    echo $(echo "${1}" | sed -e 's/\\!/\!/g' -e 's/\\(/\(/g' -e 's/\\)/\)/g' -e 's/\\\x27/\x27/g')
 }
 
 _wiki_completion()
 {
-    local cur prev opts
-    COMPREPLY=()
-    cur="${COMP_WORDS[COMP_CWORD]}"
-    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    local current="${COMP_WORDS[COMP_CWORD]}"
+    local previous="${COMP_WORDS[COMP_CWORD-1]}"
+    #local cursor_pos="${COMP_POINT}"
+
+    if [[ ${previous} != "-p" ]]; then
+        return 0
+    fi
 
     local root="${BASE}"
 
-    if [[ ${cur} != *"/"* ]]; then
-        # first layer where no slashes are present
-        root="${BASE}"
-    elif [[ ${cur} == */ ]]; then
-        # whole folder name with / is given in cur
-        local escaped_path=$( _remove_escape_characters "${cur}")
-        root="${BASE}${escaped_path}"
-    else
-        # only part of folder name is given
+    if [[ $cursor_pos -ne "${#COMP_LINE}" ]]; then
+        local prev_args="${COMP_WORDS[*]:0:COMP_CWORD}"
+        local current_arg_index="${#prev_args}"
+        local relative_cursor_index=$((cursor_pos-current_arg_index-1))
+
+        # Cut everything behind the cursor
+        current="${current:0:relative_cursor_index}"
+    fi
+
+    if [[ ${current} == *"/"* ]]; then
         # remove last folder fragment for find command
-        local current_path="${cur%/*}"
+        local current_path="${current%/*}"
         local escaped_path=$( _remove_escape_characters "${current_path}")
         root="${BASE}${escaped_path}/"
     fi
@@ -48,8 +51,7 @@ _wiki_completion()
     for i in "${!folders[@]}"; do
         local current_folder="${folders[$i]}"
 
-        # cut BASE path from string
-        # Variable cur contains the path without BASE
+        # cut BASE path from current_folder
         current_folder="${current_folder:len_base}"
 
         # escape single quotes in console tab completion
@@ -58,10 +60,10 @@ _wiki_completion()
         folders[$i]="${current_folder}"
     done
 
-    opts="${folders[*]}"
+    local suggestions="${folders[*]}"
 
-    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+    COMPREPLY=( $(compgen -W "${suggestions}" -- ${current}) )
     return 0
 }
 
-complete -o nospace -o filenames -F _wiki_completion wiki-file
+complete -o nospace -o filenames -S / -F _wiki_completion wiki-file
