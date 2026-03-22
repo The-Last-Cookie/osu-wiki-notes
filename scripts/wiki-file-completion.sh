@@ -29,6 +29,15 @@ _wiki_completion()
 
     local root="${BASE}"
 
+    if [[ $cursor_pos -ne "${#COMP_LINE}" ]]; then
+        local prev_args="${COMP_WORDS[*]:0:COMP_CWORD}"
+        local current_arg_index="${#prev_args}"
+        local relative_cursor_index=$((cursor_pos-current_arg_index-1))
+
+        # Cut everything behind the cursor
+        current="${current:0:relative_cursor_index}"
+    fi
+
     if [[ ${current} == *"/"* ]]; then
         # remove last folder fragment for find command
         local current_path="${current%/*}"
