@@ -216,7 +216,9 @@ search () {
       edited_match="${edited_match#$line_num}"
       edited_match="${edited_match#:}"
 
-      printf "(${line_num}) "
+      local green=$(tput setaf 2)
+      local normal=$(tput sgr0)
+      printf "${green}(${line_num}) ${normal}"
     fi
 
     local paragraph="${edited_match}"
