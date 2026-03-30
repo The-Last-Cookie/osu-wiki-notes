@@ -27,6 +27,7 @@ CASE=false
 REGEX=false
 SUCCINCT=false
 NEWS=false
+SHOW_LINE_NUM=false
 
 # Print debug information
 DEBUG=false
@@ -56,7 +57,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] [-p] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -95,6 +96,8 @@ help () {
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
+  printf "  -p\tDisplay the line number of the match."
+  printf "\n"
   printf "  -v\t\tDisplay the absolute path to found files."
   printf "\n"
 }
@@ -120,6 +123,10 @@ build_grep () {
 
   if $CASE; then
     cmd+=(--ignore-case)
+  fi
+
+  if $SHOW_LINE_NUM; then
+    cmd+=(-n)
   fi
 
   echo "${cmd[@]}"
@@ -197,12 +204,20 @@ search () {
       continue
     fi
 
-    local delimiter_pos=$(strpos "${edited_match}" ":")
-    ((delimiter_pos++)) # move one to the right
-    local file_path="${edited_match:0:delimiter_pos}"
-    local paragraph="${edited_match:delimiter_pos}"
+    local file_path="${edited_match%:*}"
+    edited_match="${edited_match#$file_path}"
 
     printf "${file_path}\n"
+
+    local line_num=0
+    if $SHOW_LINE_NUM; then
+      local line_num="${edited_match%:*}"
+      edited_match="${edited_match#$line_num}"
+
+      printf "(${line_num}) "
+    fi
+
+    local paragraph="${edited_match}"
 
     # Supporting -i or regex search in strpos is difficult
     if $CASE || $REGEX ; then
@@ -221,7 +236,7 @@ search () {
   printf "\nNumber of line matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:rfe:n" option; do
+while getopts ":hvil:q:rfep:n" option; do
   case $option in
     h)
         help
@@ -254,6 +269,9 @@ while getopts ":hvil:q:rfe:n" option; do
         ;;
     n)
         NEWS="$OPTARG"
+        ;;
+    p)
+        SHOW_LINE_NUM=true
         ;;
     \?)
         echo "Error: Invalid option -$OPTARG"
