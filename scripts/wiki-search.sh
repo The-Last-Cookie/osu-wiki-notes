@@ -32,6 +32,10 @@ SHOW_LINE_NUM=false
 # Print debug information
 DEBUG=false
 
+NORMAL=$(tput sgr0)
+BOLD_RED=$(tput setaf 1 bold)
+GREEN=$(tput setaf 2)
+
 set -e # otherwise the script will exit on error
 
 # https://stackoverflow.com/questions/16956810/find-all-files-containing-a-specific-text-string-on-linux
@@ -133,14 +137,12 @@ build_grep () {
 }
 
 grep_color () {
+  # Color a specific substring
   # https://stackoverflow.com/a/4332530
-  local bold_red=$(tput setaf 1 bold)
-  local normal=$(tput sgr0)
-
   local haystack="$1"
   local needle="$2"
 
-  local colored_needle="${bold_red}${needle}${normal}"
+  local colored_needle="${BOLD_RED}${needle}${NORMAL}"
   echo "${haystack//$needle/$colored_needle}"
 }
 
@@ -216,9 +218,7 @@ search () {
       edited_match="${edited_match#$line_num}"
       edited_match="${edited_match#:}"
 
-      local green=$(tput setaf 2)
-      local normal=$(tput sgr0)
-      printf "${green}(${line_num}) ${normal}"
+      printf "${GREEN}(${line_num}) ${NORMAL}"
     fi
 
     local paragraph="${edited_match}"
