@@ -206,7 +206,7 @@ search () {
       continue
     fi
 
-    local file_path="${edited_match%%*:}"
+    local file_path="${edited_match%%:*}"
     edited_match="${edited_match#$file_path}"
     edited_match="${edited_match#:}"
 
@@ -214,7 +214,7 @@ search () {
 
     local line_num=0
     if $SHOW_LINE_NUM; then
-      local line_num="${edited_match%%*:}"
+      local line_num="${edited_match%%:*}"
       edited_match="${edited_match#$line_num}"
       edited_match="${edited_match#:}"
 
