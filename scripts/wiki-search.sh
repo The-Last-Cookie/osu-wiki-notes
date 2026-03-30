@@ -96,7 +96,7 @@ help () {
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
-  printf "  -p\tDisplay the line number of the match."
+  printf "  -p\t\tDisplay the line number of the match."
   printf "\n"
   printf "  -v\t\tDisplay the absolute path to found files."
   printf "\n"
@@ -204,15 +204,17 @@ search () {
       continue
     fi
 
-    local file_path="${edited_match%:*}"
+    local file_path="${edited_match%%*:}"
     edited_match="${edited_match#$file_path}"
+    edited_match="${edited_match#:}"
 
-    printf "${file_path}\n"
+    printf "${file_path}:\n"
 
     local line_num=0
     if $SHOW_LINE_NUM; then
-      local line_num="${edited_match%:*}"
+      local line_num="${edited_match%%*:}"
       edited_match="${edited_match#$line_num}"
+      edited_match="${edited_match#:}"
 
       printf "(${line_num}) "
     fi
@@ -236,7 +238,7 @@ search () {
   printf "\nNumber of line matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:rfep:n" option; do
+while getopts ":hvil:q:rfpe:n" option; do
   case $option in
     h)
         help
