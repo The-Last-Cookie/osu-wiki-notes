@@ -273,7 +273,7 @@ while getopts ":hvil:q:rfpe:n" option; do
         EXCLUDE+=("$OPTARG")
         ;;
     n)
-        NEWS="$OPTARG"
+        NEWS=true
         ;;
     p)
         SHOW_LINE_NUM=true
