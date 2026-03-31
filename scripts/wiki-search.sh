@@ -33,7 +33,8 @@ SHOW_LINE_NUM=false
 DEBUG=false
 
 NORMAL=$(tput sgr0)
-BOLD_RED=$(tput setaf 1 bold)
+BOLD=$(tput bold)
+RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 
 set -e # otherwise the script will exit on error
@@ -142,7 +143,7 @@ grep_color () {
   local haystack="$1"
   local needle="$2"
 
-  local colored_needle="${BOLD_RED}${needle}${NORMAL}"
+  local colored_needle="${BOLD}${RED}${needle}${NORMAL}"
   echo "${haystack//$needle/$colored_needle}"
 }
 
@@ -210,7 +211,7 @@ search () {
     edited_match="${edited_match#$file_path}"
     edited_match="${edited_match#:}"
 
-    printf "${file_path}:\n"
+    printf "${BOLD}${file_path}:${NORMAL}\n"
 
     local line_num=0
     if $SHOW_LINE_NUM; then
