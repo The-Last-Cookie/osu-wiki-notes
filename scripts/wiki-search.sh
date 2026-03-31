@@ -27,9 +27,15 @@ CASE=false
 REGEX=false
 SUCCINCT=false
 NEWS=false
+SHOW_LINE_NUM=false
 
 # Print debug information
 DEBUG=false
+
+NORMAL=$(tput sgr0)
+BOLD=$(tput bold)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
 
 set -e # otherwise the script will exit on error
 
@@ -56,7 +62,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] [-p] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -95,6 +101,8 @@ help () {
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
   printf "\n"
+  printf "  -p\t\tDisplay the line number of the match."
+  printf "\n"
   printf "  -v\t\tDisplay the absolute path to found files."
   printf "\n"
 }
@@ -122,18 +130,20 @@ build_grep () {
     cmd+=(--ignore-case)
   fi
 
+  if $SHOW_LINE_NUM; then
+    cmd+=(--line-number)
+  fi
+
   echo "${cmd[@]}"
 }
 
-grep_color () {
+color_match () {
+  # Color a specific substring
   # https://stackoverflow.com/a/4332530
-  local bold_red=$(tput setaf 1 bold)
-  local normal=$(tput sgr0)
-
   local haystack="$1"
   local needle="$2"
 
-  local colored_needle="${bold_red}${needle}${normal}"
+  local colored_needle="${BOLD}${RED}${needle}${NORMAL}"
   echo "${haystack//$needle/$colored_needle}"
 }
 
@@ -197,12 +207,22 @@ search () {
       continue
     fi
 
-    local delimiter_pos=$(strpos "${edited_match}" ":")
-    ((delimiter_pos++)) # move one to the right
-    local file_path="${edited_match:0:delimiter_pos}"
-    local paragraph="${edited_match:delimiter_pos}"
+    local file_path="${edited_match%%:*}"
+    edited_match="${edited_match#$file_path}"
+    edited_match="${edited_match#:}"
 
-    printf "${file_path}\n"
+    printf "${BOLD}${file_path}:${NORMAL}\n"
+
+    local line_num=0
+    if $SHOW_LINE_NUM; then
+      local line_num="${edited_match%%:*}"
+      edited_match="${edited_match#$line_num}"
+      edited_match="${edited_match#:}"
+
+      printf "${GREEN}(${line_num}) ${NORMAL}"
+    fi
+
+    local paragraph="${edited_match}"
 
     # Supporting -i or regex search in strpos is difficult
     if $CASE || $REGEX ; then
@@ -213,7 +233,7 @@ search () {
 
     # Using printf would return error on - at the start of the line
     # printf "%q" would print the color codes instead of the colored text
-    local colored_match=$(grep_color "${paragraph}" "$QUERY")
+    local colored_match=$(color_match "${paragraph}" "$QUERY")
     echo "${colored_match}"
     printf "\n"
   done
@@ -221,7 +241,7 @@ search () {
   printf "\nNumber of line matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:rfe:n" option; do
+while getopts ":hvil:q:rfpe:n" option; do
   case $option in
     h)
         help
@@ -253,7 +273,10 @@ while getopts ":hvil:q:rfe:n" option; do
         EXCLUDE+=("$OPTARG")
         ;;
     n)
-        NEWS="$OPTARG"
+        NEWS=true
+        ;;
+    p)
+        SHOW_LINE_NUM=true
         ;;
     \?)
         echo "Error: Invalid option -$OPTARG"
