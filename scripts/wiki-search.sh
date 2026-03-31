@@ -131,7 +131,7 @@ build_grep () {
   fi
 
   if $SHOW_LINE_NUM; then
-    cmd+=(-n)
+    cmd+=(--line-number)
   fi
 
   echo "${cmd[@]}"
