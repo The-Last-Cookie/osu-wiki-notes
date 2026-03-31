@@ -137,7 +137,7 @@ build_grep () {
   echo "${cmd[@]}"
 }
 
-grep_color () {
+color_match () {
   # Color a specific substring
   # https://stackoverflow.com/a/4332530
   local haystack="$1"
@@ -233,7 +233,7 @@ search () {
 
     # Using printf would return error on - at the start of the line
     # printf "%q" would print the color codes instead of the colored text
-    local colored_match=$(grep_color "${paragraph}" "$QUERY")
+    local colored_match=$(color_match "${paragraph}" "$QUERY")
     echo "${colored_match}"
     printf "\n"
   done
