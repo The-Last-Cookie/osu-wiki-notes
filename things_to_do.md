@@ -11,8 +11,8 @@
 - nat subgroup - Untergruppe
 - featured artists - Featured Artists/gesponserte Künstler
 - beatmap spotlights - Beatmaps im Spotlight
-- Host - Spielleiter, Host, Gastgeber
 - aspect ratio and resolution - Auflösung, Seitenverhältnis, Bildschirmformat
+- Tiebreaker - Stichkampf
 
 ### Beatmap category
 
