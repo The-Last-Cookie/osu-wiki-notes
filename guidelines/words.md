@@ -21,7 +21,6 @@ It is important to note that these translations should not be seen as fixed, imm
 - commit (to commit) - Commit (in die Versionshistorie aufnehmen)
 - contest - Wettbewerb
 - contribution guide - Beitragsleitfaden
-- contributor covenant code of conduct - Verhaltenskodex für Mitwirkende
 - cooldown - Auszeit
 - cover - Titelbild, Banner oder Cover
 - custom - benutzerdefiniert, eigene(s), selbst erstellt, personalisiert
@@ -39,7 +38,6 @@ It is important to note that these translations should not be seen as fixed, imm
 - guidelines - Richtlinien
 - highlight - Erwähnung, Highlight
 - hit leniency - Trefferkulanz
-- help centre - Hilfecenter
 - host - Spielleiter, Host, Gastgeber, Ersteller (bei Beatmaps)
 - issue - Issue
 - judgement - Beurteilung
@@ -79,7 +77,6 @@ It is important to note that these translations should not be seen as fixed, imm
 - slider reverse arrow - Slider-Umkehrpfeil
 - snaking in/out slider - einziehende/ausziehende Slider
 - song select - Songauswahl
-- stack leniency - Stackzuordnung
 - submission - Veröffentlichung, Einreichung
 - submit - einreichen, einsenden, hochladen, veröffentlichen
 - support team - Support-Team
