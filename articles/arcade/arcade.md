@@ -4,16 +4,19 @@ The **osu!arcade** was a prototype arcade machine created by ::{ flag=AU }:: [pe
 
 ## History
 
-v1 (black box where speakers were external):
+### First prototype
 
-- [osu!arcade at Wai-con 2010](https://osu.ppy.sh/community/forums/topics/23392?n=1) and [osu! at Waicon 2010 (YouTube)](https://www.youtube.com/watch?v=WKvm975bmj0)
-  - development began originally in 2010, for the Wai-con in Perth with the goal to make osu! more known in the local community
-  - some last minute preparations before the event
-  - At the time, it received positive feedback from the community
-  - lots of people were gathered around the arcade cabinet on Wai-con, so much so that you could not see the arcade sometimes
-  - some complained that playing too much could lead to sore fingers ([peppy tweet](https://twitter.com/ppy/status/17689427400))
-  - used osu!(stable) as the base game (see images showcasing the interface)
-- [kingking9's profile with lots of pictures](https://osu.ppy.sh/users/1277097) (see /img folder)
+::: Infobox
+![osu! arcade machine at Wai-con 2010](img/v1/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f325f3533626465383465356661366634623532616164373839303933393761343830.jpeg "osu! arcade machine at Wai-con 2010")
+:::
+
+For the [Wai-con](https://en.wikipedia.org/wiki/Wai-Con) anime convention in Perth in January 2010, peppy wanted to create a booth for osu! with the goal to make osu! more known in the local community.[^wai-con] He came up with the spontaneous idea to make an arcade machine, so there were only a few days left until the event to prepare everything. The first prototype was a slanted box with external speakers at the side which used a modified version of osu!(stable) as the game.[^wai-con-video][^kingking9-profile]
+
+Throughout the 2-day convention, peppy tried to get feedback by watching both beginners as well as veterans of [Ouendan](https://en.wikipedia.org/wiki/Osu!_Tatakae!_Ouendan) and [Elite Beat Agents](/wiki/iNiS_games#elite-beat-agents) play the game.
+
+Many convention visitors were attracted by the arcade machine, so much so that at most times it was hard to see the screen due to the constant stream of people gathered around the cabinet. Overall, the community acclaimed the arcade machine, although some people criticised that playing too much could lead to sore fingers.[^sore-fingers]
+
+### Second prototype
 
 v2 (more beautifully designed box with integrated speakers):
 
@@ -32,6 +35,13 @@ v2 (more beautifully designed box with integrated speakers):
 
 ## References
 
+[^wai-con]: [osu!arcade at Wai-con 2010](https://osu.ppy.sh/community/forums/topics/23392?n=1)
+[^wai-con-video]: [osu! at Waicon 2010 (YouTube)](https://www.youtube.com/watch?v=WKvm975bmj0)
+[^kingking9-profile]: [kingking9's osu! profile featuring lots of pictures of the prototype](https://osu.ppy.sh/users/1277097)
+[^sore-fingers]: [Tweet by @ppy (DATE)](https://twitter.com/ppy/status/17689427400)
+
+### Other
+
 - old youtube videos?
   - [osu!arcade with a straw](https://www.youtube.com/watch?v=RyyBXYmBv04)
   - [osu!arcade streams are definitely possible](https://www.youtube.com/watch?v=CJb5glKtJJM)
@@ -42,6 +52,10 @@ v2 (more beautifully designed box with integrated speakers):
   - [osu!arcade @ OneUp Microcinema](https://www.youtube.com/watch?v=aIDqzD09Sus)
   - [jubeatsu! on osu!arcade](https://www.youtube.com/watch?v=m8-zfZBiA94)
   - [Almost osu!arcade on "Your choice" in Omsk State Technical University](https://www.youtube.com/watch?v=zCr0x9hZA4s) (not sure if officially affiliated)
+
+<https://www.reddit.com/r/osugame/comments/ycjblt/deleted_by_user/>
+
+<https://noether.s-ul.eu/3B2GKCqW>
 
 osu!stream related stuff:
 
