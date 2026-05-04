@@ -18,10 +18,16 @@ Many convention visitors were attracted by the arcade machine, so much so that a
 
 ### Second prototype
 
+::: Infobox
+![Second prototype](img/v2/iPhoneUpload-2.jpg "Second prototype")
+:::
+
+
+
 v2 (more beautifully designed box with integrated speakers):
 
 - features:
-  - e.g. led lighting controlled by an Arduino microcontroller (light related to the music I think?)
+  - e.g. led lighting controlled by an Arduino microcontroller (led lights flashing according to the music[^music-light])
   - two big audio speakers to the left and right side of the screen
   - see [osu!arcade design documents](https://osu.ppy.sh/community/forums/topics/163062?n=1)
   - peppy: ["It runs both osu!stream and osu!. I named it the osu!arcade as a piece of hardware, not software."](https://osu.ppy.sh/community/forums/topics/163062?n=20)
@@ -40,24 +46,28 @@ v2 (more beautifully designed box with integrated speakers):
 [^kingking9-profile]: [kingking9's osu! profile featuring lots of pictures of the prototype](https://osu.ppy.sh/users/1277097)
 [^sore-fingers]: [Tweet by @ppy (DATE)](https://twitter.com/ppy/status/17689427400)
 
+[^music-light]: [osu!arcade lighting #2 (wip)](https://www.youtube.com/watch?v=CjXqPZXbnHU)
+
 ### Other
 
-- old youtube videos?
-  - [osu!arcade with a straw](https://www.youtube.com/watch?v=RyyBXYmBv04)
-  - [osu!arcade streams are definitely possible](https://www.youtube.com/watch?v=CJb5glKtJJM)
-  - [[osu!stream/osu!arcade] OK Go - This Too Shall Pass](https://www.youtube.com/watch?v=LQjYwpDnBec)
-  - [osu!arcade lighting #2 (wip)](https://www.youtube.com/watch?v=CjXqPZXbnHU)
-  - [osu!arcade @ RFLAN (highlights #1)](https://www.youtube.com/watch?v=3RZ0e5QxUj8)
-  - [osu!arcade (multiplayer, various songs)](https://www.youtube.com/watch?v=0idZe5I_YjI)
-  - [osu!arcade @ OneUp Microcinema](https://www.youtube.com/watch?v=aIDqzD09Sus)
-  - [jubeatsu! on osu!arcade](https://www.youtube.com/watch?v=m8-zfZBiA94)
-  - [Almost osu!arcade on "Your choice" in Omsk State Technical University](https://www.youtube.com/watch?v=zCr0x9hZA4s) (not sure if officially affiliated)
-
-<https://www.reddit.com/r/osugame/comments/ycjblt/deleted_by_user/>
-
-<https://noether.s-ul.eu/3B2GKCqW>
+- [other link](https://noether.s-ul.eu/3B2GKCqW): no widespread production and arcade necessary features like a coin slot were never added
 
 osu!stream related stuff:
 
 - [osu!stream open mapping](https://osu.ppy.sh/community/forums/topics/91277?n=1) --> see also post 42 by dakeyrus
 - [osu!stream mapping guide](https://docs.google.com/document/d/1FYmHhRX-onR-osgTS6uHSOZuu_0JEbfRZePVySvvr9g/edit?hl=en_US&authkey=CL-Pq4EH&tab=t.0)
+
+Gameplay visualisation:
+
+- [osu!arcade with a straw](https://www.youtube.com/watch?v=RyyBXYmBv04)
+- [osu!arcade streams are definitely possible](https://www.youtube.com/watch?v=CJb5glKtJJM)
+- [[osu!stream/osu!arcade] OK Go - This Too Shall Pass](https://www.youtube.com/watch?v=LQjYwpDnBec)
+- [osu!arcade @ RFLAN (highlights #1)](https://www.youtube.com/watch?v=3RZ0e5QxUj8)
+- [osu!arcade (multiplayer, various songs)](https://www.youtube.com/watch?v=0idZe5I_YjI)
+- [osu!arcade @ OneUp Microcinema](https://www.youtube.com/watch?v=aIDqzD09Sus)
+
+comments with information
+
+- [#1](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=Ugz7J0_hFd-DXQHN5Gl4AaABAg): the touchscreen was a precise optical-based system
+- [#2](https://www.youtube.com/watch?v=RyyBXYmBv04&lc=UgwyuGjdPhOk5pLZVKd4AaABAg.A9p6IFliakHA9pB9R-xy4v): The arcade prototype was showcased to the public at multiple events.
+- [#3](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=UgyqSDvx465RZdZqSE14AaABAg): one arcade machine is estimated to cost at least 5,000 USD
