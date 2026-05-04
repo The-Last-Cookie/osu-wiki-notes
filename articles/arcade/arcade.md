@@ -22,35 +22,31 @@ Many convention visitors were attracted by the arcade machine, so much so that a
 ![Second prototype](img/v2/iPhoneUpload-2.jpg "Second prototype")
 :::
 
+Around early to mid 2012, a second prototype was developed.[^tweet-1][^tweet-2] It featured two speakers which were integrated into the cabinet. Furthermore, an [Arduino](https://en.wikipedia.org/wiki/Arduino) [microcontroller](https://en.wikipedia.org/wiki/Microcontroller) controlled LED lights that would flash accordingly to the music.[^music-light][^design-documents] Support for local multiplayer between two arcades was added in August 2012.[^local-multi]
 
+The prototype was showcased to the public running [osu!stream](/wiki/osu!stream), an osu! variant designed for touch devices, at multiple events.[^rflan]
 
-v2 (more beautifully designed box with integrated speakers):
-
-- features:
-  - e.g. led lighting controlled by an Arduino microcontroller (led lights flashing according to the music[^music-light])
-  - two big audio speakers to the left and right side of the screen
-  - see [osu!arcade design documents](https://osu.ppy.sh/community/forums/topics/163062?n=1)
-  - peppy: ["It runs both osu!stream and osu!. I named it the osu!arcade as a piece of hardware, not software."](https://osu.ppy.sh/community/forums/topics/163062?n=20)
-- work on v2 started around early to mid 2012 apparently (judging from images and videos) [tweet 1](https://twitter.com/ppy/status/212795116774109184) and [tweet 2](https://twitter.com/ppy/status/202271556498505729)
-- eventually osu!arcade was not developed further (still seen as a prototype) probably due to the shift to stable and later lazer development
-- also creating an osu!arcade is very costly
-
-[local multiplayer support](https://twitter.com/ppy/status/239027656476213249) ([another tweet](https://twitter.com/ppy/status/1380378766778589186))
-
-[Dec 2012 (RFLAN)](https://blog.ppy.sh/post/38114063519/this-week-in-osu-5): adding experimental support for conversion of osu! maps to osu!stream
+In the following years, the project was abandoned due to putting more focus on the development of osu!(stable) and later osu!(lazer). Additionally, the prototype was never mass-produced as the costs for creating a new cabinet were way too high.
 
 ## References
 
 [^wai-con]: [osu!arcade at Wai-con 2010](https://osu.ppy.sh/community/forums/topics/23392?n=1)
 [^wai-con-video]: [osu! at Waicon 2010 (YouTube)](https://www.youtube.com/watch?v=WKvm975bmj0)
 [^kingking9-profile]: [kingking9's osu! profile featuring lots of pictures of the prototype](https://osu.ppy.sh/users/1277097)
-[^sore-fingers]: [Tweet by @ppy (DATE)](https://twitter.com/ppy/status/17689427400)
+[^sore-fingers]: [Tweet by @ppy (2010-07-04)](https://twitter.com/ppy/status/17689427400)
 
+[^tweet-1]: [Tweet by @ppy (2012-05-15)](https://twitter.com/ppy/status/202271556498505729)
+[^tweet-2]: [Tweet by @ppy (2012-06-13)](https://twitter.com/ppy/status/212795116774109184)
+[^design-documents]: [Forum thread by peppy (2013-11-01) "osu!arcade design documents"](https://osu.ppy.sh/community/forums/topics/163062?n=1)
 [^music-light]: [osu!arcade lighting #2 (wip)](https://www.youtube.com/watch?v=CjXqPZXbnHU)
+[^local-multi]: [Tweet by @ppy (2012-08-24)](https://twitter.com/ppy/status/239027656476213249)
+[^rflan]: [Blog post by peppy (2012-12-17) "This Week in osu!"](https://blog.ppy.sh/post/38114063519/this-week-in-osu-5)
 
 ### Other
 
 - [other link](https://noether.s-ul.eu/3B2GKCqW): no widespread production and arcade necessary features like a coin slot were never added
+- [another tweet](https://twitter.com/ppy/status/1380378766778589186)
+- peppy: ["It runs both osu!stream and osu!. I named it the osu!arcade as a piece of hardware, not software."](https://osu.ppy.sh/community/forums/topics/163062?n=20)
 
 osu!stream related stuff:
 
@@ -70,4 +66,3 @@ comments with information
 
 - [#1](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=Ugz7J0_hFd-DXQHN5Gl4AaABAg): the touchscreen was a precise optical-based system
 - [#2](https://www.youtube.com/watch?v=RyyBXYmBv04&lc=UgwyuGjdPhOk5pLZVKd4AaABAg.A9p6IFliakHA9pB9R-xy4v): The arcade prototype was showcased to the public at multiple events.
-- [#3](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=UgyqSDvx465RZdZqSE14AaABAg): one arcade machine is estimated to cost at least 5,000 USD
