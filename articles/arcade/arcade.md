@@ -7,7 +7,7 @@ Although it has *arcade* in its name, features typical for arcade machines like 
 ## First prototype
 
 ::: Infobox
-![osu! arcade machine at 2010's Wai-con](img/v1/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f325f3533626465383465356661366634623532616164373839303933393761343830.jpeg "osu! arcade machine at 2010's Wai-con")
+![osu!arcade machine at 2010's Wai-con](img/v1/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f325f3533626465383465356661366634623532616164373839303933393761343830.jpeg "osu!arcade machine at 2010's Wai-con")
 :::
 
 For the [Wai-con](https://en.wikipedia.org/wiki/Wai-Con) anime convention in Perth in January 2010, peppy wanted to create a booth for osu! with the goal to make osu! more known in the local community.[^wai-con] He came up with the spontaneous idea to make an arcade machine, so there were only a few days left until the event to prepare everything. The first prototype was a slanted box with external speakers at the side which used a modified version of osu!(stable) as the game.[^wai-con-video][^kingking9-profile]
@@ -28,7 +28,7 @@ The prototype was showcased to the public running [osu!stream](/wiki/osu!stream)
 
 ## Discontinuation
 
-In the following years, the project was abandoned due to a shift in focus on the development of osu!(stable) and later osu!(lazer). Additionally, the prototype was never mass-produced as the costs for creating a new cabinet were too expensive.
+In the following years, the osu!arcade project was abandoned due to a shift in focus on the development of osu!(stable) and later osu!(lazer). Additionally, the prototype was never mass-produced as the costs for creating a new cabinet were too expensive.
 
 ## References
 
