@@ -2,11 +2,9 @@
 
 The **osu!arcade** was a prototype arcade machine created by ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2). It contained custom-made hardware and a built-in touchscreen running a touch-based version of osu!.
 
-Although it has *arcade* in its name, features typical for arcade machines like coin slots were not considered when developing the prototype due to timing constraints.
+Although it has *arcade* in its name, features typical for arcade machines like coin slots were not considered when developing the prototype.
 
-## History
-
-### First prototype
+## First prototype
 
 ::: Infobox
 ![osu! arcade machine at 2010's Wai-con](img/v1/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f325f3533626465383465356661366634623532616164373839303933393761343830.jpeg "osu! arcade machine at 2010's Wai-con")
@@ -18,7 +16,7 @@ Throughout the 2-day convention, peppy tried to get feedback by watching both be
 
 Many convention visitors were attracted by the arcade machine, so much so that at most times it was hard to see the screen due to the constant stream of people gathered around the cabinet. Overall, the community acclaimed the arcade machine, although some people criticised that playing too much could lead to sore fingers.[^sore-fingers]
 
-### Second prototype
+## Second prototype
 
 ::: Infobox
 ![Second prototype](img/v2/iPhoneUpload-2.jpg "Second prototype")
@@ -26,7 +24,9 @@ Many convention visitors were attracted by the arcade machine, so much so that a
 
 Around early to mid 2012, a second prototype was developed.[^tweet-1][^tweet-2] It featured two speakers which were integrated into the cabinet. The touchscreen used a precise optical-based system.[^optical] Furthermore, an [Arduino](https://en.wikipedia.org/wiki/Arduino) [microcontroller](https://en.wikipedia.org/wiki/Microcontroller) controlled LED lights that would flash according to the music.[^music-light][^design-documents] Support for local multiplayer between two arcades was added in August 2012.[^local-multi]
 
-The prototype was showcased to the public running [osu!stream](/wiki/osu!stream), an osu! variant designed for touch devices, at multiple events.[^rflan][^oneup]
+The prototype was showcased to the public running [osu!stream](/wiki/osu!stream), an osu! variant designed for touch devices, at multiple events such as the "Red Flag LAN Fest" in Perth.[^rflan][^oneup]
+
+## Discontinuation
 
 In the following years, the project was abandoned due to a shift in focus on the development of osu!(stable) and later osu!(lazer). Additionally, the prototype was never mass-produced as the costs for creating a new cabinet were too expensive.
 
