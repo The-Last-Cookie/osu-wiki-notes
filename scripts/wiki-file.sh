@@ -15,6 +15,18 @@ COUNTRIES_DE=()
 
 allowed_codes=("en" "ar" "be" "bg" "ca" "cs" "da" "de" "el" "es" "fi" "fil" "fr" "he" "hu" "id" "it" "ja" "ko" "lt" "nl" "no" "pl" "pt" "pt-br" "ro" "ru" "sk" "sl" "sr" "sv" "th" "tr" "uk" "vi" "zh" "zh-tw")
 
+grep_color () {
+  # https://stackoverflow.com/a/4332530
+  local bold_red=$(tput setaf 1 bold)
+  local normal=$(tput sgr0)
+
+  local haystack="$1"
+  local needle="$2"
+
+  local colored_needle="${bold_red}${needle}${normal}"
+  echo "${haystack//$needle/$colored_needle}"
+}
+
 # https://stackoverflow.com/a/71600549
 containsElement () {
   local match="$1"
@@ -156,7 +168,16 @@ convert_mode () {
   esac
 }
 
-while getopts ":hp:oac:" option; do
+search () {
+  local query="$1"
+  local paths=$(get_all_wiki_links)
+
+  local result=$(echo "$paths" | grep --fixed-strings -e "${query}")
+  local colored_match=$(grep_color "${result[*]}" "${query}")
+  echo "${colored_match}"
+}
+
+while getopts ":hp:oac:s:" option; do
   case $option in
     h)
         help
@@ -172,6 +193,9 @@ while getopts ":hp:oac:" option; do
         exit;;
     c)
         convert_mode "${OPTARG}"
+        exit;;
+    s)
+        search "${OPTARG}"
         exit;;
     \?)
         echo "Error: Invalid option"
