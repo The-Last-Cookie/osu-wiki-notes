@@ -4,15 +4,15 @@
 
 - Distance Snap - Abstandshalter? (very unsure), Abstandsraster, Distanzraster(ung)? (probably Distanzraster)
 - Grid snap(ping) - Gitterraster, Spielfeldraster, Raster
-- distance spacing - Abstandausrichtung
+- distance spacing - Abstandsausrichtung
 - snapping - einrasten?, Taktteilung auch möglich
 - approach rate - Approach-Rate, Einblend(ungs)rate
 - compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
 - nat subgroup - Untergruppe
 - featured artists - Featured Artists/gesponserte Künstler
 - beatmap spotlights - Beatmaps im Spotlight
-- Host - Spielleiter, Host, Gastgeber
 - aspect ratio and resolution - Auflösung, Seitenverhältnis, Bildschirmformat
+- Tiebreaker - Stichkampf
 
 ### Beatmap category
 
@@ -30,8 +30,6 @@
 
 ## add
 
-- rules/Content_Voting_Process - Verfahren zur Abstimmung über den Inhalt
-- code of conduct for modding and mapping - Verhaltenskodex für Modding und Mapping
 - game mode osu! - coloured circles with numbers on top of them - gefärbte Kreise mit Nummern darauf
 
 ## fix
