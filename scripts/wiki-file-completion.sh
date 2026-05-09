@@ -38,8 +38,9 @@ _wiki_completion()
         current="${current:0:relative_cursor_index}"
     fi
 
+    # Insert path for search in subdirectories
     if [[ ${current} == *"/"* ]]; then
-        # remove last folder fragment for find command
+        # remove incomplete directory fragment for find command
         local current_path="${current%/*}"
         local escaped_path=$( _remove_escape_characters "${current_path}")
         root="${BASE}${escaped_path}/"
