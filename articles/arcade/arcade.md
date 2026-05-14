@@ -2,24 +2,24 @@
 
 The **osu!arcade** was a prototype arcade machine created by ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2). It contained custom-made hardware and a built-in touchscreen running a touch-based version of osu!.
 
-Although it has *arcade* in its name, features typical for arcade machines like coin slots were not considered when developing the prototype.
+Although it has *arcade* in its name, features typical for arcade machines like coin slots had not been considered when developing the prototype.
 
 ## First prototype
 
 ::: Infobox
-![osu!arcade machine at 2010's Wai-con](img/v1/68747470733a2f2f666f72756d2d66696c65732e7070792e73682f325f3533626465383465356661366634623532616164373839303933393761343830.jpeg "osu!arcade machine at 2010's Wai-con")
+![osu!arcade machine at 2010's Wai-con](img/2010_Wai-con.jpg "osu!arcade machine at 2010's Wai-con")
 :::
 
-For the [Wai-con](https://en.wikipedia.org/wiki/Wai-Con) anime convention in Perth in January 2010, peppy wanted to create a booth for osu! with the goal to make osu! more known in the local community.[^wai-con] He came up with the spontaneous idea to make an arcade machine, so there were only a few days left until the event to prepare everything. The first prototype was a slanted box with external speakers at the side which used a modified version of osu!(stable) as the game.[^wai-con-video][^kingking9-profile]
+For the [Wai-con](https://en.wikipedia.org/wiki/Wai-Con) anime convention in Perth in January 2010, peppy wanted to create a booth for osu! with the goal to make osu! more known in the local community.[^wai-con] With only a few days to prepare everything before the event, the first prototype for an arcade machine was spontaneously built. The prototype was a slanted box with external speakers at the side which used a modified version of osu!(stable) as the game.[^wai-con-video][^kingking9-profile]
 
 Throughout the 2-day convention, peppy tried to get feedback by watching both beginners as well as veterans of [Ouendan](https://en.wikipedia.org/wiki/Osu!_Tatakae!_Ouendan) and [Elite Beat Agents](/wiki/iNiS_games#elite-beat-agents) play the game.
 
-Many convention visitors were attracted by the arcade machine, so much so that at most times it was hard to see the screen due to the constant stream of people gathered around the cabinet. Overall, the community acclaimed the arcade machine, although some people criticised that playing too much could lead to sore fingers.[^sore-fingers]
+Many convention visitors wanted to try out the arcade machine, so much so that at most times it was hard to see the screen due to the constant stream of people gathered around the cabinet. Overall, the community acclaimed the arcade machine, although some people criticised that playing too much could lead to sore fingers.[^sore-fingers]
 
 ## Second prototype
 
 ::: Infobox
-![Second prototype](img/v2/iPhoneUpload-2.jpg "Second prototype")
+![Second prototype](img/prototype_v2.jpg "Second prototype")
 :::
 
 Around early to mid 2012, a second prototype was developed.[^tweet-1][^tweet-2] It featured two speakers which were integrated into the cabinet. The touchscreen used a precise optical-based system.[^optical] Furthermore, an [Arduino](https://en.wikipedia.org/wiki/Arduino) [microcontroller](https://en.wikipedia.org/wiki/Microcontroller) controlled LED lights that would flash according to the music.[^music-light][^design-documents] Support for local multiplayer between two arcades was added in August 2012.[^local-multi]
