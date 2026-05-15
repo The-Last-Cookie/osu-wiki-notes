@@ -2,7 +2,7 @@
 
 The **osu!arcade** was a prototype arcade machine created by ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2). It consisted of a custom-made enclosure and a built-in touchscreen running a touch-based version of osu!.
 
-Although it has *arcade* in its name, features typical for arcade machines like coin slots had been considered but were never added when working on the prototype.
+Although it has *arcade* in its name, features typical for arcade machines like coin slots had been considered but were never added when working on the prototype.[^rfid]
 
 ## First prototype
 
@@ -34,6 +34,7 @@ In the following years, the osu!arcade project was discontinued due to a shift i
 
 ## References
 
+[^rfid]: [GitHub comment by peppy (2026-05-07)](https://github.com/ppy/osu-wiki/pull/14697/changes#r3201675470)
 [^wai-con]: [Forum thread by peppy (2010-01-27) "osu!arcade at Wai-con 2010"](https://osu.ppy.sh/community/forums/topics/23392?n=1)
 [^wai-con-video]: [YouTube video by shigeru miyamoto (2010-01-23) "osu! at Waicon 2010"](https://www.youtube.com/watch?v=WKvm975bmj0)
 [^kingking9-profile]: [kingking9's osu! profile featuring a lot of pictures of the prototype](https://osu.ppy.sh/users/1277097)
@@ -41,14 +42,14 @@ In the following years, the osu!arcade project was discontinued due to a shift i
 
 [^tweet-1]: [Tweet by @ppy (2012-05-15)](https://twitter.com/ppy/status/202271556498505729)
 [^tweet-2]: [Tweet by @ppy (2012-06-13)](https://twitter.com/ppy/status/212795116774109184)
-[^optical]: [YouTube comment by Dean Herbert in "[osu!stream/osu!arcade] OK Go - This Too Shall Pass"](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=Ugz7J0_hFd-DXQHN5Gl4AaABAg)
+[^optical]: [YouTube comment by Dean Herbert (2013) in "[osu!stream/osu!arcade] OK Go - This Too Shall Pass"](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=Ugz7J0_hFd-DXQHN5Gl4AaABAg)
 [^design-documents]: [Forum thread by peppy (2013-11-01) "osu!arcade design documents"](https://osu.ppy.sh/community/forums/topics/163062?n=1)
 [^music-light]: [YouTube video by Dean Herbert (2012-06-03) "osu!arcade lighting #2 (wip)"](https://www.youtube.com/watch?v=CjXqPZXbnHU)
 [^local-multi]: [Tweet by @ppy (2012-08-24)](https://twitter.com/ppy/status/239027656476213249)
 [^multi-arcade]: [GitHub comment by peppy (2026-05-07)](https://github.com/ppy/osu-wiki/pull/14697/changes#r3201696782)
 [^rflan]: [YouTube video by Dean Herbert (2012-10-17) "osu!arcade @ RFLAN (highlights #1)"](https://www.youtube.com/watch?v=3RZ0e5QxUj8)
 [^oneup]: [YouTube video by Dean Herbert (2012-09-19) "osu!arcade @ OneUp Microcinema"](https://www.youtube.com/watch?v=aIDqzD09Sus)
-[^mass-production]: [YouTube comment by peppy (circa 2014)](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=UgyqSDvx465RZdZqSE14AaABAg)
+[^mass-production]: [YouTube comment by Dean Herbert (2014) in "[osu!stream/osu!arcade] OK Go - This Too Shall Pass"](https://www.youtube.com/watch?v=LQjYwpDnBec&lc=UgyqSDvx465RZdZqSE14AaABAg)
 
 ### Other
 
