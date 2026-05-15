@@ -1,8 +1,8 @@
 # osu!arcade
 
-The **osu!arcade** was a prototype arcade machine created by ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2). It contained custom-made enclosure and a built-in touchscreen running a touch-based version of osu!.
+The **osu!arcade** was a prototype arcade machine created by ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2). It consisted of a custom-made enclosure and a built-in touchscreen running a touch-based version of osu!.
 
-Although it has *arcade* in its name, features typical for arcade machines like coin slots had been considered but never added when working on the prototype.
+Although it has *arcade* in its name, features typical for arcade machines like coin slots had been considered but were never added when working on the prototype.
 
 ## First prototype
 
@@ -24,9 +24,9 @@ Many convention visitors wanted to try out the arcade machine, so much so that a
 
 Around early to mid 2012, a second prototype was developed.[^tweet-1][^tweet-2] It featured two speakers which were integrated into the cabinet. The touchscreen used a precise optical-based system.[^optical] Furthermore, an [Arduino](https://en.wikipedia.org/wiki/Arduino) [microcontroller](https://en.wikipedia.org/wiki/Microcontroller) controlled LED lights that would flash according to the music.[^music-light][^design-documents]
 
-In August 2012, support for local multiplayer was added to osu!stream specifically for the arcade.[^local-multi] Included with the multiplayer was a custom server and realtime synced cursors, an exclusive feature not present in any other osu! variant.[^multi-arcade]
-
 The prototype was showcased to the public running [osu!stream](/wiki/osu!stream), an osu! variant designed for touch devices, at multiple events such as the "Red Flag LAN Fest" in Perth.[^rflan][^oneup]
+
+In August 2012, support for local multiplayer was added to osu!stream specifically for the arcade.[^local-multi] Included with the multiplayer was a custom server and real-time synced cursors, an exclusive feature not present in any other osu! variant.[^multi-arcade]
 
 ## Discontinuation
 
