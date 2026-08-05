@@ -5,7 +5,7 @@
 - Distance Snap - Abstandshalter? (very unsure), Abstandsraster, Distanzraster(ung)? (probably Distanzraster)
 - Grid snap(ping) - Gitterraster, Spielfeldraster, Raster
 - distance spacing - Abstandsausrichtung
-- snapping - einrasten?, Taktteilung auch möglich
+- snapping - ausrichten, positionieren, einrasten?, Taktteilung auch möglich
 - approach rate - Approach-Rate, Einblend(ungs)rate
 - compose - komponieren, Komposition (kann aber auch Compose sein, wenn UI-bezogen)
 - nat subgroup - Untergruppe
