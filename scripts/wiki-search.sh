@@ -21,11 +21,11 @@ BASE="/osu-wiki"
 LANGUAGE="en"
 
 QUERY=""
-VERBOSE=false
+SHOW_FULL_PATH=false
 EXCLUDE=()
 CASE=false
 REGEX=false
-SUCCINCT=false
+SHOW_FILE_LIST=false
 NEWS=false
 SHOW_LINE_NUM=false
 
@@ -119,7 +119,7 @@ build_grep () {
     "${base_folder}"
   )
 
-  if $SUCCINCT; then
+  if $SHOW_FILE_LIST; then
     cmd+=(--files-with-matches)
   fi
 
@@ -195,11 +195,11 @@ search () {
 
   for match in "${matches[@]}"; do
     local edited_match="${match}"
-    if ! $VERBOSE; then
+    if ! $SHOW_FULL_PATH; then
       edited_match="${edited_match:len_base}"
     fi
 
-    if $SUCCINCT; then
+    if $SHOW_FILE_LIST; then
       printf "${edited_match}\n"
       continue
     fi
@@ -253,7 +253,7 @@ while getopts ":hvil:q:rfpe:n" option; do
         QUERY="$OPTARG"
         ;;
     v)
-        VERBOSE=true
+        SHOW_FULL_PATH=true
         ;;
     i)
     	CASE=true
@@ -262,7 +262,7 @@ while getopts ":hvil:q:rfpe:n" option; do
         REGEX=true
         ;;
     f)
-        SUCCINCT=true
+        SHOW_FILE_LIST=true
     	;;
     e)
         EXCLUDE+=("$OPTARG")
