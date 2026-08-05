@@ -113,6 +113,7 @@ build_grep () {
 
   # e.g. final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
+    --line-number
     --include="${file_pattern}"
     --recursive
     "${base_folder}"
@@ -128,10 +129,6 @@ build_grep () {
 
   if $CASE; then
     cmd+=(--ignore-case)
-  fi
-
-  if $SHOW_LINE_NUM; then
-    cmd+=(--line-number)
   fi
 
   echo "${cmd[@]}"
@@ -186,7 +183,7 @@ search () {
 
   # Map results from grep command to array
   # Normal array syntax () can't be used because detailed results have spaces in them
-  mapfile -t matches < <( "${grep_cmd[@]}" | sort )
+  mapfile -t matches < <( "${grep_cmd[@]}" | sort -t : -k 1,1 -k 2,2n )
 
   if [ ! -z "$EXCLUDE" ]; then
     # TODO: Does not read great
@@ -213,12 +210,10 @@ search () {
 
     printf "${BOLD}${file_path}:${NORMAL}\n"
 
-    local line_num=0
+    local line_num="${edited_match%%:*}"
+    edited_match="${edited_match#$line_num}"
+    edited_match="${edited_match#:}"
     if $SHOW_LINE_NUM; then
-      local line_num="${edited_match%%:*}"
-      edited_match="${edited_match#$line_num}"
-      edited_match="${edited_match#:}"
-
       printf "${GREEN}(${line_num}) ${NORMAL}"
     fi
 
