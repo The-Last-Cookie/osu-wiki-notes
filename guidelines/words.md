@@ -13,7 +13,7 @@ It is important to note that these translations should not be seen as fixed, imm
 - beatmap difficulty - Schwierigkeitsgrad/-stufe der Beatmap, auch Level
 - beatmap listing - Beatmap-Auflistung
 - Beatmap packs - Beatmap-Pakete
-- bracket - Turnierbaum, Platzierung
+- bracket - Turnierbaum (bei z. B. double elimination bracket kann der Begriff je nach Formulierung auch weggelassen werden), Spielplan, Platzierung
 - branch - Branch
 - button - Button/Schaltfläche
 - collection - Sammlung
@@ -21,10 +21,9 @@ It is important to note that these translations should not be seen as fixed, imm
 - commit (to commit) - Commit (in die Versionshistorie aufnehmen)
 - contest - Wettbewerb
 - contribution guide - Beitragsleitfaden
-- contributor covenant code of conduct - Verhaltenskodex für Mitwirkende
 - cooldown - Auszeit
 - cover - Titelbild, Banner oder Cover
-- custom - benutzerdefiniert, eigene(s), selbst erstellt
+- custom - benutzerdefiniert, eigene(s), selbst erstellt, personalisiert
 - (to) dash - dashen
 - (to) encourage - ermutigen, auffordern, angehalten (zu etwas … werden)
 - entry - Beitrag, Einsendung
@@ -38,17 +37,18 @@ It is important to note that these translations should not be seen as fixed, imm
 - grade - Note
 - guidelines - Richtlinien
 - highlight - Erwähnung, Highlight
-- help centre - Hilfecenter
+- hit leniency - Trefferkulanz
+- host - Spielleiter, Host, Gastgeber, Ersteller (bei Beatmaps)
 - issue - Issue
 - judgement - Beurteilung
 - keyboard bindings - Tastenbelegung
 - keyboard shortcuts - Tastenkürzel
 - leaderboard - Rangliste, Bestenliste
-- maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung)
+- maintenance - Verwaltung, Betreuung (eventuell Instandhaltung, Wartung, Pflege)
 - maintainer - Verantwortlicher, Betreuer, Administrator, Leiter
 - me! page - ich!-Seite
 - medal - Medaille
-- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren, in `master` migrieren
+- merge (merging) - Zusammenführen, Anfrage anwenden/akzeptieren, in `master` migrieren, Änderung übernehmen
 - mod select screen - Modauswahl
 - modding - Modding (Verb lautet gemoddet)
 - offset wizard - Offset-Assistent
@@ -77,7 +77,6 @@ It is important to note that these translations should not be seen as fixed, imm
 - slider reverse arrow - Slider-Umkehrpfeil
 - snaking in/out slider - einziehende/ausziehende Slider
 - song select - Songauswahl
-- stack leniency - Stackzuordnung
 - submission - Veröffentlichung, Einreichung
 - submit - einreichen, einsenden, hochladen, veröffentlichen
 - support team - Support-Team

@@ -3,3 +3,4 @@
 - Take a screenshot by hitting `F12`. --> Mit `F12` kannst du einen Screenshot machen.
 - Press F9 to toggle song select. --> Drücke F9 für die Songauswahl.
 - Language can be changed by clicking the pencil icon. --> Die Sprache kann geändert werden, indem man auf das Bleistiftsymbol klickt.
+- Snap all notes to current snap divisor --> Alle Noten am aktuellen Taktteiler ausrichten
