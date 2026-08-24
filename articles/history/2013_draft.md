@@ -1,21 +1,10 @@
----
-needs_cleanup: true
----
-
-<!-- Fix grammar and tense (present to past), use neutral form in the article, add styling like backticks where appropriate and fix link formatting -->
-
 # History of osu! 2013
 
 ## January
 
-osu! now supports widescreen in all modes (including the editor too)! Database size was reduced by 10%. The ability to reset key bindings to their defaults was added. Hyperdash issues in [Catch the Beat](/wiki/Game_mode/osu!catch) were almost fixed. The main menu's copyright graphic was updated for 2013 without the copyright text. [Results for the annual "Best of" were published. (Best of 2012)](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdDRDSjNMN3o3Y1Z6UzA0QUpFNzdlNUE#gid=0).
+Widescreen support was added to all [game modes](/wiki/Game_mode), including the [beatmap editor](/wiki/Client/Beatmap_editor). Users became able to reset the key bindings to their defaults. Hyperdash issues in Catch the Beat[^catch] were almost fixed.[^hyperdash-issues] The main menu's copyright graphic was updated for 2013 without the copyright text.[^week-in-osu-8][^week-in-osu-9]
 
-Links:
-
-- [This Week in osu! – ppy blog](https://blog.ppy.sh/post/39831318171/this-week-in-osu-8)
-- [This Week in osu! – ppy blog](https://blog.ppy.sh/post/41003637501/this-week-in-osu-9)
-- [Getting Hyperdash Right – ppy blog](https://blog.ppy.sh/post/39917651337/getting-hyperdash-right)
-- [Best of 2012 Results](https://osu.ppy.sh/community/forums/posts/2042263)
+[Psy - Gangnam style](https://osu.ppy.sh/beatmapsets/55799#osu/169697) mapped by ::{ flag=US }:: [yeahyeahyeahhh](https://osu.ppy.sh/users/58042) was voted to be the most favourite [beatmap](/wiki/Beatmap) of 2012. The top 100 beatmaps are detailed in the [complete spreadsheet](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdDRDSjNMN3o3Y1Z6UzA0QUpFNzdlNUE#gid=0).[^best-of-2012]
 
 ## February
 
@@ -142,3 +131,11 @@ Links:
 - [Schedule | Comic Fiesta 2013](https://comicfiesta.org/2013/info/event/schedule)
 - [New osu! mode announced on CF2013?](https://osu.ppy.sh/community/forums/topics/176000)
 - [Comic Fiesta 2013 Impressions & osu! Q&A Panel Session with peppy (ppy) | INFONOCHIKARA 「インフォノチカラ」 Blogotopia](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/)
+
+## Notes and references
+
+[^catch]: At the time, the [osu!catch](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) was called Catch the Beat.
+[^hyperdash-issues]: [Blog post by ppy (2013-01-07) "Getting Hyperdash Right"](https://blog.ppy.sh/post/39917651337/getting-hyperdash-right)
+[^week-in-osu-8]: [Blog post by ppy (2013-01-06) "This Week in osu!"](https://blog.ppy.sh/post/39831318171/this-week-in-osu-8)
+[^week-in-osu-9]: [Blog post by ppy (2013-01-20) "This Week in osu!"](https://blog.ppy.sh/post/41003637501/this-week-in-osu-9)
+[^best-of-2012]: [Forum thread by peppy (2013-01-09) "Best of 2012 Results"](https://osu.ppy.sh/community/forums/posts/2042263)
