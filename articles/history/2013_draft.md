@@ -2,15 +2,15 @@
 
 ## January
 
-Widescreen support was added to all [game modes](/wiki/Game_mode), including the [beatmap editor](/wiki/Client/Beatmap_editor). Users became able to reset the key bindings to their defaults. Issues with the hyperdash algorithm in Catch the Beat[^catch] causing [fruits](/wiki/Gameplay/Hit_object/Fruit) to not be catchable in some edge cases were fixed.[^hyperdash-issues] By removing legacy data and checking for optimal table usage, ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2) was able to reduce the database's size.[^week-in-osu-8] While updating the main menu's copyright graphic to 2013, the copyright text was removed to make the graphic more compact and user-friendly.[^week-in-osu-9]
+Widescreen support was added to all [game modes](/wiki/Game_mode), including the [beatmap editor](/wiki/Client/Beatmap_editor). Users became able to reset the key bindings to their defaults. Issues with the hyperdash algorithm in Catch the Beat[^catch] causing [fruits](/wiki/Gameplay/Hit_object/Fruit) to not be catchable in some edge cases were fixed.[^hyperdash-issues] By removing legacy data and checking for optimal table usage, ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2) was able to reduce the database's size<!-- how big was the database in total? -->.[^week-in-osu-8] While updating the main menu's copyright graphic to 2013, the copyright text was removed to make the graphic more compact and user-friendly.[^week-in-osu-9]
 
 [Psy - Gangnam style](https://osu.ppy.sh/beatmapsets/55799#osu/169697) mapped by ::{ flag=US }:: [yeahyeahyeahhh](https://osu.ppy.sh/users/58042) was voted to be the most favourite [beatmap](/wiki/Beatmap) of 2012. The top 100 beatmaps are detailed in [this spreadsheet](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdDRDSjNMN3o3Y1Z6UzA0QUpFNzdlNUE#gid=0).[^best-of-2012]
 
 ## February
 
-The original FAQ has been superseded by the [osu! wiki](/wiki/FAQ).[^week-in-osu-10]
+After the osu! wiki had been tailored to fit the main page design, the old [FAQ](/wiki/FAQ) was superseded by it as a result.[^week-in-osu-10]
 
-A new version of the osu!mania editor was being worked on (woc2006 helped). Taiko mode skinning now has a "metadata" bar (song title and artist below the playfield), taiko playfield was no longer transparent and fades in and out of kiai time.[^stable-b20130220][^week-in-osu-10]
+::{ flag=CN }:: [woc2006](https://osu.ppy.sh/users/1105845) created an improved version of the [osu!mania](/wiki/Game_mode/osu!mania) editor. A "metadata" bar was added to the [Taiko template background](/wiki/Beatmap/Background/Taiko_template_background) for displaying the song title and the artist below the [playfield](/wiki/Client/Playfield). To hide other metadata in the background, the Taiko[^taiko] playfield was made intransparent. Furthermore, the playfield bar would fade in and out of [kiai time](/wiki/Gameplay/Kiai_time).[^stable-b20130220][^week-in-osu-10]
 
 BanchoBot's `!faq` command has been open to public for [translation](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdHhUUjNSa19QendtcTdYUjE2S2hnVHc#gid=24)<!--see google docs and ptransl also-->. The legendary [BanchoBot](/wiki/BanchoBot) finally has a [profile](https://osu.ppy.sh/users/3)![^week-in-osu-11]
 
@@ -143,3 +143,4 @@ Links:
 [^week-in-osu-11]: [Blog post by peppy (2013-02-15) "This Week in osu!"](https://blog.ppy.sh/post/43136384020/this-week-in-osu-11)
 [^week-in-osu-12]: [Blog post by peppy (2013-02-23) "This Week in osu!"](https://blog.ppy.sh/post/43823357969/this-week-in-osu-12)
 [^stable-b20130220]: [Forum thread by peppy (2013-02-20) "osu! release b20130220"](https://osu.ppy.sh/community/forums/posts/2134063)
+[^taiko]: At the time, the [osu!taiko](/wiki/Game_mode/osu!taiko) [game mode](/wiki/Game_mode) was called Taiko.
