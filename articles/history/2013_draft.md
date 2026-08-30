@@ -12,7 +12,7 @@ After the osu! wiki had been tailored to fit the main page design, the old [FAQ]
 
 ::{ flag=CN }:: [woc2006](https://osu.ppy.sh/users/1105845) created an improved version of the [osu!mania](/wiki/Game_mode/osu!mania) editor. A "metadata" bar was added to the [Taiko template background](/wiki/Beatmap/Background/Taiko_template_background) for displaying the song title and the artist below the [playfield](/wiki/Client/Playfield). To hide other metadata in the background, the Taiko[^taiko] playfield was made intransparent. Furthermore, the playfield bar would fade in and out of [kiai time](/wiki/Gameplay/Kiai_time).[^stable-b20130220][^week-in-osu-10]
 
-BanchoBot's `!faq` command has been open to public for [translation](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdHhUUjNSa19QendtcTdYUjE2S2hnVHc#gid=24)<!--see google docs and ptransl also-->. The legendary [BanchoBot](/wiki/BanchoBot) finally has a [profile](https://osu.ppy.sh/users/3)![^week-in-osu-11]
+The in-game chat bot [BanchoBot](/wiki/BanchoBot) received its proper [profile](https://osu.ppy.sh/users/3) and the `!faq` chat command became translatable via [a spreadsheet](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdHhUUjNSa19QendtcTdYUjE2S2hnVHc#gid=24).[^week-in-osu-11]
 
 osu!mania now supports vertical flip (upside-down), making gameplay similar to that of DDR/o2jam.[^week-in-osu-12]
 
