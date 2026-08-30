@@ -8,19 +8,19 @@ Widescreen support was added to all [game modes](/wiki/Game_mode), including the
 
 ## February
 
-BanchoBot's `!faq` command has been open to public for [translation](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdHhUUjNSa19QendtcTdYUjE2S2hnVHc#gid=24). The legendary [BanchoBot](/wiki/BanchoBot) finally has a [profile](https://osu.ppy.sh/users/3)! The user panels display now adjusts to display four columns on all widescreen modes.
+The original FAQ has been superseded by the [osu! wiki](/wiki/FAQ).[^week-in-osu-10]
 
-The original FAQ has been superseded by the [osu! wiki](/wiki/FAQ).
+A new version of the osu!mania editor was being worked on (woc2006 helped). Taiko mode skinning now has a "metadata" bar (song title and artist below the playfield), taiko playfield was no longer transparent and fades in and out of kiai time.[^stable-b20130220][^week-in-osu-10]
 
-A new version of the osu!mania editor was being worked on. Taiko mode skinning now has a "metadata" bar (song title and artist below the playfield), taiko playfield was no longer transparent and fades in and out of kiai time.[^stable-b20130220]
+BanchoBot's `!faq` command has been open to public for [translation](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdHhUUjNSa19QendtcTdYUjE2S2hnVHc#gid=24)<!--see google docs and ptransl also-->. The legendary [BanchoBot](/wiki/BanchoBot) finally has a [profile](https://osu.ppy.sh/users/3)![^week-in-osu-11]
 
-osu!mania now supports vertical flip (upside-down), making gameplay similar to that of DDR/o2jam. Skinning now supports double-resolution sprites when the window width is greater than 1600 pixels. To add support to a skin, add images with double the width/height containing the `@2x` suffix before the file extension (eg: `cursor@2x.png`).[^stable-b20130220]
+osu!mania now supports vertical flip (upside-down), making gameplay similar to that of DDR/o2jam.[^week-in-osu-12]
 
-Ranking support for [Hidden](/wiki/Gameplay/Game_modifier/Hidden) and [FadeIn](/wiki/Gameplay/Game_modifier/Fade_In) mods in osu!mania and lastly, less widescreen limitations in the editor when it comes to placement and selection.[^stable-b20130220]
+Skinning now supports double-resolution sprites when the window width is greater than 1600 pixels. To add support to a skin, add images with double the width/height containing the `@2x` suffix before the file extension (eg: `cursor@2x.png`).[^stable-b20130220][^week-in-osu-12]
 
-[^week-in-osu-10]
-[^week-in-osu-11]
-[^week-in-osu-12]
+Lastly, less widescreen limitations in the editor when it comes to placement and selection. The user panels display now adjusts to display four columns on all widescreen modes.[^week-in-osu-12]
+
+Ranking support for [Hidden](/wiki/Gameplay/Game_modifier/Hidden) and [FadeIn](/wiki/Gameplay/Game_modifier/Fade_In) mods in osu!mania[^stable-b20130220]
 
 ## March
 
