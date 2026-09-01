@@ -20,7 +20,7 @@ Furthermore, the [Hidden](/wiki/Gameplay/Game_modifier/Hidden) and [FadeIn](/wik
 
 In addition, [skins](/wiki/Skin) would support double-resolution sprites when the window width was greater than 1600 pixels. To add support to a skin, images with double the width/height required `@2x` as the suffix before the file extension (e.g. `cursor@2x.png`).[^stable-b20130220][^week-in-osu-12]
 
-Lastly, widescreen support was tweaked to allow mappers to place and select objects in the beatmap editor with less limitations, and the user panels display would adjust dynamically to display four columns on all widescreen modes.[^stable-b20130220][^week-in-osu-12]
+Lastly, widescreen support was tweaked to allow mappers to place and select objects in the beatmap editor with less limitations, and the online user panels would adjust dynamically to display four columns on all widescreen modes.[^stable-b20130220][^week-in-osu-12]
 
 ## March
 
