@@ -14,13 +14,13 @@ After the osu! wiki had been tailored to fit the main page design, the old [FAQ]
 
 The in-game chat bot [BanchoBot](/wiki/BanchoBot) received its proper [profile](https://osu.ppy.sh/users/3) and the `!faq` chat command became translatable via [a spreadsheet](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdHhUUjNSa19QendtcTdYUjE2S2hnVHc#gid=24).[^week-in-osu-11]
 
-osu!mania now supports vertical flip (upside-down), making gameplay similar to that of DDR/o2jam.[^week-in-osu-12]
+A new feature in osu!mania made it possible to flip the playfield vertically which would make gameplay similar to that of DDR/o2jam.[^stable-b20130220][^week-in-osu-12]
 
-Skinning now supports double-resolution sprites when the window width is greater than 1600 pixels. To add support to a skin, add images with double the width/height containing the `@2x` suffix before the file extension (eg: `cursor@2x.png`).[^stable-b20130220][^week-in-osu-12]
+Furthermore, the [Hidden](/wiki/Gameplay/Game_modifier/Hidden) and [FadeIn](/wiki/Gameplay/Game_modifier/Fade_In) mods became ranked in osu!mania.[^stable-b20130220]
 
-Lastly, less widescreen limitations in the editor when it comes to placement and selection. The user panels display now adjusts to display four columns on all widescreen modes.[^week-in-osu-12]
+In addition, [skins](/wiki/Skin) would support double-resolution sprites when the window width was greater than 1600 pixels. To add support to a skin, images with double the width/height required `@2x` as the suffix before the file extension (e.g. `cursor@2x.png`).[^stable-b20130220][^week-in-osu-12]
 
-Ranking support for [Hidden](/wiki/Gameplay/Game_modifier/Hidden) and [FadeIn](/wiki/Gameplay/Game_modifier/Fade_In) mods in osu!mania[^stable-b20130220]
+Lastly, widescreen support was tweaked to allow mappers to place and select objects in the beatmap editor with less limitations, and the user panels display would adjust dynamically to display four columns on all widescreen modes.[^stable-b20130220][^week-in-osu-12]
 
 ## March
 
