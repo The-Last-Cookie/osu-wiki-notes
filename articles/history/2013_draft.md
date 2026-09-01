@@ -24,7 +24,9 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 ## March
 
-osu! received a complete overhaul of the UI (User Interface)! The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). Buttons in the editor were updated too. Special mode was combined with the [song select](/wiki/Client/Interface#song-select) screen (named under "Mods"), allowing players to switch modes quicker and hassle-free. All [game modifier](/wiki/Gameplay/Game_modifier) buttons received their respective image overhaul. The result screen now showed the beatmap's background image rather than the user skin's result background.
+staff restructure[^staff-restructure]
+
+osu!'s user interface was completely redesigned. The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). Buttons in the editor were updated too. Special mode was combined with the [song select](/wiki/Client/Interface#song-select) screen (named under "Mods"), allowing players to switch modes quicker and hassle-free. All [game modifier](/wiki/Gameplay/Game_modifier) buttons received their respective image overhaul. The result screen now showed the beatmap's background image rather than the user skin's result background.
 
 Hit-Offset can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
 
@@ -34,12 +36,9 @@ The ranking scoreboard, on the other hand, received two revisions in a single mo
 
 Lastly, player's profile picture has been added beside the grade mark of their place in the ranking scoreboard. When hovered to the tab, the placement can be known as the profile picture was darken to show the placement number. Please note that this simple addition does not affect Local scoreboard in any way, as it will most likely be flooded with your own play results with little to no intrusion from other players (unless the beatmap was received from other players in folder form).
 
-Links:
-
-- [osu! Public Release (b20130319)](https://osu.ppy.sh/community/forums/topics/123276)
-- [osu! Public Release (b20130325)](https://osu.ppy.sh/community/forums/topics/124366)
-- [osu! Public Release (b20130328)](https://osu.ppy.sh/community/forums/topics/124848)
-- [2013 Staff Restructuring](https://osu.ppy.sh/community/forums/topics/123510)
+[^stable-20130319]
+[^stable-20130325]
+[^stable-20130328]
 
 ## April
 
@@ -144,3 +143,8 @@ Links:
 [^week-in-osu-12]: [Blog post by peppy (2013-02-23) "This Week in osu!"](https://blog.ppy.sh/post/43823357969/this-week-in-osu-12)
 [^stable-b20130220]: [Forum thread by peppy (2013-02-20) "osu! release b20130220"](https://osu.ppy.sh/community/forums/posts/2134063)
 [^taiko]: At the time, the [osu!taiko](/wiki/Game_mode/osu!taiko) [game mode](/wiki/Game_mode) was called Taiko.
+
+[^stable-20130319]: [Forum thread by peppy (2013-03-19) "osu! Public Release (b20130319)"](https://osu.ppy.sh/community/forums/topics/123276?n=1)
+[^stable-20130325]: [Forum thread by peppy (2013-03-25) "osu! Public Release (b20130325)"](https://osu.ppy.sh/community/forums/topics/124366?n=1)
+[^stable-20130328]: [Forum thread by peppy (2013-03-28) "osu! Public Release (b20130328)"](https://osu.ppy.sh/community/forums/topics/124848?n=1)
+[^staff-restructure]: [Forum thread by Ephemeral (2013-03-20) "2013 Staff Restructuring"](https://osu.ppy.sh/community/forums/topics/123510?n=1)
