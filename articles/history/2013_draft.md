@@ -73,6 +73,8 @@ Three brand new Dedication [achievements](/wiki/Medals) for osu!mania have been 
 - [osu! Public Release (b20130509)](https://osu.ppy.sh/community/forums/topics/131611)
 - [May 2013 Highlights + Map of the Month](https://osu.ppy.sh/community/forums/posts/2334705)
 
+Beatmap appreciation team changes?
+
 ## June
 
 [osu! Beatmapping Contest \#4](https://osu.ppy.sh/community/forums/posts/2324098) has started. As a counter-measure against players creating lots of accounts, clarity of messaging during account registration was improved and an infographic showing that you can't register from phones/tablets has been added to prevent players creating more accounts for personal reasons.
