@@ -26,19 +26,24 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 staff restructure[^staff-restructure]
 
-osu!'s user interface was completely redesigned. The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). Buttons in the editor were updated too. Special mode was combined with the [song select](/wiki/Client/Interface#song-select) screen (named under "Mods"), allowing players to switch modes quicker and hassle-free. All [game modifier](/wiki/Gameplay/Game_modifier) buttons received their respective image overhaul. The result screen now showed the beatmap's background image rather than the user skin's result background.
+osu!'s user interface was completely redesigned. The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). Buttons in the editor were updated too. Special mode was combined with the [song select](/wiki/Client/Interface#song-select) screen (named under "Mods"), allowing players to switch modes quicker and hassle-free. All [game modifier](/wiki/Gameplay/Game_modifier) buttons received their respective image overhaul. The result screen now showed the beatmap's background image rather than the user skin's result background.[^stable-20130319]
+
+<!-- osu! ui revamping and new default skin is work in progress -->
 
 Hit-Offset can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
 
 In terms of skin, "osu!default by peppy" was replaced by "osu! by peppy" (art by [RBRat3](https://osu.ppy.sh/users/307202)). Since osu! can now support both widescreen HD and standard size, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead. [Combo fire](/wiki/Gameplay/Combo_fire) was removed due to performance concerns. At the Multi side, hosts have a new special command called "Free Mods" and the "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). `#userlog` was introduced to showcase your recent playing achievement privately.
 
-The ranking scoreboard, on the other hand, received two revisions in a single month. The first revision was "unified scoreboards", where the scoreboard was separated into four parts (Mods, Friends, Personal Best, Local) with score difference given below the accuracy of the layer, the removal of local scoreboard and the inability to scroll to see more of the later Top score players. Despite it being limited to osu!supporters only, it received much criticism and as such, a second revision has been issued near the end of the month. The scoreboard was basically reverted back to how it was previously, keeping the score difference gap. The prominent addition was the tabbed drop-down menu, where various types of ranking scoreboard were housed. However, the new types of scoreboard \[Country, Global (Selected Mod), and Friend\] were still limited to osu!supporters only.
+The ranking scoreboard, on the other hand, received two revisions in a single month. The first revision was "unified scoreboards", where the scoreboard was separated into four parts (Mods, Friends, Personal Best, Local) with score difference given below the accuracy of the layer, the removal of local scoreboard and the inability to scroll to see more of the later Top score players. Despite it being limited to osu!supporters only, it received much criticism and as such, a second revision has been issued near the end of the month. The scoreboard was basically reverted back to how it was previously, keeping the score difference gap. The prominent addition was the tabbed drop-down menu, where various types of ranking scoreboard were housed. However, the new types of scoreboard \[Country, Global (Selected Mod), and Friend\] were still limited to osu!supporters only.[^stable-20130325][^stable-20130328]
+
+<!--
+ranking leaderboards are separated via a dropdown due to criticism
+country ranking was added
+-->
 
 Lastly, player's profile picture has been added beside the grade mark of their place in the ranking scoreboard. When hovered to the tab, the placement can be known as the profile picture was darken to show the placement number. Please note that this simple addition does not affect Local scoreboard in any way, as it will most likely be flooded with your own play results with little to no intrusion from other players (unless the beatmap was received from other players in folder form).
 
-[^stable-20130319]
-[^stable-20130325]
-[^stable-20130328]
+[^week-in-osu-13]
 
 ## April
 
@@ -102,6 +107,8 @@ Links:
 - [June 2013 Highlights + Map of the Month](https://osu.ppy.sh/community/forums/posts/2400775)
 - [Regional Team Management](https://osu.ppy.sh/community/forums/topics/132667)
 
+https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu
+
 ## July
 
 [The new regional BATmanagers](https://osu.ppy.sh/community/forums/topics/132667) began their first major recruitment of new BAT in to the team with the [Summer 2013 NewBAT Applications](https://osu.ppy.sh/community/forums/topics/142864). This provided a chance for the new managers to adequately handle new applications. The new regional managers were [NatsumeRin](https://osu.ppy.sh/users/151679) representing Asia/Oceania, [Kurai](https://osu.ppy.sh/users/77089) representing Europe, and [Garven](https://osu.ppy.sh/users/244216) representing America.
@@ -116,6 +123,10 @@ Links:
 
 - [Summer 2013 NewBAT Applications](https://osu.ppy.sh/community/forums/topics/142864)
 - [osu!api open beta](https://osu.ppy.sh/community/forums/topics/141240)
+
+## August
+
+- https://blog.ppy.sh/post/59476446944/frictionless-updates
 
 ## December
 
@@ -149,4 +160,5 @@ Links:
 [^stable-20130319]: [Forum thread by peppy (2013-03-19) "osu! Public Release (b20130319)"](https://osu.ppy.sh/community/forums/topics/123276?n=1)
 [^stable-20130325]: [Forum thread by peppy (2013-03-25) "osu! Public Release (b20130325)"](https://osu.ppy.sh/community/forums/topics/124366?n=1)
 [^stable-20130328]: [Forum thread by peppy (2013-03-28) "osu! Public Release (b20130328)"](https://osu.ppy.sh/community/forums/topics/124848?n=1)
+[^week-in-osu-13]: [Blog post by peppy (2013-04-02) "This week (month) in osu!"](https://blog.ppy.sh/post/46924535831/this-week-month-in-osu-13)
 [^staff-restructure]: [Forum thread by Ephemeral (2013-03-20) "2013 Staff Restructuring"](https://osu.ppy.sh/community/forums/topics/123510?n=1)
