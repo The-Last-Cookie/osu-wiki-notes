@@ -26,13 +26,13 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 staff restructure[^staff-restructure]
 
-osu!'s user interface was completely redesigned. The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). Buttons in the editor were updated too. Special mode was combined with the [song select](/wiki/Client/Interface#song-select) screen (named under "Mods"), allowing players to switch modes quicker and hassle-free. All [game modifier](/wiki/Gameplay/Game_modifier) buttons received their respective image overhaul. The result screen now showed the beatmap's background image rather than the user skin's result background.[^stable-20130319]
+osu!'s user interface was completely redesigned. The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). Buttons in the editor were updated too. Special mode was combined with the [song select](/wiki/Client/Interface#song-select) screen (named under "Mods"), allowing players to switch modes quicker and hassle-free<!-- see April -->. All [game modifier](/wiki/Gameplay/Game_modifier) buttons received their respective image overhaul. The result screen now showed the beatmap's background image rather than the user skin's result background.[^stable-20130319]
 
 <!-- osu! ui revamping and new default skin is work in progress -->
 
-Hit-Offset can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
+In terms of skin, "osu!default by peppy" was replaced by "osu! by peppy" (art by [RBRat3](https://osu.ppy.sh/users/307202)). Since osu! can now support both widescreen HD and standard size, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead. [Combo fire](/wiki/Gameplay/Combo_fire) was removed due to performance concerns. At the Multi side, hosts have a new special command called "Free Mods" and the "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). `#userlog` was introduced to showcase your recent playing achievement privately.[^week-in-osu-13]
 
-In terms of skin, "osu!default by peppy" was replaced by "osu! by peppy" (art by [RBRat3](https://osu.ppy.sh/users/307202)). Since osu! can now support both widescreen HD and standard size, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead. [Combo fire](/wiki/Gameplay/Combo_fire) was removed due to performance concerns. At the Multi side, hosts have a new special command called "Free Mods" and the "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). `#userlog` was introduced to showcase your recent playing achievement privately.
+Hit-Offset can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
 
 The ranking scoreboard, on the other hand, received two revisions in a single month. The first revision was "unified scoreboards", where the scoreboard was separated into four parts (Mods, Friends, Personal Best, Local) with score difference given below the accuracy of the layer, the removal of local scoreboard and the inability to scroll to see more of the later Top score players. Despite it being limited to osu!supporters only, it received much criticism and as such, a second revision has been issued near the end of the month. The scoreboard was basically reverted back to how it was previously, keeping the score difference gap. The prominent addition was the tabbed drop-down menu, where various types of ranking scoreboard were housed. However, the new types of scoreboard \[Country, Global (Selected Mod), and Friend\] were still limited to osu!supporters only.[^stable-20130325][^stable-20130328]
 
@@ -44,6 +44,13 @@ country ranking was added
 Lastly, player's profile picture has been added beside the grade mark of their place in the ranking scoreboard. When hovered to the tab, the placement can be known as the profile picture was darken to show the placement number. Please note that this simple addition does not affect Local scoreboard in any way, as it will most likely be flooded with your own play results with little to no intrusion from other players (unless the beatmap was received from other players in folder form).
 
 [^week-in-osu-13]
+ui revamp and new default skin work in progress (Taiko / CtB / osu!mania still unfinished)
+rbrat3 helped a lot in editing the ui sprites
+high definition resolution for all sprites (@2x)
+follow points are directional
+hit explosions became visually smaller, improving readability especially on streams
+new game "mode" menu in song select
+online ranking button changes? (was a popup before)
 
 ## April
 
