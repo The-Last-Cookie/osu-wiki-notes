@@ -26,18 +26,20 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 staff restructure[^staff-restructure]
 
-osu!'s user interface was completely redesigned with the help of ::{ flag=US }:: [RBRat3](https://osu.ppy.sh/users/307202), including the beatmap editor controls, [game modifier](/wiki/Gameplay/Game_modifier) icons<!-- before/after comparison would be awesome! --> and the main menu. The osu! game mode received a new leitmotif symbol (previously, it was a circle with "osu!" and became a circle with a "1"). The special mode selection accessible in the main menu was moved to the [song select](/wiki/Client/Interface#song-select) screen, allowing players to switch game modes quicker and more intuitively. The result screen would show the beatmap's background image rather than the user skin's result background. Hit explosions became visually smaller, improving readability especially on [streams](/wiki/Beatmap/Pattern/osu!/Stream).[^stable-20130319]
-
-<!-- osu! ui revamping and new default skin is work in progress
+<!--
 ui revamp and new default skin work in progress (Taiko / CtB / osu!mania still unfinished)
-high definition resolution for all sprites (@2x)
-follow points are directional
+follow points are directional[^week-in-osu-13]
 
-https://www.youtube.com/watch?v=yZa2RQoKzpM
 https://osekai.net/snapshots/?version=197
 -->
 
-In terms of skin, "osu!default by peppy" was replaced by "osu! by peppy" (art by [RBRat3](https://osu.ppy.sh/users/307202)). Since osu! can now support both widescreen HD and standard size, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead. [Combo fire](/wiki/Gameplay/Combo_fire) was removed due to performance concerns. At the Multi side, hosts have a new special command called "Free Mods" and the "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). `#userlog` was introduced to showcase your recent playing achievement privately.[^week-in-osu-13]
+osu!'s user interface was completely redesigned with the help of ::{ flag=US }:: [RBRat3](https://osu.ppy.sh/users/307202), including the beatmap editor controls, [game modifier](/wiki/Gameplay/Game_modifier) icons and the main menu. Meanwhile, the osu! game mode's leitmotif symbol was tweaked by changing the "osu!" text in the middle of the circle to a "1". The special mode selection accessible in the main menu was moved to the [song select](/wiki/Client/Interface#song-select) screen, allowing players to switch game modes quicker and more intuitively. Furthermore, the result screen would show the beatmap's background image rather than the user skin's result background. Hit explosions became visually smaller, improving readability especially on [streams](/wiki/Beatmap/Pattern/osu!/Stream). [Combo fire](/wiki/Gameplay/Combo_fire) was removed due to performance concerns.[^stable-20130319]
+
+![Comparison](img/comparison-game-modifier.png "Comparison of the game modifier icons before and after the redesign")
+
+To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead.
+
+In [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts have a new special command called "Free Mods" and the "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). `#userlog` was introduced to showcase your recent playing achievement privately.
 
 Hit-Offset can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
 
