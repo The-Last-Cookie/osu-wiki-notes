@@ -33,6 +33,12 @@ follow points are directional[^week-in-osu-13]
 https://osekai.net/snapshots/?version=197
 -->
 
+::: Infobox
+
+![Comparison of the game modifier icons before and after the redesign](img/comparison-game-modifier.png "Comparison of the game modifier icons before and after the redesign")
+
+:::
+
 osu!'s user interface was completely redesigned with the help of ::{ flag=US }:: [RBRat3](https://osu.ppy.sh/users/307202), including the beatmap editor controls, [game modifier](/wiki/Gameplay/Game_modifier) icons and the main menu. Additionally, these changes were made:[^stable-20130319]
 
 - The osu! game mode's leitmotif symbol was tweaked by changing the "osu!" text in the middle of the circle to a "1".
@@ -40,8 +46,6 @@ osu!'s user interface was completely redesigned with the help of ::{ flag=US }::
 - [Combo fire](/wiki/Gameplay/Combo_fire) was removed due to performance concerns.
 - The result screen would show the beatmap's background image rather than the user skin's result background.
 - Hit explosions became visually smaller, improving readability especially on [streams](/wiki/Beatmap/Pattern/osu!/Stream).
-
-![Comparison](img/comparison-game-modifier.png "Comparison of the game modifier icons before and after the redesign")
 
 To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead.
 
