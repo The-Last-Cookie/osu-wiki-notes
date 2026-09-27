@@ -47,11 +47,11 @@ osu!'s user interface was completely redesigned with the help of ::{ flag=US }::
 - The result screen would show the beatmap's background image rather than the user skin's result background.
 - Hit explosions became visually smaller, improving readability especially on [streams](/wiki/Beatmap/Pattern/osu!/Stream).
 
-To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new button was added to the "Skins" tab under "Options". By default, old skin behaviour was used for compatibility and enabling the button will force the new skin behaviour to be in effect instead.
+To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new setting was added to the `Skins` tab in the options menu. By default, old skin behaviour was used for compatibility and enabling this setting would force the new skin behaviour to be in effect instead.
 
-In [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts have a new special command called "Free Mods" and the "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). `#userlog` was introduced to showcase your recent playing achievement privately.
+In [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able to activate `Free Mods`, allowing players to freely choose any mod combination, except ones that change gameplay speed. The "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods")<!-- I have no idea what "game style" is referring to. -->. The `#userlog` channel was introduced to display the player's recent match result privately.
 
-Hit-Offset can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
+Hit-Offset<!-- damit ist der hit error https://osu.ppy.sh/wiki/de/Gameplay/Accuracy#error gemeint --> can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
 
 <!--
 ranking leaderboards are separated via a dropdown due to criticism
