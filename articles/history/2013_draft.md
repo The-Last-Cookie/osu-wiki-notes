@@ -102,7 +102,9 @@ Three brand new Dedication [achievements](/wiki/Medals) for osu!mania have been 
 - [osu! Public Release (b20130509)](https://osu.ppy.sh/community/forums/topics/131611)
 - [May 2013 Highlights + Map of the Month](https://osu.ppy.sh/community/forums/posts/2334705)
 
+<!--
 Beatmap appreciation team changes?
+-->
 
 ## June
 
@@ -131,7 +133,11 @@ Links:
 - [June 2013 Highlights + Map of the Month](https://osu.ppy.sh/community/forums/posts/2400775)
 - [Regional Team Management](https://osu.ppy.sh/community/forums/topics/132667)
 
+<!--
 https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu
+
+[poll for changing domain name](https://osu.ppy.sh/community/forums/topics/140667)
+-->
 
 ## July
 
@@ -150,7 +156,10 @@ Links:
 
 ## August
 
-- https://blog.ppy.sh/post/59476446944/frictionless-updates
+- <https://blog.ppy.sh/post/59476446944/frictionless-updates>
+- [Public Release (b20130801)](https://osu.ppy.sh/community/forums/topics/146484?n=1)
+- [osu! news](https://osu.ppy.sh/community/forums/topics/147706?n=1)
+- [osu!test now more usable](https://osu.ppy.sh/community/forums/topics/147744?n=1)
 
 ## December
 
@@ -166,6 +175,7 @@ Links:
 - [Schedule | Comic Fiesta 2013](https://comicfiesta.org/2013/info/event/schedule)
 - [New osu! mode announced on CF2013?](https://osu.ppy.sh/community/forums/topics/176000)
 - [Comic Fiesta 2013 Impressions & osu! Q&A Panel Session with peppy (ppy) | INFONOCHIKARA 「インフォノチカラ」 Blogotopia](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/)
+- [osu! panel at Comic Fiesta 2013](https://www.youtube.com/watch?v=IjuaFiLia6w)
 
 ## Notes and references
 
