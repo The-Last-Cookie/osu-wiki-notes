@@ -47,23 +47,27 @@ osu!'s user interface was completely redesigned with the help of ::{ flag=US }::
 - The result screen would show the beatmap's background image rather than the user skin's result background.
 - Hit explosions became visually smaller, improving readability especially on [streams](/wiki/Beatmap/Pattern/osu!/Stream).
 
-To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new setting was added to the `Skins` tab in the options menu. By default, old skin behaviour was used for compatibility and enabling this setting would force the new skin behaviour to be in effect instead.
+To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new setting was added to the `Skins` tab in the options menu. By default, old skin behaviour was used for compatibility and enabling this setting would force the new skin behaviour (e.g. animations) to be in effect instead.
 
-In [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able to activate `Free Mods`, allowing players to freely choose any mod combination, except ones that change gameplay speed. The "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods")<!-- I have no idea what "game style" is referring to. -->. The `#userlog` channel was introduced to display the player's recent match result privately.
+In the [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able to activate `Free Mods`, allowing players to freely choose any mod combination, except ones that change gameplay speed. The "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods")<!-- I have no idea what "game style" is referring to. -->. The `#userlog` channel was introduced to display the player's recent match result privately.
 
-Hit-Offset<!-- damit ist der hit error https://osu.ppy.sh/wiki/de/Gameplay/Accuracy#error gemeint --> can now be known by hovering to the Accuracy from the result screen. Do note that it will disappear and can't be saved. Online Results were now hidden below the result screen rather than forcing you to see it. You can scroll down to see or you can just click the button and you will be directed to the Online Results screen.
+When hovering over the [performance graph](/wiki/Gameplay/Accuracy#performance-graph) in the [results screen](/wiki/Client/Interface#results-screen), players became able to know how far off their early hits and their late hits were on average. Do note that these values will disappear and can not be saved. Online leaderboard information in the ranking popup dialog became part of the extended results screen which can be reached by scrolling down in the results screen, or by clicking the button at the bottom of the screen.[^week-in-osu-13]
 
 <!--
-ranking leaderboards are separated via a dropdown due to criticism
-country ranking was added
+At the end of March, "unified scoreboards" made it possible for [osu!supporters](/wiki/osu!supporter) to combine local scores, plays with the same mods and scores from friends in one listing. The difference between scores was displayed below the accuracy of the respective score panel. After a lot of people criticised the new leaderboard design for being too cluttered and for the inability to scroll to see more top scores from other players, the scoreboard received a second revision just days later. Players became able to choose between the several leaderboards via a dropdown menu. However, the `Global (Selected Mod)`, `Friend` as well as the per-beatmap `Country` ranking added in the same update stayed limited to osu!supporters. Though, the score difference display was kept.[^stable-20130325][^stable-20130328]
+
+Is the above rewrite (one listing) accurate enough? Something along these lines maybe:
+The scoreboard was separated into the four parts plays with the same mods, scores from friends, the personal best and local scores which would be displayed below each other in one listing. For osu!supporters, it was possible to combine all scores into the same listing.
+see https://osu.ppy.sh/community/forums/topics/124366?n=117 and the respective screenshots
 -->
 
-The ranking scoreboard, on the other hand, received two revisions in a single month. The first revision was "unified scoreboards", where the scoreboard was separated into four parts (Mods, Friends, Personal Best, Local) with score difference given below the accuracy of the layer, the removal of local scoreboard and the inability to scroll to see more of the later Top score players. Despite it being limited to osu!supporters only, it received much criticism and as such, a second revision has been issued near the end of the month. The scoreboard was basically reverted back to how it was previously, keeping the score difference gap. The prominent addition was the tabbed drop-down menu, where various types of ranking scoreboard were housed. However, the new types of scoreboard \[Country, Global (Selected Mod), and Friend\] were still limited to osu!supporters only.[^stable-20130325][^stable-20130328]
+The ranking scoreboard received two revisions in a single month. The first revision was "unified scoreboards", where the scoreboard was separated into four parts (Mods, Friends, Personal Best and Local) with score difference given below the accuracy of the score panel, the removal of local scoreboard and the inability to scroll to see more of the later Top score players. Despite it being limited to osu!supporters only, it received much criticism and as such, a second revision has been issued near the end of the month. The scoreboard was basically reverted back to how it was previously, keeping the score difference gap. The prominent addition was the tabbed drop-down menu, where various types of ranking scoreboard were housed. However, the new types of scoreboard `Country`, `Global (Selected Mod)`, and `Friend` stayed limited to osu!supporters.[^stable-20130325][^stable-20130328]
 
-Lastly, player's profile picture has been added beside the grade mark of their place in the ranking scoreboard. When hovered to the tab, the placement can be known as the profile picture was darken to show the placement number. Please note that this simple addition does not affect Local scoreboard in any way, as it will most likely be flooded with your own play results with little to no intrusion from other players (unless the beatmap was received from other players in folder form).
+Lastly, the player's profile picture had been added beside the [grade](/wiki/Gameplay/Grade) mark in the ranking scoreboard. When hovering over the score, the profile picture was darkened to show the placement number.
 
-[^week-in-osu-13]
-online ranking button changes? (was a popup before)
+<!-- Not sure what to do with this:
+"Please note that this simple addition does not affect Local scoreboard in any way, as it will most likely be flooded with your own play results with little to no intrusion from other players (unless the beatmap was received from other players in folder form)."
+-->
 
 ## April
 
