@@ -20,10 +20,9 @@ These resources might include stuff not worth mentioning but may still be a good
 
 - osu! recap videos
 - history of osu!
-  - <https://www.youtube.com/watch?v=tHBZaT8vjaM>
-  - <https://www.youtube.com/watch?v=VNCVIWrqWGA>
-  - <https://www.youtube.com/watch?v=KJ1mFC3w4D8>
-  - <https://www.youtube.com/watch?v=VNCVIWrqWGA>
+  - [the history of osu!, i guess](https://www.youtube.com/watch?v=tHBZaT8vjaM)
+  - [The Evergreen Rhythm Game - History of Osu!](https://www.youtube.com/watch?v=VNCVIWrqWGA)
+  - <https://www.youtube.com/watch?v=KJ1mFC3w4D8> (*unavailable*)
 
 ## Editorial rules
 

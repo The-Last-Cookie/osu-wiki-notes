@@ -21,14 +21,21 @@ BASE="/osu-wiki"
 LANGUAGE="en"
 
 QUERY=""
-VERBOSE=false
+SHOW_FULL_PATH=false
 EXCLUDE=()
 CASE=false
-RESULTS=false
+REGEX=false
+SHOW_FILE_LIST=false
 NEWS=false
+SHOW_LINE_NUM=false
 
 # Print debug information
 DEBUG=false
+
+NORMAL=$(tput sgr0)
+BOLD=$(tput bold)
+RED=$(tput setaf 1)
+GREEN=$(tput setaf 2)
 
 set -e # otherwise the script will exit on error
 
@@ -55,7 +62,7 @@ strpos () {
 help () {
   printf "Search for file contents in the osu! wiki."
   printf "\n"
-  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-c] -q \"QUERY\""
+  printf "Usage: [-h] [-v] [-l <lang>] [-i] [-e <exclude>] [-f] [-r] [-p] -q \"QUERY\""
   printf "\n"
   printf "\n"
   printf "Maintenance:"
@@ -71,18 +78,30 @@ help () {
   printf "\n"
   printf "  -i\t\tIgnore case distinctions in the search query."
   printf "\n"
-  printf "\t\tThe output is NOT colored when used together with the -c option."
+  printf "\t\tThe output will not be colored when using this option."
   printf "\n"
   printf "  -n\t\tSearch /news instead of /wiki."
   printf "\n"
   printf "\n"
   printf "Output options:"
   printf "\n"
-  printf "  -c\t\tShow comprehensive results for each match."
+  printf "  -f\t\tList files with matches instead of detailing each match."
   printf "\n"
-  printf "  -e [query]\tExclude anything from the results which contains [query]."
+  printf "  -r\t\tInterpret query as regular expression."
+  printf "\n"
+  printf "\t\tUses basic regular expressions (BRE)."
+  printf "\n"
+  printf "\t\tThe output will not be colored when using this option."
+  printf "\n"
+  printf "  -e [query]\tExclude results containing [query] in file paths or article lines."
+  printf "\n"
+  printf "\t\tArgument can be used multiple times to exclude several terms."
+  printf "\n"
+  printf "\t\tIf using the succinct file view (-f), file paths will be excluded instead."
   printf "\n"
   printf "\t\tDoes NEITHER support regex pattern matching NOR ignore case distinctions."
+  printf "\n"
+  printf "  -p\t\tDisplay the line number of the match."
   printf "\n"
   printf "  -v\t\tDisplay the absolute path to found files."
   printf "\n"
@@ -92,43 +111,37 @@ build_grep () {
   local file_pattern="$1"
   local base_folder="$2"
 
-  # final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
+  # e.g. final command: grep --include="*\\en.md" -Rl "$BASE" -e "$QUERY" | sort
   local cmd=(
+    --line-number
     --include="${file_pattern}"
-    -R
+    --recursive
     "${base_folder}"
   )
 
-  if ! $RESULTS; then
-    cmd+=(-l)
+  if $SHOW_FILE_LIST; then
+    cmd+=(--files-with-matches)
+  fi
+
+  if ! $REGEX; then
+    cmd+=(--fixed-strings)
   fi
 
   if $CASE; then
-    cmd+=(-i)
+    cmd+=(--ignore-case)
   fi
 
   echo "${cmd[@]}"
 }
 
-grep_color () {
+color_match () {
+  # Color a specific substring
   # https://stackoverflow.com/a/4332530
-  local bold_red=$(tput setaf 1 bold)
-  local normal=$(tput sgr0)
-
   local haystack="$1"
   local needle="$2"
 
-  local match_start=$(strpos "${haystack}" "${needle}")
-
-  # Return plaintext when searching with regex
-  if [[ match_start -eq -1 ]]; then
-    echo "${haystack}"
-    return
-  fi
-
-  local match_len="${#needle}"
-  local match_end=$((match_start + match_len))
-  echo "${haystack:0:match_start}${bold_red}${haystack:match_start:match_len}${normal}${haystack:match_end}"
+  local colored_needle="${BOLD}${RED}${needle}${NORMAL}"
+  echo "${haystack//$needle/$colored_needle}"
 }
 
 exclude () {
@@ -170,7 +183,7 @@ search () {
 
   # Map results from grep command to array
   # Normal array syntax () can't be used because detailed results have spaces in them
-  mapfile -t matches < <( "${grep_cmd[@]}" | sort )
+  mapfile -t matches < <( "${grep_cmd[@]}" | sort -t : -k 1,1 -k 2,2n )
 
   if [ ! -z "$EXCLUDE" ]; then
     # TODO: Does not read great
@@ -182,24 +195,32 @@ search () {
 
   for match in "${matches[@]}"; do
     local edited_match="${match}"
-    if ! $VERBOSE; then
+    if ! $SHOW_FULL_PATH; then
       edited_match="${edited_match:len_base}"
     fi
 
-    if ! $RESULTS; then
+    if $SHOW_FILE_LIST; then
       printf "${edited_match}\n"
       continue
     fi
 
-    local delimiter_pos=$(strpos "${edited_match}" ":")
-    ((delimiter_pos++)) # move one to the right
-    local file_path="${edited_match:0:delimiter_pos}"
-    local paragraph="${edited_match:delimiter_pos}"
+    local file_path="${edited_match%%:*}"
+    edited_match="${edited_match#$file_path}"
+    edited_match="${edited_match#:}"
 
-    printf "${file_path}\n"
+    printf "${BOLD}${file_path}:${NORMAL}\n"
 
-    # TODO: Coloring doesn't work with -i due to strpos not supporting this
-    if $CASE; then
+    local line_num="${edited_match%%:*}"
+    edited_match="${edited_match#$line_num}"
+    edited_match="${edited_match#:}"
+    if $SHOW_LINE_NUM; then
+      printf "${GREEN}(${line_num}) ${NORMAL}"
+    fi
+
+    local paragraph="${edited_match}"
+
+    # Supporting -i or regex search in strpos is difficult
+    if $CASE || $REGEX ; then
       echo "${paragraph}"
       printf "\n"
       continue
@@ -207,15 +228,15 @@ search () {
 
     # Using printf would return error on - at the start of the line
     # printf "%q" would print the color codes instead of the colored text
-    local colored_match=$(grep_color "${paragraph}" "$QUERY")
+    local colored_match=$(color_match "${paragraph}" "$QUERY")
     echo "${colored_match}"
     printf "\n"
   done
 
-  printf "\nNumber of matches: ${#matches[@]}\n"
+  printf "\nNumber of line matches: ${#matches[@]}\n"
 }
 
-while getopts ":hvil:q:ce:n" option; do
+while getopts ":hvil:q:rfpe:n" option; do
   case $option in
     h)
         help
@@ -225,29 +246,35 @@ while getopts ":hvil:q:ce:n" option; do
         if containsElement "$OPTARG" "${allowed_codes[@]}"; then
     	  LANGUAGE="$OPTARG"
     	else
-    	  printf "Language is not valid. Using default language.\n\n"
+          printf "Language is not valid. Using default language '$LANGUAGE'.\n\n"
     	fi
         ;;
     q)
         QUERY="$OPTARG"
         ;;
     v)
-        VERBOSE=true
+        SHOW_FULL_PATH=true
         ;;
     i)
     	CASE=true
     	;;
-    c)
-    	RESULTS=true
+    r)
+        REGEX=true
+        ;;
+    f)
+        SHOW_FILE_LIST=true
     	;;
     e)
         EXCLUDE+=("$OPTARG")
         ;;
     n)
-        NEWS="$OPTARG"
+        NEWS=true
+        ;;
+    p)
+        SHOW_LINE_NUM=true
         ;;
     \?)
-        echo "Error: Invalid option"
+        echo "Error: Invalid option -$OPTARG"
         exit;;
     :)
         echo "Option -$OPTARG requires an argument." >&2
