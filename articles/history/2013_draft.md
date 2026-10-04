@@ -24,13 +24,19 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 ## March
 
+<!--
+- The [Language Surveillance Division](/wiki/People/Language_Surveillance_Division) was renamed to "Chat Moderators"
+- The [Support Team](/wiki/People/Technical_Support_Team) was formed as a proper group
+- The Administrators group was replaced with the [Global Moderation Team](/wiki/People/Global_Moderation_Team)
+  - BAT map management options removed from GMT members
+  - BAT -> assistance with beatmaps
+  - GMT -> player moderation in-game or in the forums
+-->
+
 staff restructure[^staff-restructure]
 
 <!--
 ui revamp and new default skin work in progress (Taiko / CtB / osu!mania still unfinished)
-follow points are directional[^week-in-osu-13]
-
-https://osekai.net/snapshots/?version=197
 -->
 
 ::: Infobox
@@ -53,21 +59,17 @@ In the [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able
 
 When hovering over the [performance graph](/wiki/Gameplay/Accuracy#performance-graph) in the [results screen](/wiki/Client/Interface#results-screen), players became able to know how far off their early hits and their late hits were on average. Do note that these values will disappear and can not be saved.<!-- upon exiting the result screen? --> Online leaderboard information in the ranking popup dialog became part of the extended results screen which can be reached by scrolling down in the results screen, or by clicking the button at the bottom of the screen.[^week-in-osu-13]
 
-<!-- OLD:
-The ranking scoreboard received two revisions in a single month. The first revision was "unified scoreboards", where the scoreboard was separated into four parts (Mods, Friends, Personal Best and Local) with score difference given below the accuracy of the score panel, the removal of local scoreboard and the inability to scroll to see more of the later Top score players. Despite it being limited to osu!supporters only, it received much criticism and as such, a second revision has been issued near the end of the month. The scoreboard was basically reverted back to how it was previously, keeping the score difference gap. The prominent addition was the tabbed drop-down menu, where various types of ranking scoreboard were housed. However, the new types of scoreboard `Country`, `Global (Selected Mod)`, and `Friend` stayed limited to osu!supporters.[^stable-20130325][^stable-20130328]
-
-see https://osu.ppy.sh/community/forums/topics/124366?n=117 and the respective screenshots
+<!--
+still unsure about the paragraph down below. i guess i will have to see if this is okay in the review
 
 What about mentioning auto-scroll? Another feature that people were irritated by was that the scoreboard would automatically scroll {to the personal best?}.
+
+https://osu.ppy.sh/community/forums/topics/124366?n=1
 -->
 
-At the end of March, local scoreboards were removed in place of "unified scoreboards" which displayed plays with the same mods, scores from friends and local scores in consecutive sections directly below each other in a scrollable list. For [osu!supporters](/wiki/osu!supporter), it was also possible to combine all scores into the same listing. The difference between scores was displayed below the accuracy of the respective score panel. After a lot of people criticised the new leaderboard design for being too cluttered and for the inability to scroll to see more top scores from other players, the scoreboard received a second revision just days later. As a result, players became able to choose between the several leaderboards via a dropdown menu. However, the `Global (Selected Mod)`, `Friend` as well as the per-beatmap `Country` ranking added in the same update stayed limited to osu!supporters. Though, the score difference display was kept.[^stable-20130325][^stable-20130328]
+At the end of March, "unified scoreboards" were added which displayed plays with the same mods, scores from friends and local scores in consecutive sections directly below each other in a scrollable list. This feature was only available to [osu!supporters](/wiki/osu!supporter), as peppy wanted to test how the server performance would be affected. The difference between scores was displayed below the accuracy of the respective score panel. After a lot of people criticised the new leaderboard design for being too cluttered and for the inability to scroll to see more top scores from other players, the scoreboard received a second revision just days later. As a result, players became able to choose between the several leaderboards via a dropdown menu. However, the `Global (Selected Mod)`, `Friend` as well as the per-beatmap `Country` ranking added in the same update stayed limited to osu!supporters. Though, the score difference display was kept.[^stable-20130325][^stable-20130328]
 
 Lastly, the player's profile picture had been added beside the [grade](/wiki/Gameplay/Grade) mark in the ranking scoreboard. When hovering over the score, the profile picture would become darker to show the placement number.
-
-<!-- Not sure what to do with this:
-"Please note that this simple addition does not affect Local scoreboard in any way, as it will most likely be flooded with your own play results with little to no intrusion from other players (unless the beatmap was received from other players in folder form)."
--->
 
 ## April
 
