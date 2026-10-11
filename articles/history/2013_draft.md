@@ -64,21 +64,20 @@ Lastly, the player's profile picture had been added beside the [grade](/wiki/Gam
 
 ## April
 
+<!--
+https://www.reddit.com/r/osugame/comments/unahsd/what_did_favourites_a_and_favourites_b_use_to/
+before collections existed you could save maps into these 2 different 'collections' of favourites ingame, thats all, has nothing to do with favourites in the website (which are Online Favourite) in this screenshot
+-->
+
 This month's updates were mostly made up of patching up the previous major update, but that doesn't mean that was the end! First, it was the initial implementation of "Collections" support that will replace the long-standing "Favourites A/B", making it simple for a player to put in their favourite beatmaps in one "Collections" and able to share it with others by transferring the "Collections" rather than "Favourites A/B".
 
 Game modes can now be easily switched at song selection by using `Ctrl` + `1`, `2`, `3`, or `4`<!-- shortcut added to ui change in march probably -->. A new game modifier was added specially for osu!mania, [Random](/wiki/Gameplay/Game_modifier/Random). Some adjustment has been made on Multi's "Quick Join" button behaviour to direct you to a room with respect to your average pp against the room pp's deviation.
 
 For beatmap replays, stale-standing comment has been switched to moving [nico-style](https://en.wikipedia.org/wiki/Nico_Nico_Douga) comment style and comment colour can now be customised (for osu!supporters only).
 
-In the beatmapping side of things, all MAT members became BAT members as the MAT has been officially dissolved since the power boundary between MAT and BAT members was too close to each other.
+In the beatmapping side of things, all MAT members became BAT members as the MAT has been officially dissolved since the power boundary between MAT and BAT members was too close to each other.[^mat-end]
 
-peppy released one of the initial osu! builds from 2007 to 2009 (the one he had hoped to release for the 5th anniversary of osu!).
-
-Links:
-
-- [This week (month) in osu! – ppy blog](https://blog.ppy.sh/post/46924535831/this-week-month-in-osu-13)
-- [The end of the MAT](https://osu.ppy.sh/community/forums/topics/129165)
-- [osu! Public Release (2007-09)](https://osu.ppy.sh/community/forums/topics/130144)
+peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/forums/topics/130144) from 2007 to 2009<!-- isn't that more like September 2007? 2007 to 2009 does not make any sense --> (the one he had hoped to release for the 5th anniversary of osu!).
 
 ## May
 
@@ -127,7 +126,7 @@ Links:
 - [Regional Team Management](https://osu.ppy.sh/community/forums/topics/132667)
 
 <!--
-https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu
+https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu (Juni und Mai)
 
 [poll for changing domain name](https://osu.ppy.sh/community/forums/topics/140667)
 -->
@@ -189,3 +188,5 @@ Links:
 [^stable-20130328]: [Forum thread by peppy (2013-03-28) "osu! Public Release (b20130328)"](https://osu.ppy.sh/community/forums/topics/124848?n=1)
 [^week-in-osu-13]: [Blog post by peppy (2013-04-02) "This week (month) in osu!"](https://blog.ppy.sh/post/46924535831/this-week-month-in-osu-13)
 [^staff-restructure]: [Forum thread by Ephemeral (2013-03-20) "2013 Staff Restructuring"](https://osu.ppy.sh/community/forums/topics/123510?n=1)
+
+[^mat-end]: [Forum thread by Ephemeral (2023-04-23) "The end of the MAT"](https://osu.ppy.sh/community/forums/topics/129165)
