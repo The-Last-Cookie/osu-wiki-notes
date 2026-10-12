@@ -71,7 +71,11 @@ before collections existed you could save maps into these 2 different 'collectio
 
 This month's updates were mostly made up of patching up the previous major update, but that doesn't mean that was the end! First, it was the initial implementation of "Collections" support that will replace the long-standing "Favourites A/B", making it simple for a player to put in their favourite beatmaps in one "Collections" and able to share it with others by transferring the "Collections" rather than "Favourites A/B".
 
-Game modes can now be easily switched at song selection by using `Ctrl` + `1`, `2`, `3`, or `4`<!-- shortcut added to ui change in march probably -->. A new game modifier was added specially for osu!mania, [Random](/wiki/Gameplay/Game_modifier/Random). Some adjustment has been made on Multi's "Quick Join" button behaviour to direct you to a room with respect to your average pp against the room pp's deviation.
+<!-- DRAFT:
+The shortcuts `Ctrl` + `1`, `2`, `3` or `4` were added to easily switch in the song select screen to the [osu!](/wiki/Game_mode/osu!), [Taiko](/wiki/Game_mode/osu!taiko), [osu!mania](/wiki/Game_mode/osu!mania) or [Catch the Beat](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) respectively. osu!mania received the game modifier [Random](/wiki/Gameplay/Game_modifier/Random), which would shuffle the note placement every time a beatmap is played.
+-->
+
+Game modes can now be easily switched at song selection by using `Ctrl` + `1`, `2`, `3`, or `4`. A new game modifier was added specially for osu!mania, [Random](/wiki/Gameplay/Game_modifier/Random). Some adjustment has been made on Multi's "Quick Join" button behaviour to direct you to a room with respect to your average pp against the room pp's deviation.
 
 For beatmap replays, stale-standing comment has been switched to moving [nico-style](https://en.wikipedia.org/wiki/Nico_Nico_Douga) comment style and comment colour can now be customised (for osu!supporters only).
 
