@@ -72,16 +72,16 @@ before collections existed you could save maps into these 2 different 'collectio
 This month's updates were mostly made up of patching up the previous major update, but that doesn't mean that was the end! First, it was the initial implementation of "Collections" support that will replace the long-standing "Favourites A/B", making it simple for a player to put in their favourite beatmaps in one "Collections" and able to share it with others by transferring the "Collections" rather than "Favourites A/B".
 
 <!-- DRAFT:
-The shortcuts `Ctrl` + `1`, `2`, `3` or `4` were added to easily switch in the song select screen to the [osu!](/wiki/Game_mode/osu!), [Taiko](/wiki/Game_mode/osu!taiko), [osu!mania](/wiki/Game_mode/osu!mania) or [Catch the Beat](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) respectively. osu!mania received the game modifier [Random](/wiki/Gameplay/Game_modifier/Random), which would shuffle the note placement every time a beatmap is played.
+The shortcuts `Ctrl` + `1`, `2`, `3` or `4` were added to easily switch in the song select screen to the [osu!](/wiki/Game_mode/osu!), [Taiko](/wiki/Game_mode/osu!taiko), [osu!mania](/wiki/Game_mode/osu!mania) or [Catch the Beat](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) respectively. osu!mania received the game modifier [Random](/wiki/Gameplay/Game_modifier/Random), which would shuffle the note placement every time a beatmap is played. When using the `Quick Join` button in the multiplayer mode, the room selection was adjusted to take a player's average pp into consideration.
 -->
 
 Game modes can now be easily switched at song selection by using `Ctrl` + `1`, `2`, `3`, or `4`. A new game modifier was added specially for osu!mania, [Random](/wiki/Gameplay/Game_modifier/Random). Some adjustment has been made on Multi's "Quick Join" button behaviour to direct you to a room with respect to your average pp against the room pp's deviation.
 
-For beatmap replays, stale-standing comment has been switched to moving [nico-style](https://en.wikipedia.org/wiki/Nico_Nico_Douga) comment style and comment colour can now be customised (for osu!supporters only).
+Comments in beatmap [replays](/wiki/Gameplay/Replay) were styled as [danmaku subtitles](https://en.wikipedia.org/wiki/Danmaku_subtitling) which caused them to move across the screen in accordance to when they were made, similar to the famous video sharing platform [Niconico](https://en.wikipedia.org/wiki/Niconico). osu!supporters received the ability to set a customisable colour for their comments.
 
 In the beatmapping side of things, all MAT members became BAT members as the MAT has been officially dissolved since the power boundary between MAT and BAT members was too close to each other.[^mat-end]
 
-peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/forums/topics/130144) from 2007 to 2009<!-- isn't that more like September 2007? 2007 to 2009 does not make any sense --> (the one he had hoped to release for the 5th anniversary of osu!).
+peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/forums/topics/130144) from September 2007, the one he had hoped to release for osu!'s 5th anniversary.
 
 ## May
 
