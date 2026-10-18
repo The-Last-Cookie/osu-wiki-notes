@@ -78,18 +78,15 @@ peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/for
 
 ## May
 
-Game modifiers naming in results has been shortened (e.g. "Hard Rock" to "HR") to decrease the limited space usage. *Most* of the broken replays from the past have been fixed. A new spectator system where you can follow the spectator target if they were spectating someone else. The update system has been reworked, most notably it will no longer force restarts unless required.
+Game modifiers were shortened to their two-letter acronym (e.g. [Hard Rock](/wiki/Gameplay/Game_modifier/Hard_Rock) became "HR") in the result screen to not clutter the limited space too much. A bug in replays causing misses to be displayed incorrectly was fixed. The spectator system was improved by allowing the user to follow the spectated person if they were spectating someone else. Unless required, the game would no longer force a restart when updating.[^stable-b20130509]
 
-During replays, half-speed replay has been added (after pressing `2x` Speed, it will show `0.5x` Speed). The playfield will not flash out the background at 100% dim. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support (Up/Down: change song, Right: select, Left: exit).
+When watching [replays](/wiki/Gameplay/Replay), users received the ability to set the playback speed to 50% by clicking the speed button twice. The playfield would not flash out the background anymore when fully dimmed. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support<!-- Taiko too? --> in the song selection menu (`Up`/`Down`: Change song, `Right`: Select, `Left`: Exit).
 
-[A new ranking/modding system is in development](https://osu.ppy.sh/community/forums/topics/129625) which will replace the ancient [forum-styled modding](/wiki/Modding/Forum_modding) threads.
+[A new ranking/modding system is in development](https://osu.ppy.sh/community/forums/topics/129625) which will replace the ancient [forum-styled modding](/wiki/Modding/Forum_modding) threads.<!-- TODO -->
 
-For Multi mode, players can now use Special mod (Relax/Autopilot/SpunOut/ManiaKeys) when Free Mod is enabled by the host. At the skinning side of things, widescreen taiko (taiko `@2x`) default sprites have been added. Favourite A/B have removed completely and superseded by the Collections.
+In the multiplayer mode, players became able to use mods from the `Special` category ([Relax](/wiki/Gameplay/Game_modifier/Relax), [Autopilot](/wiki/Gameplay/Game_modifier/Autopilot), [SpunOut](/wiki/Gameplay/Game_modifier/Spun_Out) and [ManiaKeys](/wiki/Gameplay/Game_modifier/xK)) when Free Mod was enabled by the host. Widescreen default sprites (`@2x`) were added to the Taiko game mode. The "Favourites A/B" feature was completely removed in favor of collections.
 
-Three brand new Dedication [achievements](/wiki/Medals) for osu!mania have been released (40,000 / 400,000 / 4,000,000 keys pressed). User profile design has been reworked and your "last visit" will be based on connection to Bancho (that was, in-game sign-in) rather than visits to the forum. Finally, osu! hit the milestone of having 10,000 users connected simultaneously!
-
-- [osu! Public Release (b20130509)](https://osu.ppy.sh/community/forums/topics/131611)
-- [May 2013 Highlights + Map of the Month](https://osu.ppy.sh/community/forums/posts/2334705)
+Three brand new Dedication [achievements](/wiki/Medals) for osu!mania have been released (40,000 / 400,000 / 4,000,000 keys pressed). User profile design has been reworked and your "last visit" will be based on connection to Bancho (that was, in-game sign-in) rather than visits to the forum. Finally, osu! hit the milestone of having 10,000 users connected simultaneously![^may-highlights]<!-- TODO -->
 
 <!--
 Beatmap appreciation team changes?
@@ -150,6 +147,8 @@ Links:
 - [osu! news](https://osu.ppy.sh/community/forums/topics/147706?n=1)
 - [osu!test now more usable](https://osu.ppy.sh/community/forums/topics/147744?n=1)
 
+<!-- October osu!arcade design documents published? -->
+
 ## December
 
 ![](img/2013-12_01.jpg "Guest appearance at Comic Fiesta 2013")
@@ -187,3 +186,6 @@ Links:
 [^staff-restructure]: [Forum thread by Ephemeral (2013-03-20) "2013 Staff Restructuring"](https://osu.ppy.sh/community/forums/topics/123510?n=1)
 
 [^mat-end]: [Forum thread by Ephemeral (2023-04-23) "The end of the MAT"](https://osu.ppy.sh/community/forums/topics/129165)
+
+[^stable-b20130509]: [Forum thread by peppy (2013-05-09) "osu! Public Release (b20130509)"](https://osu.ppy.sh/community/forums/topics/131611)
+[^may-highlights]: [Forum thread by MillhioreF (2013-05-31) "May 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2334705)
