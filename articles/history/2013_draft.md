@@ -103,17 +103,17 @@ In-game wise, the main menu gets a new visualisation, with a blazing flare aroun
 
 Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. For online results storages, personal best rank was shown on [beatmap info pages](/wiki/Beatmap_information) besides the \#1 player. Score submission from mania charts was allowed and Top 50 replays was stored rather than the usual Top 40. Quick repeat sliders not reaching their maximum combo has been fixed. Disqus comments were added to beatmap pages. Finally, prototype testing of score meter for all modes was underway for osu!test.
 
-![](img/2013-06_01.jpg "Account creation process")
+![Account creation process](img/2013-06_01.jpg "Account creation process")
 
-![](img/2013-06_02.jpg "Example of attempting to create multiple accounts")
+![A warning was shown when attempting to create multiple accounts](img/2013-06_02.jpg "A warning was shown when attempting to create multiple accounts")
 
-![](img/2013-06_03.jpg "Example of comparison in beatmap info pages")
+![Example of score comparison in a beatmap info page](img/2013-06_03.jpg "Example of score comparison in a beatmap info page")
 
-![](img/2013-06_04.jpg "Example of current date user profile")
+![User profile design as of June 2013](img/2013-06_04.jpg "User profile design as of June 2013")
 
-![](img/2013-06_05.jpg "Disqus implemented")
+![A Disqus comment section in a beatmap info page](img/2013-06_05.jpg "A Disqus comment section in a beatmap info page")
 
-![](img/2013-06_06.jpg "New main menu visualisation")
+![osu! logo illuminated by the flare](img/2013-06_06.jpg "osu! logo illuminated by the flare")
 
 <!--
 https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu (Juni und Mai)
