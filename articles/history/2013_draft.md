@@ -88,7 +88,7 @@ To address glaring issues in the [forum-based modding](/wiki/Modding/Forum_moddi
 
 In the multiplayer mode, players became able to use mods from the `Special` category ([Relax](/wiki/Gameplay/Game_modifier/Relax), [Autopilot](/wiki/Gameplay/Game_modifier/Autopilot), [SpunOut](/wiki/Gameplay/Game_modifier/Spun_Out) and [ManiaKeys](/wiki/Gameplay/Game_modifier/xK)) when Free Mod was enabled by the host. Widescreen default sprites (`@2x`) were added to the Taiko game mode. The "Favourites A/B" feature was completely removed in favor of collections.
 
-Three dedication [achievements](/wiki/Medals) were released for osu!mania that required the player to press 40,000, 400,000, and 4,000,000 keys respectively. Furthermore, the user profile was redesigned, e.g. a user's last visit would be based on when they last signed into the game rather than visits to the web forum.[^may-highlights]
+Three new dedication [achievements](/wiki/Medals) were released for osu!mania that required the player to press 40,000, 400,000, and 4,000,000 keys respectively. Furthermore, the user profile was redesigned, e.g. a user's last visit would be based on when they last signed into the game rather than visits to the web forum.[^may-highlights]
 
 ## June
 
