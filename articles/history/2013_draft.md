@@ -78,17 +78,22 @@ peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/for
 
 ## May
 
+On May 5, the number of users being connected simultaneously exceeded 10,000 for the first time.[^june-may-in-osu]
+
 Game modifiers were shortened to their two-letter acronym (e.g. [Hard Rock](/wiki/Gameplay/Game_modifier/Hard_Rock) became "HR") in the result screen to not clutter the limited space too much. A bug in replays causing misses to be displayed incorrectly was fixed. The spectator system was improved by allowing the user to follow the spectated person if they were spectating someone else. Unless required, the game would no longer force a restart when updating.[^stable-b20130509]
 
 When watching [replays](/wiki/Gameplay/Replay), users received the ability to set the playback speed to 50% by clicking the speed button twice. The playfield would not flash out the background anymore when fully dimmed. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support<!-- Taiko too? --> in the song selection menu (`Up`/`Down`: Change song, `Right`: Select, `Left`: Exit).
 
-To address glaring issues in the [forum-based modding](/wiki/Modding/Forum_modding) threads, such as beatmaps becoming [Ranked](/wiki/Beatmap/Category#ranked) even though they are not adhering to the [ranking criteria](/wiki/Ranking_criteria), peppy started working on a new [ranking/modding system](https://osu.ppy.sh/community/forums/topics/129625).
+To address glaring issues in the [forum-based modding](/wiki/Modding/Forum_modding) threads, such as beatmaps becoming [Ranked](/wiki/Beatmap/Category#ranked) even though they were not adhering to the [ranking criteria](/wiki/Ranking_criteria), peppy started working on a new [ranking/modding system](https://osu.ppy.sh/community/forums/topics/129625).
 
 In the multiplayer mode, players became able to use mods from the `Special` category ([Relax](/wiki/Gameplay/Game_modifier/Relax), [Autopilot](/wiki/Gameplay/Game_modifier/Autopilot), [SpunOut](/wiki/Gameplay/Game_modifier/Spun_Out) and [ManiaKeys](/wiki/Gameplay/Game_modifier/xK)) when Free Mod was enabled by the host. Widescreen default sprites (`@2x`) were added to the Taiko game mode. The "Favourites A/B" feature was completely removed in favor of collections.
 
-Three dedication [achievements](/wiki/Medals) were released for osu!mania that required the player to press 40,000, 400,000, and 4,000,000 keys respectively. Furthermore, the user profile was redesigned, e.g. a user's last visit would be based on when they last signed into the game rather than visits to the web forum. In may, the number of users being connected simultaneously exceeded 10,000 for the first time.[^may-highlights]
+Three dedication [achievements](/wiki/Medals) were released for osu!mania that required the player to press 40,000, 400,000, and 4,000,000 keys respectively. Furthermore, the user profile was redesigned, e.g. a user's last visit would be based on when they last signed into the game rather than visits to the web forum.[^may-highlights]
 
 ## June
+
+[^may-june-in-osu]
+[^june-highlights]
 
 [osu! Beatmapping Contest \#4](https://osu.ppy.sh/community/forums/posts/2324098) has started. As a counter-measure against players creating lots of accounts, clarity of messaging during account registration was improved and an infographic showing that you can't register from phones/tablets has been added to prevent players creating more accounts for personal reasons.
 
@@ -110,11 +115,6 @@ Gameplay-wise, lead-in time was automatically added to any beatmaps which start 
 
 ![](img/2013-06_06.jpg "New main menu visualisation")
 
-Links:
-
-- [June 2013 Highlights + Map of the Month](https://osu.ppy.sh/community/forums/posts/2400775)
-- [Regional Team Management](https://osu.ppy.sh/community/forums/topics/132667)
-
 <!--
 https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu (Juni und Mai)
 
@@ -123,7 +123,7 @@ https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu (Juni und Mai)
 
 ## July
 
-[The new regional BATmanagers](https://osu.ppy.sh/community/forums/topics/132667) began their first major recruitment of new BAT in to the team with the [Summer 2013 NewBAT Applications](https://osu.ppy.sh/community/forums/topics/142864). This provided a chance for the new managers to adequately handle new applications. The new regional managers were [NatsumeRin](https://osu.ppy.sh/users/151679) representing Asia/Oceania, [Kurai](https://osu.ppy.sh/users/77089) representing Europe, and [Garven](https://osu.ppy.sh/users/244216) representing America.
+[The new regional BATmanagers](https://osu.ppy.sh/community/forums/topics/132667)<!-- announced in May (see footnote) --> began their first major recruitment of new BAT in to the team with the [Summer 2013 NewBAT Applications](https://osu.ppy.sh/community/forums/topics/142864). This provided a chance for the new managers to adequately handle new applications. The new regional managers were [NatsumeRin](https://osu.ppy.sh/users/151679) representing Asia/Oceania, [Kurai](https://osu.ppy.sh/users/77089) representing Europe, and [Garven](https://osu.ppy.sh/users/244216) representing America.[^regional-team]
 
 On 2013-07-02, peppy made the [osu!api](https://osu.ppy.sh/community/forums/topics/141240) open to the public (previously available only through private requests). This allowed independent developers to work on third party services for osu!. On 2013-07-11, the previously broken "forgot password" page has been fixed. 2013-07-18 brought updates to Bancho's fallback connectivity. On 2013-07-21, widescreen support for storyboards was added in the song setup dialog. Two new in-game overlays were added to track accuracy as you play or watch others play. Refer to [Options](/wiki/Client/Options) page for further information.
 
@@ -185,3 +185,7 @@ Links:
 
 [^stable-b20130509]: [Forum thread by peppy (2013-05-09) "osu! Public Release (b20130509)"](https://osu.ppy.sh/community/forums/topics/131611)
 [^may-highlights]: [Forum thread by MillhioreF (2013-05-31) "May 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2334705)
+
+[^may-june-in-osu]: [Blog post by peppy (2013-07-03) "The Last Two Months in osu!"](https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu)
+[^june-highlights]: [Forum thread by MillhioreF (2013-07-01) "June 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2400775)
+[^regional-team]: [Forum thread by Ephemeral (2013-05-15) "Regional Team Management"](https://osu.ppy.sh/community/forums/topics/132667)
