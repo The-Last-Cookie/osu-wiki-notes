@@ -78,7 +78,7 @@ peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/for
 
 ## May
 
-On May 5, the number of users being connected simultaneously exceeded 10,000 for the first time.[^june-may-in-osu]
+On May 5, the number of users being connected simultaneously exceeded 10,000 for the first time.[^may-june-in-osu]
 
 Game modifiers were shortened to their two-letter acronym (e.g. [Hard Rock](/wiki/Gameplay/Game_modifier/Hard_Rock) became "HR") in the result screen to not clutter the limited space too much. A bug in replays causing misses to be displayed incorrectly was fixed. The spectator system was improved by allowing the user to follow the spectated person if they were spectating someone else. Unless required, the game would no longer force a restart when updating.[^stable-b20130509]
 
