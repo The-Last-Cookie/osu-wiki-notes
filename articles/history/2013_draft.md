@@ -92,31 +92,31 @@ Three new dedication [achievements](/wiki/Medals) were released for osu!mania th
 
 ## June
 
-[osu! Beatmapping Contest \#4](https://osu.ppy.sh/community/forums/posts/2324098) has started.[^may-june-in-osu]
+The fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/community/forums/posts/2324098) had started, where users were required to create 3 difficulties in the osu! game mode to 1 out of 3 songs of their choice. For each song, the winner would receive the "Elite Mapper" title, a $50 Amazon gift card and one year of osu!supporter, whereas the second place would receive three months of osu!supporter.<!-- results? -->[^may-june-in-osu]
 
-<!-- web (no source other than changelog) -->
-
-As a counter-measure against players creating lots of accounts, clarity of messaging during account registration was improved and an infographic showing that you can't register from phones/tablets has been added to prevent players creating more accounts for personal reasons.
-
-Away with the security measures, users allowed to choose which game mode their profile defaults to (such as [osu!mania](/wiki/Game_mode/osu!mania), [Taiko](/wiki/Game_mode/osu!taiko)) and [last.fm](https://last.fm) support was added to profiles. User profiles now had a country performance rank on their profile and a new pp graph. For online results storages, personal best rank was shown on [beatmap info pages](/wiki/Beatmap_information) besides the \#1 player. Disqus comments were added to beatmap pages.[^may-june-in-osu]
-
-In-game wise, the main menu gets a new visualisation, with a blazing flare around the osu! symbol dependent on intensity of currently playing song's BPM. Performance have been optimised in song selection with many (more than 10,000) maps. Update process robustness and performance have been improved.[^may-june-in-osu]
-
-Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo has been fixed.
-
-Score submission from mania charts was allowed,[^june-highlights] and Top 50 replays was stored rather than the usual Top 40[^may-june-in-osu].
+To discourage players from creating several accounts for personal reasons, potential consequences for them were made more prominent and clear. Furthermore, an infographic showing that it is not possible to register from mobile devices was added.
 
 ![Account creation process](img/2013-06_01.jpg "Account creation process")
 
 ![A warning was shown when attempting to create multiple accounts](img/2013-06_02.jpg "A warning was shown when attempting to create multiple accounts")
 
-![Example of score comparison in a beatmap info page](img/2013-06_03.jpg "Example of score comparison in a beatmap info page")
+Users became able to choose their primary game mode<!-- Alternative: game mode their profile defaults to --> which is shown when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
+
+For online results storages, personal best rank was shown on [beatmap info pages](/wiki/Beatmap_information) besides the \#1 player. Disqus comments were added to beatmap pages.[^may-june-in-osu]
 
 ![User profile design as of June 2013](img/2013-06_04.jpg "User profile design as of June 2013")
 
+![Example of score comparison in a beatmap info page](img/2013-06_03.jpg "Example of score comparison in a beatmap info page")
+
 ![A Disqus comment section in a beatmap info page](img/2013-06_05.jpg "A Disqus comment section in a beatmap info page")
 
+In-game wise, the main menu gets a new visualisation, with a blazing flare around the osu! symbol dependent on intensity of currently playing song's BPM. Performance have been optimised in song selection with many (more than 10,000) maps. Update process robustness and performance have been improved.[^may-june-in-osu]
+
 ![osu! logo illuminated by the flare](img/2013-06_06.jpg "osu! logo illuminated by the flare")
+
+Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo has been fixed.
+
+Score submission from mania charts was allowed,[^june-highlights] and Top 50 replays was stored rather than the usual Top 40[^may-june-in-osu].
 
 <!--
 [poll for changing domain name](https://osu.ppy.sh/community/forums/topics/140667)
