@@ -100,9 +100,9 @@ To discourage players from creating several accounts for personal reasons, poten
 
 ![A warning was shown when attempting to create multiple accounts](img/2013-06_02.jpg "A warning was shown when attempting to create multiple accounts")
 
-Users became able to choose their primary game mode<!-- Alternative: game mode their profile defaults to --> which is shown when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
+Users became able to choose their primary game mode which is shown by default when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
 
-For online results storages, personal best rank was shown on [beatmap info pages](/wiki/Beatmap_information) besides the \#1 player. Disqus comments were added to beatmap pages.[^may-june-in-osu]
+If available, the personal best rank would be shown in the leaderboard section on the [beatmap information](/wiki/Beatmap_information) page next to the first place score.[^best-rank-comparison] A Disqus comment feature coupled with [single sign-on](https://en.wikipedia.org/wiki/Single_sign-on) was added to the beatmap information page, allowing for a simple and integrated way of exchanging ideas and opinions about a beatmap.[^may-june-in-osu]
 
 ![User profile design as of June 2013](img/2013-06_04.jpg "User profile design as of June 2013")
 
@@ -192,3 +192,4 @@ Links:
 [^may-june-in-osu]: [Blog post by peppy (2013-07-03) "The Last Two Months in osu!"](https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu)
 [^june-highlights]: [Forum thread by MillhioreF (2013-07-01) "June 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2400775)
 [^regional-team]: [Forum thread by Ephemeral (2013-05-15) "Regional Team Management"](https://osu.ppy.sh/community/forums/topics/132667)
+[^best-rank-comparison]: [Forum comment by peppy (2013-06-16) in "Can't see my rank in Beatmap Listing Page. [resolved]"](https://osu.ppy.sh/community/forums/topics/137952?n=5)
