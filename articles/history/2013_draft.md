@@ -92,16 +92,19 @@ Three new dedication [achievements](/wiki/Medals) were released for osu!mania th
 
 ## June
 
-[^may-june-in-osu]
-[^june-highlights]
+[osu! Beatmapping Contest \#4](https://osu.ppy.sh/community/forums/posts/2324098) has started.[^may-june-in-osu]
 
-[osu! Beatmapping Contest \#4](https://osu.ppy.sh/community/forums/posts/2324098) has started. As a counter-measure against players creating lots of accounts, clarity of messaging during account registration was improved and an infographic showing that you can't register from phones/tablets has been added to prevent players creating more accounts for personal reasons.
+<!-- web (no source other than changelog) -->
 
-Away with the security measures, users allowed to choose which game mode their profile defaults to (such as [osu!mania](/wiki/Game_mode/osu!mania), [Taiko](/wiki/Game_mode/osu!taiko)) and [last.fm](https://last.fm) support was added to profiles. User profiles now had a country performance rank on their profile and a new pp graph.
+As a counter-measure against players creating lots of accounts, clarity of messaging during account registration was improved and an infographic showing that you can't register from phones/tablets has been added to prevent players creating more accounts for personal reasons.
 
-In-game wise, the main menu gets a new visualisation, with a blazing flare around the osu! symbol dependent on intensity of currently playing song's BPM. Performance have been optimised in song selection with many (more than 10,000) maps. Update process robustness and performance have been improved.
+Away with the security measures, users allowed to choose which game mode their profile defaults to (such as [osu!mania](/wiki/Game_mode/osu!mania), [Taiko](/wiki/Game_mode/osu!taiko)) and [last.fm](https://last.fm) support was added to profiles. User profiles now had a country performance rank on their profile and a new pp graph. For online results storages, personal best rank was shown on [beatmap info pages](/wiki/Beatmap_information) besides the \#1 player. Disqus comments were added to beatmap pages.[^may-june-in-osu]
 
-Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. For online results storages, personal best rank was shown on [beatmap info pages](/wiki/Beatmap_information) besides the \#1 player. Score submission from mania charts was allowed and Top 50 replays was stored rather than the usual Top 40. Quick repeat sliders not reaching their maximum combo has been fixed. Disqus comments were added to beatmap pages. Finally, prototype testing of score meter for all modes was underway for osu!test.
+In-game wise, the main menu gets a new visualisation, with a blazing flare around the osu! symbol dependent on intensity of currently playing song's BPM. Performance have been optimised in song selection with many (more than 10,000) maps. Update process robustness and performance have been improved.[^may-june-in-osu]
+
+Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo has been fixed.
+
+Score submission from mania charts was allowed,[^june-highlights] and Top 50 replays was stored rather than the usual Top 40[^may-june-in-osu].
 
 ![Account creation process](img/2013-06_01.jpg "Account creation process")
 
@@ -116,9 +119,9 @@ Gameplay-wise, lead-in time was automatically added to any beatmaps which start 
 ![osu! logo illuminated by the flare](img/2013-06_06.jpg "osu! logo illuminated by the flare")
 
 <!--
-https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu (Juni und Mai)
-
 [poll for changing domain name](https://osu.ppy.sh/community/forums/topics/140667)
+
+100,000 beatmaps submitted[^june-highlights]
 -->
 
 ## July
