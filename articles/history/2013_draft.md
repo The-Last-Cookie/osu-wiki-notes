@@ -96,23 +96,23 @@ The fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/commun
 
 To discourage players from creating several accounts for personal reasons, potential consequences for them were made more prominent and clear. Furthermore, an infographic showing that it is not possible to register from mobile devices was added.
 
-![Account creation process](img/2013-06_01.jpg "Account creation process")
+![Account creation process](img/account-creation.jpg "Account creation process")
 
-![A warning was shown when attempting to create multiple accounts](img/2013-06_02.jpg "A warning was shown when attempting to create multiple accounts")
+![A warning was shown when attempting to create multiple accounts](img/multiple-accounts.jpg "A warning was shown when attempting to create multiple accounts")
 
 Users became able to choose their primary game mode which is shown by default when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
 
 If available, the personal best rank would be shown in the leaderboard section on the [beatmap information](/wiki/Beatmap_information) page next to the first place score.[^best-rank-comparison] A Disqus comment feature coupled with [single sign-on](https://en.wikipedia.org/wiki/Single_sign-on) was added to the beatmap information page, allowing for a simple and integrated way of exchanging ideas and opinions about a beatmap.[^may-june-in-osu]
 
-![User profile design as of June 2013](img/2013-06_04.jpg "User profile design as of June 2013")
+![User profile design as of June 2013](img/user-profile.jpg "User profile design as of June 2013")
 
-![Example of score comparison in a beatmap info page](img/2013-06_03.jpg "Example of score comparison in a beatmap info page")
+![Example of score comparison in a beatmap info page](img/beatmap-info.jpg "Example of score comparison in a beatmap info page")
 
-![A Disqus comment section in a beatmap info page](img/2013-06_05.jpg "A Disqus comment section in a beatmap info page")
+![A Disqus comment section in a beatmap info page](img/disqus.jpg "A Disqus comment section in a beatmap info page")
 
 In-game wise, the main menu gets a new visualisation, with a blazing flare around the osu! symbol dependent on intensity of currently playing song's BPM. Performance have been optimised in song selection with many (more than 10,000) maps. Update process robustness and performance have been improved.[^may-june-in-osu]
 
-![osu! logo illuminated by the flare](img/2013-06_06.jpg "osu! logo illuminated by the flare")
+![osu! logo illuminated by the flare](img/flare.jpg "osu! logo illuminated by the flare")
 
 Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo has been fixed.
 
@@ -130,9 +130,9 @@ Score submission from mania charts was allowed,[^june-highlights] and Top 50 rep
 
 On 2013-07-02, peppy made the [osu!api](https://osu.ppy.sh/community/forums/topics/141240) open to the public (previously available only through private requests). This allowed independent developers to work on third party services for osu!. On 2013-07-11, the previously broken "forgot password" page has been fixed. 2013-07-18 brought updates to Bancho's fallback connectivity. On 2013-07-21, widescreen support for storyboards was added in the song setup dialog. Two new in-game overlays were added to track accuracy as you play or watch others play. Refer to [Options](/wiki/Client/Options) page for further information.
 
-![](img/2013-07_01.jpg "Hit-error overlay")
+![Hit error overlay](img/hit-error-overlay.jpg "Hit error overlay")
 
-![](img/2013-07_02.jpg "Colour overlay")
+![Colour overlay](img/colour-overlay.jpg "Colour overlay")
 
 Links:
 
@@ -150,7 +150,7 @@ Links:
 
 ## December
 
-![](img/2013-12_01.jpg "Guest appearance at Comic Fiesta 2013")
+![Guest appearance at Comic Fiesta 2013](img/comic-fiesta.jpg "Guest appearance at Comic Fiesta 2013")
 
 [peppy was confirmed for Comic Fiesta 2013 in Malaysia at 21st and 22nd of December in Kuala Lumpur City Center](https://osu.ppy.sh/community/forums/topics/163121). For day 1 (2013-12-21), osu! was shown as a stage event, demonstrating the game in four different game modes (osu!, Taiko, Catch the Beat, and osu!mania). For day 2 (2013-12-22), peppy gives an insight of osu! along with his future update plans at the panel room and showcased osu!tablet for the public to try it out.
 
