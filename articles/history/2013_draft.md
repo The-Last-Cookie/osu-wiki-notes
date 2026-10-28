@@ -110,11 +110,11 @@ If available, the personal best rank would be shown in the leaderboard section o
 
 ![A Disqus comment section in a beatmap info page](img/disqus.jpg "A Disqus comment section in a beatmap info page")
 
-In-game wise, the main menu gets a new visualisation, with a blazing flare around the osu! symbol dependent on intensity of currently playing song's BPM. Performance have been optimised in song selection with many (more than 10,000) maps. Update process robustness and performance have been improved.[^may-june-in-osu]
+In the main menu, a flare was added to the [osu! cookie](/wiki/Client/Interface/Cookie) which would become more bright depending on the song's intensity. The performance in the song select screen was optimised for users that had more than 10,000 beatmaps loaded in-game.[^may-june-in-osu]
 
 ![osu! logo illuminated by the flare](img/flare.jpg "osu! logo illuminated by the flare")
 
-Gameplay-wise, lead-in time was automatically added to any beatmaps which start abruptly to allow enough time to adjust [Visual Settings](/wiki/Client/Interface/Visual_settings) and total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo has been fixed.
+The<!-- is there a better phrasing?--> [lead-in time](/wiki/Beatmap/Lead-in_time) was automatically added to any beatmap that would start abruptly to allow for enough time to adjust the [visual settings](/wiki/Client/Interface/Visual_settings), Furthermore, the total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo were fixed.
 
 Score submission from mania charts was allowed,[^june-highlights] and Top 50 replays was stored rather than the usual Top 40[^may-june-in-osu].
 
