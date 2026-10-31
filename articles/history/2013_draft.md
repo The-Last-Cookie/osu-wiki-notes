@@ -100,7 +100,7 @@ To discourage players from creating several accounts for personal reasons, poten
 
 ![A warning was shown when attempting to create multiple accounts](img/multiple-accounts.jpg "A warning was shown when attempting to create multiple accounts")
 
-Users became able to choose their primary game mode which is shown by default when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
+Users became able to choose their primary game mode which would be shown by default when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
 
 If available, the personal best rank would be shown in the leaderboard section on the [beatmap information](/wiki/Beatmap_information) page next to the first place score.[^best-rank-comparison] A Disqus comment feature coupled with [single sign-on](https://en.wikipedia.org/wiki/Single_sign-on) was added to the beatmap information page, allowing for a simple and integrated way of exchanging ideas and opinions about a beatmap.[^may-june-in-osu]
 
@@ -110,18 +110,18 @@ If available, the personal best rank would be shown in the leaderboard section o
 
 ![A Disqus comment section in a beatmap info page](img/disqus.jpg "A Disqus comment section in a beatmap info page")
 
-In the main menu, a flare was added to the [osu! cookie](/wiki/Client/Interface/Cookie) which would become more bright depending on the song's intensity. The performance in the song select screen was optimised for users that had more than 10,000 beatmaps loaded in-game.[^may-june-in-osu]
+In the main menu, a flare was added around the [osu! cookie](/wiki/Client/Interface/Cookie) which would become brighter depending on the song's intensity. The performance in the song select screen was optimised for users that had more than 10,000 beatmaps loaded in-game.[^may-june-in-osu]
 
 ![osu! logo illuminated by the flare](img/flare.jpg "osu! logo illuminated by the flare")
 
-The<!-- is there a better phrasing?--> [lead-in time](/wiki/Beatmap/Lead-in_time) was automatically added to any beatmap that would start abruptly to allow for enough time to adjust the [visual settings](/wiki/Client/Interface/Visual_settings), Furthermore, the total press counts for each key on the input overlay was added. Quick repeat sliders not reaching their maximum combo were fixed.
+The [lead-in time](/wiki/Beatmap/Lead-in_time) was automatically added to any beatmap that would start abruptly to allow for enough time to adjust the [visual settings](/wiki/Client/Interface/Visual_settings). A new feature made it possible to view the total press counts for each key in the input overlay. Furthermore, quick repeat sliders not reaching their maximum combo were fixed.
 
-Score submission from mania charts was allowed,[^june-highlights] and Top 50 replays was stored rather than the usual Top 40[^may-june-in-osu].
+An update in osu!(stable) enabled score submission for osu!mania charts.[^june-highlights] peppy moved replay information to the hosting service [Amazon S3](https://en.wikipedia.org/wiki/Amazon_S3) which allowed him to store replay information for the top 50 scores on a beatmap, instead of the previous 40.[^may-june-in-osu]
+
+The number of submitted beatmaps reached 100,000.[^june-highlights]
 
 <!--
 [poll for changing domain name](https://osu.ppy.sh/community/forums/topics/140667)
-
-100,000 beatmaps submitted[^june-highlights]
 -->
 
 ## July
