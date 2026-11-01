@@ -118,11 +118,7 @@ The [lead-in time](/wiki/Beatmap/Lead-in_time) was automatically added to any be
 
 An update in osu!(stable) enabled score submission for osu!mania charts.[^june-highlights] peppy moved replay information to the hosting service [Amazon S3](https://en.wikipedia.org/wiki/Amazon_S3) which allowed him to store replay information for the top 50 scores on a beatmap, instead of the previous 40.[^may-june-in-osu]
 
-The number of submitted beatmaps reached 100,000.[^june-highlights]
-
-<!--
-[poll for changing domain name](https://osu.ppy.sh/community/forums/topics/140667)
--->
+With ::{ flag=AR }:: [Antoneko](https://osu.ppy.sh/users/2772600) uploading [Otokaze - Mallow Flower](https://osu.ppy.sh/beatmapsets/100000#osu/265570), the number of submitted beatmaps reached 100,000.[^june-highlights]
 
 ## July
 
