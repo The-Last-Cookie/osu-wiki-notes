@@ -86,7 +86,7 @@ Game modifiers were shortened to their two-letter acronym (e.g. [Hard Rock](/wik
 
 When watching [replays](/wiki/Gameplay/Replay), users received the ability to set the playback speed to 50% by clicking the speed button twice. The playfield would not flash out the background anymore when fully dimmed. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support<!-- Taiko too? --> in the song selection menu (`Up`/`Down`: Change song, `Right`: Select, `Left`: Exit).
 
-To address glaring issues in the [forum-based modding](/wiki/Modding/Forum_modding) threads, such as beatmaps becoming [Ranked](/wiki/Beatmap/Category#ranked) even though they were not adhering to the [ranking criteria](/wiki/Ranking_criteria), peppy started working on a new [ranking/modding system](https://osu.ppy.sh/community/forums/topics/129625).
+To address glaring issues in the [forum-based modding](/wiki/Modding/Forum_modding) threads, such as beatmaps becoming [Ranked](/wiki/Beatmap/Category#ranked) even though they were not adhering to the [ranking criteria](/wiki/Ranking_criteria), peppy started working on a new [ranking/modding system](https://osu.ppy.sh/community/forums/topics/129625), which would later become known as [Modding v2](/wiki/Beatmap_discussion).
 
 In the multiplayer mode, players became able to use mods from the `Special` category ([Relax](/wiki/Gameplay/Game_modifier/Relax), [Autopilot](/wiki/Gameplay/Game_modifier/Autopilot), [SpunOut](/wiki/Gameplay/Game_modifier/Spun_Out) and [ManiaKeys](/wiki/Gameplay/Game_modifier/xK)) when Free Mod was enabled by the host. Widescreen default sprites (`@2x`) were added to the Taiko game mode. The "Favourites A/B" feature was completely removed in favor of collections.
 
