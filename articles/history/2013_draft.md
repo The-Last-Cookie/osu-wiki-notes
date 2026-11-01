@@ -124,18 +124,17 @@ With ::{ flag=AR }:: [Antoneko](https://osu.ppy.sh/users/2772600) uploading [Oto
 
 ## July
 
-[The new regional BATmanagers](https://osu.ppy.sh/community/forums/topics/132667)<!-- announced in May (see footnote) --> began their first major recruitment of new BAT in to the team with the [Summer 2013 NewBAT Applications](https://osu.ppy.sh/community/forums/topics/142864). This provided a chance for the new managers to adequately handle new applications. The new regional managers were [NatsumeRin](https://osu.ppy.sh/users/151679) representing Asia/Oceania, [Kurai](https://osu.ppy.sh/users/77089) representing Europe, and [Garven](https://osu.ppy.sh/users/244216) representing America.[^regional-team]
+On July 2, peppy made the [osu!api](/wiki/osu!api) open to the public, which was previously available only through private requests. This allowed independent developers to work on third party services for osu!.[^api-beta]
 
-On 2013-07-02, peppy made the [osu!api](https://osu.ppy.sh/community/forums/topics/141240) open to the public (previously available only through private requests). This allowed independent developers to work on third party services for osu!. On 2013-07-11, the previously broken "forgot password" page has been fixed. 2013-07-18 brought updates to Bancho's fallback connectivity. On 2013-07-21, widescreen support for storyboards was added in the song setup dialog. Two new in-game overlays were added to track accuracy as you play or watch others play. Refer to [Options](/wiki/Client/Options) page for further information.
+Applications for the BAT were opened in July to look for new volunteers, especially people that want to put a focus on the game modes Taiko, Catch the Beat or osu!mania, as those were becoming more and more popular.[^new-bat]
+
+On July 11, a bug was fixed that caused the osu! website to not send any password reset e-mail.
+
+An update to osu!(stable) added a toggle for storyboards in the song setup dialog to remove the [pillarboxes](https://en.wikipedia.org/wiki/Pillarbox) from the sides of the [playfield](/wiki/Client/Playfield) if the screen's aspect ratio was higher than `4:3`. Two new in-game overlays were added, allowing users to track the accuracy while playing or spectating other players. In the hit error overlay, [judgements](/wiki/Gameplay/Judgement) would be visualised on a time-based graph, while in the colour overlay, they were shown as a coloured square.
 
 ![Hit error overlay](img/hit-error-overlay.jpg "Hit error overlay")
 
 ![Colour overlay](img/colour-overlay.jpg "Colour overlay")
-
-Links:
-
-- [Summer 2013 NewBAT Applications](https://osu.ppy.sh/community/forums/topics/142864)
-- [osu!api open beta](https://osu.ppy.sh/community/forums/topics/141240)
 
 ## August
 
@@ -186,8 +185,11 @@ Links:
 
 [^stable-b20130509]: [Forum thread by peppy (2013-05-09) "osu! Public Release (b20130509)"](https://osu.ppy.sh/community/forums/topics/131611)
 [^may-highlights]: [Forum thread by MillhioreF (2013-05-31) "May 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2334705)
+[^regional-team]: [Forum thread by Ephemeral (2013-05-15) "Regional Team Management"](https://osu.ppy.sh/community/forums/topics/132667)
 
 [^may-june-in-osu]: [Blog post by peppy (2013-07-03) "The Last Two Months in osu!"](https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu)
 [^june-highlights]: [Forum thread by MillhioreF (2013-07-01) "June 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2400775)
-[^regional-team]: [Forum thread by Ephemeral (2013-05-15) "Regional Team Management"](https://osu.ppy.sh/community/forums/topics/132667)
 [^best-rank-comparison]: [Forum comment by peppy (2013-06-16) in "Can't see my rank in Beatmap Listing Page. [resolved]"](https://osu.ppy.sh/community/forums/topics/137952?n=5)
+
+[^api-beta]: [Forum thread by peppy (2013-07-02) "osu!api open beta"](https://osu.ppy.sh/community/forums/topics/141240)
+[^new-bat]: [Forum thread by Kurai (2013-07-11) "Summer 2013 NewBAT Applications"](https://osu.ppy.sh/community/forums/topics/142864)
