@@ -145,21 +145,19 @@ An update to osu!(stable) added a toggle for storyboards in the song setup dialo
 
 <!-- October osu!arcade design documents published? -->
 
+<!-- can I use something from the 2013 news posts? https://osu.ppy.sh/home/news/2013-07-31-the-revival -->
+
 ## December
 
 ![Guest appearance at Comic Fiesta 2013](img/comic-fiesta.jpg "Guest appearance at Comic Fiesta 2013")
 
-[peppy was confirmed for Comic Fiesta 2013 in Malaysia at 21st and 22nd of December in Kuala Lumpur City Center](https://osu.ppy.sh/community/forums/topics/163121). For day 1 (2013-12-21), osu! was shown as a stage event, demonstrating the game in four different game modes (osu!, Taiko, Catch the Beat, and osu!mania). For day 2 (2013-12-22), peppy gives an insight of osu! along with his future update plans at the panel room and showcased osu!tablet for the public to try it out.
+<!-- On December 21 and 22 ... -->
+
+peppy was confirmed for Comic Fiesta 2013 in Malaysia at 21st and 22nd of December in Kuala Lumpur City Center.[^CF-announcement] For day 1 (2013-12-21), osu! was shown as a stage event, demonstrating the game in four different game modes (osu!, Taiko, Catch the Beat, and osu!mania). For day 2 (2013-12-22), peppy gives an insight of osu! along with his future update plans at the panel room and showcased osu!tablet for the public to try it out<!-- [^CF-new-mode] -->.[^CF-schedule][^CF-panel]
 
 One of the current hot topics for debate at the time was that peppy was making a new game mode and was testing it as a proof-in-concept (testing if it's playable, competitive or flexible enough). Some players speculate it was [Touhosu!](https://osu.ppy.sh/community/forums/topics/19307) (dodging the bullet-hell, that was, inverse of [Catch the Beat](/wiki/Game_mode/osu!catch)). By time of writing, not much information was discovered about the new game mode. [A video clip about the talk was in ppy's blog](https://blog.ppy.sh/post/71405880656/i-have-a-few-posts-waiting-for-some-final-touches)
 
-Links:
-
-- [I will be in malaysia (December)](https://osu.ppy.sh/community/forums/topics/163121)
-- [Schedule | Comic Fiesta 2013](https://comicfiesta.org/2013/info/event/schedule)
-- [New osu! mode announced on CF2013?](https://osu.ppy.sh/community/forums/topics/176000)
-- [Comic Fiesta 2013 Impressions & osu! Q&A Panel Session with peppy (ppy) | INFONOCHIKARA 「インフォノチカラ」 Blogotopia](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/)
-- [osu! panel at Comic Fiesta 2013](https://www.youtube.com/watch?v=IjuaFiLia6w)
+- [Comic Fiesta 2013 Impressions & osu! Q&A Panel Session with peppy (ppy) | INFONOCHIKARA 「インフォノチカラ」 Blogotopia](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/)<!-- link is dead and wayback machine does not have anthing saved -->
 
 ## Notes and references
 
@@ -193,3 +191,8 @@ Links:
 
 [^api-beta]: [Forum thread by peppy (2013-07-02) "osu!api open beta"](https://osu.ppy.sh/community/forums/topics/141240)
 [^new-bat]: [Forum thread by Kurai (2013-07-11) "Summer 2013 NewBAT Applications"](https://osu.ppy.sh/community/forums/topics/142864)
+
+[^CF-announcement]: [Forum thread by peppy (2013-11-01) "I will be in malaysia (December)"](https://osu.ppy.sh/community/forums/topics/163121)
+[^CF-schedule]: [Schedule | Comic Fiesta 2013](https://web.archive.org/web/20131222065744/http://comicfiesta.org/2013/info/event/schedule/)
+[^CF-new-mode]: [Forum thread by BlackMidKnight (2014-01-02) "New osu! mode announced on CF2013?"](https://osu.ppy.sh/community/forums/topics/176000)
+[^CF-panel]: [YouTube video by Dean Herbert (2013-12-28) "osu! panel at Comic Fiesta 2013"](https://www.youtube.com/watch?v=IjuaFiLia6w)
