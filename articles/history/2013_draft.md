@@ -80,6 +80,8 @@ peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/for
 
 On May 5, the number of users being connected simultaneously exceeded 10,000 for the first time.[^may-june-in-osu]
 
+Following the promotion of all active members of the MAT to the BAT in April, three individuals were appointed as BAT managers to administer the major geographical regions, where ::{ flag=CN }:: [NatsumeRin](https://osu.ppy.sh/users/151679) represented Asia/Oceania, ::{ flag=FR }:: [Kurai](https://osu.ppy.sh/users/77089) represented Europe and ::{ flag=US }:: [Garven](https://osu.ppy.sh/users/244216) represented America. Together, they were responsible for overseeing all major changes to the [ranking criteria](/wiki/Ranking_criteria), and also handling the recruitment of new modders and mappers into the BAT.[^regional-team]
+
 Game modifiers were shortened to their two-letter acronym (e.g. [Hard Rock](/wiki/Gameplay/Game_modifier/Hard_Rock) became "HR") in the result screen to not clutter the limited space too much. A bug in replays causing misses to be displayed incorrectly was fixed. The spectator system was improved by allowing the user to follow the spectated person if they were spectating someone else. Unless required, the game would no longer force a restart when updating.[^stable-b20130509]
 
 When watching [replays](/wiki/Gameplay/Replay), users received the ability to set the playback speed to 50% by clicking the speed button twice. The playfield would not flash out the background anymore when fully dimmed. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support<!-- Taiko too? --> in the song selection menu (`Up`/`Down`: Change song, `Right`: Select, `Left`: Exit).
