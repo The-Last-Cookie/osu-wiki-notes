@@ -98,8 +98,6 @@ Three new dedication [achievements](/wiki/Medals) were released for osu!mania th
 
 ## June
 
-The fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/community/forums/posts/2324098) had started, where users were required to create 3 difficulties in the osu! game mode to 1 out of 3 songs of their choice. For each song, the winner would receive the "Elite Mapper" title, a $50 Amazon gift card and one year of osu!supporter, whereas the second place would receive three months of osu!supporter.<!-- move to August -->[^may-june-in-osu]
-
 To discourage players from creating several accounts for personal reasons, potential consequences for them were made more prominent and clear. Furthermore, an infographic showing that it is not possible to register from mobile devices was added.
 
 ![Account creation process](img/account-creation.jpg "Account creation process")
@@ -130,7 +128,7 @@ With ::{ flag=AR }:: [Antoneko](https://osu.ppy.sh/users/2772600) uploading [Oto
 
 On 2 July, peppy made the [osu!api](/wiki/osu!api) open to the public, which was previously available only through private requests. This allowed independent developers to work on third party services for osu!.[^api-beta]
 
-Applications for the BAT were opened in July to look for new volunteers, especially people that want to put a focus on the game modes Taiko, Catch the Beat or osu!mania, as those were becoming more and more popular.[^new-bat]
+The applications for becoming a member of the BAT was opened in July to look for new volunteers, especially people that want to put a focus on the game modes Taiko, Catch the Beat or osu!mania, as those were becoming more and more popular.[^new-bat]
 
 On 11 July, a bug was fixed that caused the osu! website to not send any password reset e-mail.
 
@@ -140,19 +138,28 @@ An update to osu!(stable) added a toggle for storyboards in the song setup dialo
 
 ![Colour overlay](img/colour-overlay.jpg "Colour overlay")
 
+In the fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/community/forums/topics/134515?n=1) through June and July, participants were required to create 3 difficulties in the osu! game mode to 1 out of 3 songs of their choice. For each song, the winner would receive the "Elite Mapper" title, a $50 Amazon gift card and one year of osu!supporter, whereas the second place would receive three months of osu!supporter. On 29 July, ::{ flag=AU }:: [Ephemeral](https://osu.ppy.sh/users/102335) announced the following finalists:[^BC4-results]
+
+| Song | 1st place | 2nd place |
+| :-- | :-- | :-- |
+| Tomoya Ohtani - Rooftop Run | ::{ flag=NL }:: [Kyshiro](https://osu.ppy.sh/users/640611) | ::{ flag=KR }:: [Sonnyc](https://osu.ppy.sh/users/11771) |
+| Infected Mushroom - Pink Nightmares | ::{ flag=US }:: [RLC](https://osu.ppy.sh/users/1047883) | ::{ flag=US }:: [Charles445](https://osu.ppy.sh/users/85000) |
+| Kurosaki Maon - Fuss Fuzz | ::{ flag=SE }:: [Xgor](https://osu.ppy.sh/users/98661) | ::{ flag=NL }:: [Lesjuh](https://osu.ppy.sh/users/44308) |
+
 ## August
 
+Since the osu!(stable) update on 8 August, players were no longer required to pass a beatmap before being able to adjust the [visual settings](/wiki/Client/Interface/Visual_settings)<!-- this was heavily discussed in 2012 -->.[^stable-b20130801]
+
+Several people received the newly created community contributor badge to commend them for their outstanding contributions to the community.[^contributors-2013]
+
+A team of volunteers revived the [osu!monthly](/wiki/Community/osu!monthly) newsletter from 2011<!-- short explanation of the newsletter --> in the form of infrequently published news posts.[^news]
+
 - <https://blog.ppy.sh/post/59476446944/frictionless-updates>
-- [Forum thread by peppy (2013-08-01) "Public Release (b20130801)"](https://osu.ppy.sh/community/forums/topics/146484?n=1)
-  - Due to an update, it was no longer required to pass a beatmap before being able to adjust the [visual settings](/wiki/Client/Interface/Visual_settings).
-- [osu! news](https://osu.ppy.sh/community/forums/topics/147706?n=1)
 - [osu!test now more usable](https://osu.ppy.sh/community/forums/topics/147744?n=1)
   - <https://osu.ppy.sh/home/news/2013-08-08-osutest-build-now-more-usable>
-- [News post by Ephemeral (2013-08-08) "osu! community contributors"](https://osu.ppy.sh/home/news/2013-08-08-osu-community-contributors)
-- [Beatmapping Contest 4 - Results](https://osu.ppy.sh/community/forums/topics/145908?n=1)
 - [August highlights](https://osu.ppy.sh/home/news/2013-09-06-august-2013-highlights)
-
-<!-- October osu!arcade design documents published? -->
+  - version-based changelog display
+  - [osu! stickers](https://osu.ppy.sh/community/forums/topics/146524?n=1)
 
 ## December
 
@@ -199,6 +206,11 @@ One of the current hot topics for debate at the time was that peppy was making a
 [^api-beta]: [Forum thread by peppy (2013-07-02) "osu!api open beta"](https://osu.ppy.sh/community/forums/topics/141240?n=1)
 [^new-bat]: [Forum thread by Kurai (2013-07-11) "Summer 2013 NewBAT Applications"](https://osu.ppy.sh/community/forums/topics/142864?n=1)
 [^july-highlights]: [News post by osu!news team (2013-07-31) "Highlights of July"](https://osu.ppy.sh/home/news/2013-07-31-highlights-of-july)
+
+[^stable-b20130801]: [Forum thread by peppy (2013-08-01) "Public Release (b20130801)"](https://osu.ppy.sh/community/forums/topics/146484?n=1)
+[^contributors-2013]: [News post by Ephemeral (2013-08-08) "osu! community contributors"](https://osu.ppy.sh/home/news/2013-08-08-osu-community-contributors)
+[^BC4-results]: [Forum thread by Ephemeral (2013-07-29) "osu! Beatmapping Contest \#4 Results"](https://osu.ppy.sh/community/forums/topics/145908?n=1)
+[^news]: [Forum thread by dkun (2013-08-07) "osu! news"](https://osu.ppy.sh/community/forums/topics/147706?n=1)
 
 [^CF-announcement]: [Forum thread by peppy (2013-11-01) "I will be in malaysia (December)"](https://osu.ppy.sh/community/forums/topics/163121)
 [^CF-schedule]: [Schedule | Comic Fiesta 2013](https://web.archive.org/web/20131222065744/http://comicfiesta.org/2013/info/event/schedule/)
