@@ -40,7 +40,7 @@ ui revamp and new default skin work in progress (Taiko / CtB / osu!mania still u
 
 :::
 
-osu!'s user interface was completely redesigned with the help of ::{ flag=US }:: [RBRat3](https://osu.ppy.sh/users/307202), including the beatmap editor controls, [game modifier](/wiki/Gameplay/Game_modifier) icons and the main menu. Additionally, these changes were made:[^stable-20130319]
+osu!'s user interface was completely redesigned with the help of ::{ flag=US }:: [RBRat3](https://osu.ppy.sh/users/307202), including the beatmap editor controls, [game modifier](/wiki/Gameplay/Game_modifier) icons and the main menu. Additionally, these notable changes were made:[^stable-20130319]
 
 - The osu! game mode's leitmotif symbol was tweaked by changing the "osu!" text in the middle of the circle to a "1".
 - The special mode selection accessible in the main menu was moved to the [song select](/wiki/Client/Interface#song-select) screen, allowing players to switch game modes quicker and more intuitively.
