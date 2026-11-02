@@ -98,7 +98,7 @@ Three new dedication [achievements](/wiki/Medals) were released for osu!mania th
 
 ## June
 
-The fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/community/forums/posts/2324098) had started, where users were required to create 3 difficulties in the osu! game mode to 1 out of 3 songs of their choice. For each song, the winner would receive the "Elite Mapper" title, a $50 Amazon gift card and one year of osu!supporter, whereas the second place would receive three months of osu!supporter.<!-- results? -->[^may-june-in-osu]
+The fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/community/forums/posts/2324098) had started, where users were required to create 3 difficulties in the osu! game mode to 1 out of 3 songs of their choice. For each song, the winner would receive the "Elite Mapper" title, a $50 Amazon gift card and one year of osu!supporter, whereas the second place would receive three months of osu!supporter.<!-- move to August -->[^may-june-in-osu]
 
 To discourage players from creating several accounts for personal reasons, potential consequences for them were made more prominent and clear. Furthermore, an infographic showing that it is not possible to register from mobile devices was added.
 
@@ -143,13 +143,16 @@ An update to osu!(stable) added a toggle for storyboards in the song setup dialo
 ## August
 
 - <https://blog.ppy.sh/post/59476446944/frictionless-updates>
-- [Public Release (b20130801)](https://osu.ppy.sh/community/forums/topics/146484?n=1)
+- [Forum thread by peppy (2013-08-01) "Public Release (b20130801)"](https://osu.ppy.sh/community/forums/topics/146484?n=1)
+  - Due to an update, it was no longer required to pass a beatmap before being able to adjust the [visual settings](/wiki/Client/Interface/Visual_settings).
 - [osu! news](https://osu.ppy.sh/community/forums/topics/147706?n=1)
 - [osu!test now more usable](https://osu.ppy.sh/community/forums/topics/147744?n=1)
+  - <https://osu.ppy.sh/home/news/2013-08-08-osutest-build-now-more-usable>
+- [News post by Ephemeral (2013-08-08) "osu! community contributors"](https://osu.ppy.sh/home/news/2013-08-08-osu-community-contributors)
+- [Beatmapping Contest 4 - Results](https://osu.ppy.sh/community/forums/topics/145908?n=1)
+- [August highlights](https://osu.ppy.sh/home/news/2013-09-06-august-2013-highlights)
 
 <!-- October osu!arcade design documents published? -->
-
-<!-- can I use something from the 2013 news posts? https://osu.ppy.sh/home/news/2013-07-31-the-revival -->
 
 ## December
 
