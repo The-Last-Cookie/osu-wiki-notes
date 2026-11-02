@@ -28,7 +28,7 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 ## March
 
-On March 20, ::{ flag=AU }:: [Ephemeral](https://osu.ppy.sh/users/102335) announced that the osu! staff had been restructured internally to clearly define roles and responsibilities amongst all staff members. The [Language Surveillance Division](/wiki/People/Language_Surveillance_Division) was renamed to "Chat Moderators". The [Support Team](/wiki/People/Technical_Support_Team) was formed as a proper group to help users with technical issues. The "Administrators" group was replaced with the [Global Moderation Team](/wiki/People/Global_Moderation_Team) to solely focus on in-game and forum moderation. For this reason, the BAT map management options became unavailable to GMT members.[^staff-restructure]
+On 20 March, ::{ flag=AU }:: [Ephemeral](https://osu.ppy.sh/users/102335) announced that the osu! staff had been restructured internally to clearly define roles and responsibilities amongst all staff members. The [Language Surveillance Division](/wiki/People/Language_Surveillance_Division) was renamed to "Chat Moderators". The [Support Team](/wiki/People/Technical_Support_Team) was formed as a proper group to help users with technical issues. The "Administrators" group was replaced with the [Global Moderation Team](/wiki/People/Global_Moderation_Team) to solely focus on in-game and forum moderation. For this reason, the BAT map management options became unavailable to GMT members.[^staff-restructure]
 
 <!--
 ui revamp and new default skin work in progress (Taiko / CtB / osu!mania still unfinished)
@@ -82,7 +82,7 @@ peppy released one of the [initial osu! builds](https://osu.ppy.sh/community/for
 
 ## May
 
-On May 5, the number of users being connected simultaneously exceeded 10,000 for the first time.[^may-june-in-osu]
+On 5 May, the number of users being connected simultaneously exceeded 10,000 for the first time.[^may-june-in-osu]
 
 Following the promotion of all active members of the MAT to the BAT in April, three individuals were appointed as BAT managers to administer the major geographical regions, where ::{ flag=CN }:: [NatsumeRin](https://osu.ppy.sh/users/151679) represented Asia/Oceania, ::{ flag=FR }:: [Kurai](https://osu.ppy.sh/users/77089) represented Europe and ::{ flag=US }:: [Garven](https://osu.ppy.sh/users/244216) represented America. Together, they were responsible for overseeing all major changes to the [ranking criteria](/wiki/Ranking_criteria), and also handling the recruitment of new modders and mappers into the BAT.[^regional-team]
 
@@ -128,11 +128,11 @@ With ::{ flag=AR }:: [Antoneko](https://osu.ppy.sh/users/2772600) uploading [Oto
 
 ## July
 
-On July 2, peppy made the [osu!api](/wiki/osu!api) open to the public, which was previously available only through private requests. This allowed independent developers to work on third party services for osu!.[^api-beta]
+On 2 July, peppy made the [osu!api](/wiki/osu!api) open to the public, which was previously available only through private requests. This allowed independent developers to work on third party services for osu!.[^api-beta]
 
 Applications for the BAT were opened in July to look for new volunteers, especially people that want to put a focus on the game modes Taiko, Catch the Beat or osu!mania, as those were becoming more and more popular.[^new-bat]
 
-On July 11, a bug was fixed that caused the osu! website to not send any password reset e-mail.
+On 11 July, a bug was fixed that caused the osu! website to not send any password reset e-mail.
 
 An update to osu!(stable) added a toggle for storyboards in the song setup dialog to remove the [pillarboxes](https://en.wikipedia.org/wiki/Pillarbox) from the sides of the [playfield](/wiki/Client/Playfield) if the screen's aspect ratio was higher than `4:3`. Two new in-game overlays were added, allowing users to track the accuracy while playing or spectating other players. In the hit error overlay, [judgements](/wiki/Gameplay/Judgement) would be visualised on a time-based graph, while in the colour overlay, they were shown as a coloured square.[^july-highlights]
 
@@ -158,7 +158,7 @@ An update to osu!(stable) added a toggle for storyboards in the song setup dialo
 
 ![Guest appearance at Comic Fiesta 2013](img/comic-fiesta.jpg "Guest appearance at Comic Fiesta 2013")
 
-<!-- On December 21 and 22 ... -->
+<!-- On 21 and 22 December ... -->
 
 peppy was confirmed for Comic Fiesta 2013 in Malaysia at 21st and 22nd of December in Kuala Lumpur City Center.[^CF-announcement] For day 1 (2013-12-21), osu! was shown as a stage event, demonstrating the game in four different game modes (osu!, Taiko, Catch the Beat, and osu!mania). For day 2 (2013-12-22), peppy gives an insight of osu! along with his future update plans at the panel room and showcased osu!tablet for the public to try it out<!-- [^CF-new-mode] -->.[^CF-schedule][^CF-panel]
 
