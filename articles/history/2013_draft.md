@@ -1,5 +1,9 @@
 # History of osu! 2013
 
+<!--
+Some phrases were removed because I deemed them too insignificant (e.g. updates to Bancho's stability). Several new things not mentioned before have been added. I'd recommend to skip through the original article for a comparison.
+-->
+
 ## January
 
 Widescreen support was added to all [game modes](/wiki/Game_mode), including the [beatmap editor](/wiki/Client/Beatmap_editor). Users became able to reset the key bindings to their defaults. Issues with the hyperdash algorithm in Catch the Beat[^catch] causing [fruits](/wiki/Gameplay/Hit_object/Fruit) to not be catchable in some edge cases were fixed.[^hyperdash-issues] By removing legacy data and checking for optimal table usage, ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2) was able to reduce the database's size<!-- how big was the database in total? -->.[^week-in-osu-8] While updating the main menu's copyright graphic to 2013, the copyright text was removed to make the graphic more compact and user-friendly.[^week-in-osu-9]
