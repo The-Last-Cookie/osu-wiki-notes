@@ -134,7 +134,7 @@ Applications for the BAT were opened in July to look for new volunteers, especia
 
 On July 11, a bug was fixed that caused the osu! website to not send any password reset e-mail.
 
-An update to osu!(stable) added a toggle for storyboards in the song setup dialog to remove the [pillarboxes](https://en.wikipedia.org/wiki/Pillarbox) from the sides of the [playfield](/wiki/Client/Playfield) if the screen's aspect ratio was higher than `4:3`. Two new in-game overlays were added, allowing users to track the accuracy while playing or spectating other players. In the hit error overlay, [judgements](/wiki/Gameplay/Judgement) would be visualised on a time-based graph, while in the colour overlay, they were shown as a coloured square.
+An update to osu!(stable) added a toggle for storyboards in the song setup dialog to remove the [pillarboxes](https://en.wikipedia.org/wiki/Pillarbox) from the sides of the [playfield](/wiki/Client/Playfield) if the screen's aspect ratio was higher than `4:3`. Two new in-game overlays were added, allowing users to track the accuracy while playing or spectating other players. In the hit error overlay, [judgements](/wiki/Gameplay/Judgement) would be visualised on a time-based graph, while in the colour overlay, they were shown as a coloured square.[^july-highlights]
 
 ![Hit error overlay](img/hit-error-overlay.jpg "Hit error overlay")
 
@@ -169,12 +169,12 @@ One of the current hot topics for debate at the time was that peppy was making a
 [^hyperdash-issues]: [Blog post by ppy (2013-01-07) "Getting Hyperdash Right"](https://blog.ppy.sh/post/39917651337/getting-hyperdash-right)
 [^week-in-osu-8]: [Blog post by ppy (2013-01-06) "This Week in osu!"](https://blog.ppy.sh/post/39831318171/this-week-in-osu-8)
 [^week-in-osu-9]: [Blog post by ppy (2013-01-20) "This Week in osu!"](https://blog.ppy.sh/post/41003637501/this-week-in-osu-9)
-[^best-of-2012]: [Forum thread by peppy (2013-01-09) "Best of 2012 Results"](https://osu.ppy.sh/community/forums/posts/2042263)
+[^best-of-2012]: [Forum thread by peppy (2013-01-09) "Best of 2012 Results"](https://osu.ppy.sh/community/forums/posts/2042263?n=1)
 
 [^week-in-osu-10]: [Blog post by peppy (2013-02-13) "This Week in osu!"](https://blog.ppy.sh/post/42178900910/this-week-in-osu-10)
 [^week-in-osu-11]: [Blog post by peppy (2013-02-15) "This Week in osu!"](https://blog.ppy.sh/post/43136384020/this-week-in-osu-11)
 [^week-in-osu-12]: [Blog post by peppy (2013-02-23) "This Week in osu!"](https://blog.ppy.sh/post/43823357969/this-week-in-osu-12)
-[^stable-b20130220]: [Forum thread by peppy (2013-02-20) "osu! release b20130220"](https://osu.ppy.sh/community/forums/posts/2134063)
+[^stable-b20130220]: [Forum thread by peppy (2013-02-20) "osu! release b20130220"](https://osu.ppy.sh/community/forums/posts/2134063?n=1)
 [^taiko]: At the time, the [osu!taiko](/wiki/Game_mode/osu!taiko) [game mode](/wiki/Game_mode) was called Taiko.
 
 [^stable-20130319]: [Forum thread by peppy (2013-03-19) "osu! Public Release (b20130319)"](https://osu.ppy.sh/community/forums/topics/123276?n=1)
@@ -183,20 +183,21 @@ One of the current hot topics for debate at the time was that peppy was making a
 [^week-in-osu-13]: [Blog post by peppy (2013-04-02) "This week (month) in osu!"](https://blog.ppy.sh/post/46924535831/this-week-month-in-osu-13)
 [^staff-restructure]: [Forum thread by Ephemeral (2013-03-20) "2013 Staff Restructuring"](https://osu.ppy.sh/community/forums/topics/123510?n=1)
 
-[^mat-end]: [Forum thread by Ephemeral (2023-04-23) "The end of the MAT"](https://osu.ppy.sh/community/forums/topics/129165)
+[^mat-end]: [Forum thread by Ephemeral (2023-04-23) "The end of the MAT"](https://osu.ppy.sh/community/forums/topics/129165?n=1)
 
-[^stable-b20130509]: [Forum thread by peppy (2013-05-09) "osu! Public Release (b20130509)"](https://osu.ppy.sh/community/forums/topics/131611)
-[^may-highlights]: [Forum thread by MillhioreF (2013-05-31) "May 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2334705)
-[^regional-team]: [Forum thread by Ephemeral (2013-05-15) "Regional Team Management"](https://osu.ppy.sh/community/forums/topics/132667)
+[^stable-b20130509]: [Forum thread by peppy (2013-05-09) "osu! Public Release (b20130509)"](https://osu.ppy.sh/community/forums/topics/131611?n=1)
+[^may-highlights]: [Forum thread by MillhioreF (2013-05-31) "May 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2334705?n=1)
+[^regional-team]: [Forum thread by Ephemeral (2013-05-15) "Regional Team Management"](https://osu.ppy.sh/community/forums/topics/132667?n=1)
 
 [^may-june-in-osu]: [Blog post by peppy (2013-07-03) "The Last Two Months in osu!"](https://blog.ppy.sh/post/54501455726/the-last-two-months-in-osu)
-[^june-highlights]: [Forum thread by MillhioreF (2013-07-01) "June 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2400775)
+[^june-highlights]: [Forum thread by MillhioreF (2013-07-01) "June 2013 Highlights + Map of the Month"](https://osu.ppy.sh/community/forums/posts/2400775?n=1)
 [^best-rank-comparison]: [Forum comment by peppy (2013-06-16) in "Can't see my rank in Beatmap Listing Page. [resolved]"](https://osu.ppy.sh/community/forums/topics/137952?n=5)
 
-[^api-beta]: [Forum thread by peppy (2013-07-02) "osu!api open beta"](https://osu.ppy.sh/community/forums/topics/141240)
-[^new-bat]: [Forum thread by Kurai (2013-07-11) "Summer 2013 NewBAT Applications"](https://osu.ppy.sh/community/forums/topics/142864)
+[^api-beta]: [Forum thread by peppy (2013-07-02) "osu!api open beta"](https://osu.ppy.sh/community/forums/topics/141240?n=1)
+[^new-bat]: [Forum thread by Kurai (2013-07-11) "Summer 2013 NewBAT Applications"](https://osu.ppy.sh/community/forums/topics/142864?n=1)
+[^july-highlights]: [News post by osu!news team (2013-07-31) "Highlights of July"](https://osu.ppy.sh/home/news/2013-07-31-highlights-of-july)
 
 [^CF-announcement]: [Forum thread by peppy (2013-11-01) "I will be in malaysia (December)"](https://osu.ppy.sh/community/forums/topics/163121)
 [^CF-schedule]: [Schedule | Comic Fiesta 2013](https://web.archive.org/web/20131222065744/http://comicfiesta.org/2013/info/event/schedule/)
-[^CF-new-mode]: [Forum thread by BlackMidKnight (2014-01-02) "New osu! mode announced on CF2013?"](https://osu.ppy.sh/community/forums/topics/176000)
+[^CF-new-mode]: [Forum thread by BlackMidKnight (2014-01-02) "New osu! mode announced on CF2013?"](https://osu.ppy.sh/community/forums/topics/176000?n=1)
 [^CF-panel]: [YouTube video by Dean Herbert (2013-12-28) "osu! panel at Comic Fiesta 2013"](https://www.youtube.com/watch?v=IjuaFiLia6w)
