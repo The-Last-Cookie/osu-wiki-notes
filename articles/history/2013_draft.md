@@ -160,13 +160,17 @@ Several people voiced an interest in osu! stickers, so peppy made two options av
 
 ## December
 
+::: Infobox
+
 ![Guest appearance at Comic Fiesta 2013](img/comic-fiesta.jpg "Guest appearance at Comic Fiesta 2013")
 
-<!-- On 21 and 22 December ... -->
+:::
 
-peppy was confirmed for Comic Fiesta 2013 in Malaysia at 21st and 22nd of December in Kuala Lumpur City Center.[^CF-announcement] For day 1 (2013-12-21), osu! was shown as a stage event, demonstrating the game in four different game modes (osu!, Taiko, Catch the Beat, and osu!mania). For day 2 (2013-12-22), peppy gives an insight of osu! along with his future update plans at the panel room and showcased osu!tablet for the public to try it out<!-- [^CF-new-mode] -->.[^CF-schedule][^CF-panel]
+From 21 to 22 December, peppy was invited as a guest speaker to the 2013's [Comic Fiesta](https://en.wikipedia.org/wiki/Comic_Fiesta) in Malaysia.[^CF-announcement] On the first day, the four different [game modes](/wiki/Game_mode) were presented as a stage event, where live gameplay was projected onto a big screen. In a presentation on the second day, peppy gave an insight into osu!'s origins, the early-stage development, the natural growth of its community, the server infrastructure, along with detailing his future update plans and answering various community questions.[^CF-schedule][^CF-panel]
 
-One of the current hot topics for debate at the time was that peppy was making a new game mode and was testing it as a proof-in-concept (testing if it's playable, competitive or flexible enough). Some players speculate it was [Touhosu!](https://osu.ppy.sh/community/forums/topics/19307) (dodging the bullet-hell, that was, inverse of [Catch the Beat](/wiki/Game_mode/osu!catch)). By time of writing, not much information was discovered about the new game mode. [A video clip about the talk was in ppy's blog](https://blog.ppy.sh/post/71405880656/i-have-a-few-posts-waiting-for-some-final-touches)
+One topic heavily discussed at the time was a potential fifth game mode. peppy teasered in his presentation that he was testing a proof of concept inspired by the [Touhou Project](https://en.wikipedia.org/wiki/Touhou_Project), where players would be required to dodge lots of small projectiles, basically the inverse of [Catch the Beat](/wiki/Game_mode/osu!catch).[^CF-new-mode] Many users had voiced over the years that they would like to see such a concept being implemented.[^touhosu]
+
+Furthermore, peppy gave several interviews at the convention,[^CF-interview-1][^CF-interview-2] and showcased the [osu!tablet](/wiki/Past_osu!store_items#osu!tablet) to the public, an [input device](/wiki/Gameplay/Input_device) which would be used to control the in-game cursor movement.
 
 - [Comic Fiesta 2013 Impressions & osu! Q&A Panel Session with peppy (ppy) | INFONOCHIKARA 「インフォノチカラ」 Blogotopia](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/)<!-- link is dead and wayback machine does not have anthing saved -->
 
@@ -214,5 +218,9 @@ One of the current hot topics for debate at the time was that peppy was making a
 
 [^CF-announcement]: [Forum thread by peppy (2013-11-01) "I will be in malaysia (December)"](https://osu.ppy.sh/community/forums/topics/163121)
 [^CF-schedule]: [Schedule | Comic Fiesta 2013](https://web.archive.org/web/20131222065744/http://comicfiesta.org/2013/info/event/schedule/)
-[^CF-new-mode]: [Forum thread by BlackMidKnight (2014-01-02) "New osu! mode announced on CF2013?"](https://osu.ppy.sh/community/forums/topics/176000?n=1)
 [^CF-panel]: [YouTube video by Dean Herbert (2013-12-28) "osu! panel at Comic Fiesta 2013"](https://www.youtube.com/watch?v=IjuaFiLia6w)
+[^CF-new-mode]: [Forum thread by BlackMidKnight (2014-01-02) "New osu! mode announced on CF2013?"](https://osu.ppy.sh/community/forums/topics/176000?n=1)
+[^touhosu]: [Forum thread by Yasa (2009-10-29) "Touhosu! / Dodge the Beat"](https://osu.ppy.sh/community/forums/topics/19307)
+
+[^CF-interview-1]: [YouTube video by Metanorn (2014-01-14) "Metanorn Exclusive Interview: PPY @ Comic Fiesta 2013"](https://www.youtube.com/watch?v=TpmQQdkUzSA)
+[^CF-interview-2]: [YouTube video by CalvinJustOtaku (2014-01-12) "CosNews 1 | Peppy (PPY) - Osu! Interview (Comic Fiesta)"](https://www.youtube.com/watch?v=83y5EEm-2dk)
