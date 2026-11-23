@@ -152,14 +152,11 @@ Since the osu!(stable) update on 8 August, players were no longer required to pa
 
 Several people received the newly created community contributor badge to commend them for their outstanding contributions to the community.[^contributors-2013]
 
-A team of volunteers revived the [osu!monthly](/wiki/Community/osu!monthly) newsletter from 2011<!-- short explanation of the newsletter --> in the form of infrequently published news posts.[^news]
+To make updating osu! more user-friendly, the external updater `osume.exe` was deprecated in favor of an in-game update system. A message in the bottom-left corner would inform users that an update was being installed in the background. Instead of being forced to restart their game immediately, users became able to continue playing on the old version, and apply the update later.[^deployment]
 
-- <https://blog.ppy.sh/post/59476446944/frictionless-updates>
-- [osu!test now more usable](https://osu.ppy.sh/community/forums/topics/147744?n=1)
-  - <https://osu.ppy.sh/home/news/2013-08-08-osutest-build-now-more-usable>
-- [August highlights](https://osu.ppy.sh/home/news/2013-09-06-august-2013-highlights)
-  - version-based changelog display
-  - [osu! stickers](https://osu.ppy.sh/community/forums/topics/146524?n=1)
+While still being limited to [osu!supporters](/wiki/osu!supporter), the "osu!test" build[^osu-test] was integrated into the main [Bancho](/wiki/Bancho_(server)) server, so that volunteers could help test new features more easily.[^osu-test-thread]
+
+Several people voiced an interest in osu! stickers, so peppy made two options available in the store, the first being five different designs measuring 7.6x7.6cm, and the second being ten osu! logo stickers measuring 5x5cm in size.[^stickers]
 
 ## December
 
@@ -210,7 +207,10 @@ One of the current hot topics for debate at the time was that peppy was making a
 [^stable-b20130801]: [Forum thread by peppy (2013-08-01) "Public Release (b20130801)"](https://osu.ppy.sh/community/forums/topics/146484?n=1)
 [^contributors-2013]: [News post by Ephemeral (2013-08-08) "osu! community contributors"](https://osu.ppy.sh/home/news/2013-08-08-osu-community-contributors)
 [^BC4-results]: [Forum thread by Ephemeral (2013-07-29) "osu! Beatmapping Contest \#4 Results"](https://osu.ppy.sh/community/forums/topics/145908?n=1)
-[^news]: [Forum thread by dkun (2013-08-07) "osu! news"](https://osu.ppy.sh/community/forums/topics/147706?n=1)
+[^deployment]: [Blog post by peppy (2013-08-27) "Frictionless Updates"](https://blog.ppy.sh/post/59476446944/frictionless-updates)
+[^osu-test]: At the time, the `Beta`/`Cutting Edge` [release stream](/wiki/Client/Release_stream) was called osu!test.
+[^osu-test-thread]: [Forum thread by peppy (2013-08-07) "osu!test now more usable"](https://osu.ppy.sh/community/forums/topics/147744?n=1)
+[^stickers]: [Forum thread by peppy (2013-08-01) "Poll 20: Interested in osu! stickers?"](https://osu.ppy.sh/community/forums/topics/146524?n=1)
 
 [^CF-announcement]: [Forum thread by peppy (2013-11-01) "I will be in malaysia (December)"](https://osu.ppy.sh/community/forums/topics/163121)
 [^CF-schedule]: [Schedule | Comic Fiesta 2013](https://web.archive.org/web/20131222065744/http://comicfiesta.org/2013/info/event/schedule/)
