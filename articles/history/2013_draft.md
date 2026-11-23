@@ -1,9 +1,13 @@
 # History of osu! 2013
 
 <!--
+For your information, I have worked on this PR weekly for the past ~3 months. This was a lot of effort.
+
 Some phrases were removed because I deemed them too insignificant (e.g. updates to Bancho's stability). Several new things not mentioned before have been added. I'd recommend to skip through the original article for a comparison.
 
-The link to a [blog post about the Comic Fiesta 2013](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/) is dead and wayback machine does not have anything saved. Should the reference be kept nonetheless?
+For the game modifier icons, I used the skin archive in [this old forum thread](https://osu.ppy.sh/community/forums/topics/278571?n=1). Checking with old YouTube videos, the icons seem to be the same. A part of the archive was also used in [osu-resources #447](https://github.com/ppy/osu-resources/pull/447).
+
+The link to a [blog post about the Comic Fiesta 2013](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/) is dead and wayback machine does not have anything saved. Should the reference be added in nonetheless?
 
 Answers as comments:
 - January: How big was the database in total?
@@ -58,7 +62,7 @@ To accommodate the major interface overhaul, "osu!default by peppy" was replaced
 
 In the [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able to activate `Free Mods`, allowing players to freely choose any mod combination, except ones that change gameplay speed. The "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). The `#userlog` channel was introduced to display the player's recent match result privately.
 
-When hovering over the [performance graph](/wiki/Gameplay/Accuracy#performance-graph) in the [results screen](/wiki/Client/Interface#results-screen), players became able to know how far off their early hits and their late hits were on average. Do note that these values will disappear and can not be saved.<!-- upon exiting the result screen? --> Online leaderboard information in the ranking popup dialog became part of the extended results screen which can be reached by scrolling down in the results screen, or by clicking the button at the bottom of the screen.[^week-in-osu-13]
+When hovering over the [performance graph](/wiki/Gameplay/Accuracy#performance-graph) in the [results screen](/wiki/Client/Interface#results-screen), players became able to know how far off their early hits and their late hits were on average. Do note that these values will disappear and can not be saved. Online leaderboard information in the ranking popup dialog became part of the extended results screen which can be reached by scrolling down in the results screen, or by clicking the button at the bottom of the screen.[^week-in-osu-13]
 
 At the end of March, "unified scoreboards" were added which displayed plays with the same mods, scores from friends and local scores in consecutive sections directly below each other in a scrollable list. This feature was only available to [osu!supporters](/wiki/osu!supporter), as peppy wanted to test how the server performance would be affected. The difference between scores was displayed below the accuracy in the respective score panel.
 
