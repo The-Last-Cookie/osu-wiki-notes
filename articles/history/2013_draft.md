@@ -30,10 +30,6 @@ Lastly, widescreen support was tweaked to allow mappers to place and select obje
 
 On 20 March, ::{ flag=AU }:: [Ephemeral](https://osu.ppy.sh/users/102335) announced that the osu! staff had been restructured internally to clearly define roles and responsibilities amongst all staff members. The [Language Surveillance Division](/wiki/People/Language_Surveillance_Division) was renamed to "Chat Moderators". The [Support Team](/wiki/People/Technical_Support_Team) was formed as a proper group to help users with technical issues. The "Administrators" group was replaced with the [Global Moderation Team](/wiki/People/Global_Moderation_Team) to solely focus on in-game and forum moderation. For this reason, the BAT map management options became unavailable to GMT members.[^staff-restructure]
 
-<!--
-ui revamp and new default skin work in progress (Taiko / CtB / osu!mania still unfinished)
--->
-
 ::: Infobox
 
 ![Comparison of the game modifier icons before and after the redesign](img/comparison-game-modifier.png "Comparison of the game modifier icons before and after the redesign")
@@ -55,8 +51,6 @@ In the [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able
 When hovering over the [performance graph](/wiki/Gameplay/Accuracy#performance-graph) in the [results screen](/wiki/Client/Interface#results-screen), players became able to know how far off their early hits and their late hits were on average. Do note that these values will disappear and can not be saved.<!-- upon exiting the result screen? --> Online leaderboard information in the ranking popup dialog became part of the extended results screen which can be reached by scrolling down in the results screen, or by clicking the button at the bottom of the screen.[^week-in-osu-13]
 
 <!--
-still unsure about the paragraph down below. i guess i will have to see if this is okay in the review
-
 What about mentioning auto-scroll? Another feature that people were irritated by was that the scoreboard would automatically scroll {to the personal best?}.
 
 https://osu.ppy.sh/community/forums/topics/124366?n=1
@@ -72,7 +66,7 @@ Lastly, the player's profile picture had been added beside the [grade](/wiki/Gam
 
 Besides publishing patches for the previous major update, the initial support for "collections" enabled users to group beatmaps in as many batches as they wanted, instead of just two like in the "Favourites A/B" feature. This also made it simpler for users to share their favorite beatmaps with others.
 
-The shortcuts `Ctrl` + `1`, `2`, `3` or `4` were added to easily switch in the song select screen to the [osu!](/wiki/Game_mode/osu!), [Taiko](/wiki/Game_mode/osu!taiko), [osu!mania](/wiki/Game_mode/osu!mania) or [Catch the Beat](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) respectively. osu!mania received the game modifier [Random](/wiki/Gameplay/Game_modifier/Random), which would shuffle the note placement every time a beatmap is played. When using the `Quick Join` button in the multiplayer mode, the room selection was adjusted to take the average pp of all room participants in comparison to the player into consideration<!-- maybe not perfect phrasing? -->.
+The shortcuts `Ctrl` + `1`, `2`, `3` or `4` were added to easily switch in the song select screen to the [osu!](/wiki/Game_mode/osu!), [Taiko](/wiki/Game_mode/osu!taiko), [osu!mania](/wiki/Game_mode/osu!mania) or [Catch the Beat](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) respectively. osu!mania received the game modifier [Random](/wiki/Gameplay/Game_modifier/Random), which would shuffle the note placement every time a beatmap is played. When using the `Quick Join` button in the multiplayer mode, the room selection was adjusted to take the average pp of all room participants in comparison to the player into consideration.
 
 <!-- Alternative: Comments in beatmap replays imitated the comment style from Niconico, where they would move across the screen in accordance to when they were made. -->
 
@@ -154,7 +148,7 @@ In the fourth iteration of the [osu! Beatmapping Contest](https://osu.ppy.sh/com
 
 ## August
 
-Since the osu!(stable) update on 8 August, players were no longer required to pass a beatmap before being able to adjust the [visual settings](/wiki/Client/Interface/Visual_settings)<!-- this was heavily discussed in 2012 -->.[^stable-b20130801]
+Since the osu!(stable) update on 8 August, players were no longer required to pass a beatmap before being able to adjust the [visual settings](/wiki/Client/Interface/Visual_settings).[^stable-b20130801]
 
 Several people received the newly created community contributor badge to commend them for their outstanding contributions to the community.[^contributors-2013]
 
