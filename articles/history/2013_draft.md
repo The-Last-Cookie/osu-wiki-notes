@@ -183,9 +183,9 @@ Furthermore, peppy gave several interviews at the convention,[^CF-interview-1][^
 ## Notes and references
 
 [^catch]: At the time, the [osu!catch](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) was called Catch the Beat.
-[^hyperdash-issues]: [Blog post by ppy (2013-01-07) "Getting Hyperdash Right"](https://blog.ppy.sh/post/39917651337/getting-hyperdash-right)
-[^week-in-osu-8]: [Blog post by ppy (2013-01-06) "This Week in osu!"](https://blog.ppy.sh/post/39831318171/this-week-in-osu-8)
-[^week-in-osu-9]: [Blog post by ppy (2013-01-20) "This Week in osu!"](https://blog.ppy.sh/post/41003637501/this-week-in-osu-9)
+[^hyperdash-issues]: [Blog post by peppy (2013-01-07) "Getting Hyperdash Right"](https://blog.ppy.sh/post/39917651337/getting-hyperdash-right)
+[^week-in-osu-8]: [Blog post by peppy (2013-01-06) "This Week in osu!"](https://blog.ppy.sh/post/39831318171/this-week-in-osu-8)
+[^week-in-osu-9]: [Blog post by peppy (2013-01-20) "This Week in osu!"](https://blog.ppy.sh/post/41003637501/this-week-in-osu-9)
 [^best-of-2012]: [Forum thread by peppy (2013-01-09) "Best of 2012 Results"](https://osu.ppy.sh/community/forums/posts/2042263?n=1)
 
 [^week-in-osu-10]: [Blog post by peppy (2013-02-13) "This Week in osu!"](https://blog.ppy.sh/post/42178900910/this-week-in-osu-10)
@@ -212,11 +212,11 @@ Furthermore, peppy gave several interviews at the convention,[^CF-interview-1][^
 
 [^api-beta]: [Forum thread by peppy (2013-07-02) "osu!api open beta"](https://osu.ppy.sh/community/forums/topics/141240?n=1)
 [^new-bat]: [Forum thread by Kurai (2013-07-11) "Summer 2013 NewBAT Applications"](https://osu.ppy.sh/community/forums/topics/142864?n=1)
+[^BC4-results]: [Forum thread by Ephemeral (2013-07-29) "osu! Beatmapping Contest \#4 Results"](https://osu.ppy.sh/community/forums/topics/145908?n=1)
 [^july-highlights]: [News post by osu!news team (2013-07-31) "Highlights of July"](https://osu.ppy.sh/home/news/2013-07-31-highlights-of-july)
 
 [^stable-b20130801]: [Forum thread by peppy (2013-08-01) "Public Release (b20130801)"](https://osu.ppy.sh/community/forums/topics/146484?n=1)
 [^contributors-2013]: [News post by Ephemeral (2013-08-08) "osu! community contributors"](https://osu.ppy.sh/home/news/2013-08-08-osu-community-contributors)
-[^BC4-results]: [Forum thread by Ephemeral (2013-07-29) "osu! Beatmapping Contest \#4 Results"](https://osu.ppy.sh/community/forums/topics/145908?n=1)
 [^deployment]: [Blog post by peppy (2013-08-27) "Frictionless Updates"](https://blog.ppy.sh/post/59476446944/frictionless-updates)
 [^osu-test]: At the time, the `Beta`/`Cutting Edge` [release stream](/wiki/Client/Release_stream) was called osu!test.
 [^osu-test-thread]: [Forum thread by peppy (2013-08-07) "osu!test now more usable"](https://osu.ppy.sh/community/forums/topics/147744?n=1)
