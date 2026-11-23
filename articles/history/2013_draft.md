@@ -116,7 +116,11 @@ If available, the personal best rank would be shown in the leaderboard section o
 
 In the main menu, a flare was added around the [osu! cookie](/wiki/Client/Interface/Cookie) which would become brighter depending on the song's intensity. The performance in the song select screen was optimised for users that had more than 10,000 beatmaps loaded in-game.[^may-june-in-osu]
 
+::: Infobox
+
 ![osu! logo illuminated by the flare](img/flare.jpg "osu! logo illuminated by the flare")
+
+:::
 
 The [lead-in time](/wiki/Beatmap/Lead-in_time) was automatically added to any beatmap that would start abruptly to allow for enough time to adjust the [visual settings](/wiki/Client/Interface/Visual_settings). A new feature made it possible to view the total press counts for each key in the input overlay. Furthermore, quick repeat sliders not reaching their maximum combo were fixed.
 
