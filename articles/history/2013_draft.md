@@ -2,11 +2,21 @@
 
 <!--
 Some phrases were removed because I deemed them too insignificant (e.g. updates to Bancho's stability). Several new things not mentioned before have been added. I'd recommend to skip through the original article for a comparison.
+
+The link to a [blog post about the Comic Fiesta 2013](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/) is dead and wayback machine does not have anything saved. Should the reference be kept nonetheless?
+
+Answers as comments:
+- January: How big was the database in total?
+- March: I have no idea what "game style" is referring to.
+- March: Mention auto-scroll feature? https://osu.ppy.sh/community/forums/topics/124366?n=1
+- April: Alternative - Comments in beatmap replays imitated the comment style from Niconico, where they would move across the screen in accordance to when they were made.
+- May: Joystick support for Taiko too? changelog says so.
+- June: The screenshot seems to contain 90 days of data but is there any source to back this up?
 -->
 
 ## January
 
-Widescreen support was added to all [game modes](/wiki/Game_mode), including the [beatmap editor](/wiki/Client/Beatmap_editor). Users became able to reset the key bindings to their defaults. Issues with the hyperdash algorithm in Catch the Beat[^catch] causing [fruits](/wiki/Gameplay/Hit_object/Fruit) to not be catchable in some edge cases were fixed.[^hyperdash-issues] By removing legacy data and checking for optimal table usage, ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2) was able to reduce the database's size<!-- how big was the database in total? -->.[^week-in-osu-8] While updating the main menu's copyright graphic to 2013, the copyright text was removed to make the graphic more compact and user-friendly.[^week-in-osu-9]
+Widescreen support was added to all [game modes](/wiki/Game_mode), including the [beatmap editor](/wiki/Client/Beatmap_editor). Users became able to reset the key bindings to their defaults. Issues with the hyperdash algorithm in Catch the Beat[^catch] causing [fruits](/wiki/Gameplay/Hit_object/Fruit) to not be catchable in some edge cases were fixed.[^hyperdash-issues] By removing legacy data and checking for optimal table usage, ::{ flag=AU }:: [peppy](https://osu.ppy.sh/users/2) was able to reduce the database's size.[^week-in-osu-8] While updating the main menu's copyright graphic to 2013, the copyright text was removed to make the graphic more compact and user-friendly.[^week-in-osu-9]
 
 [Psy - Gangnam style](https://osu.ppy.sh/beatmapsets/55799#osu/169697) mapped by ::{ flag=US }:: [yeahyeahyeahhh](https://osu.ppy.sh/users/58042) was voted to be the most favourite [beatmap](/wiki/Beatmap) of 2012. The top 100 beatmaps are detailed in [this spreadsheet](https://docs.google.com/a/ppy.sh/spreadsheet/ccc?key=0AlsSAL_F7-xDdDRDSjNMN3o3Y1Z6UzA0QUpFNzdlNUE#gid=0).[^best-of-2012]
 
@@ -46,15 +56,9 @@ osu!'s user interface was completely redesigned with the help of ::{ flag=US }::
 
 To accommodate the major interface overhaul, "osu!default by peppy" was replaced with "osu! by peppy" as the new default skin. Since osu! received support for both widescreen HD and standard resolution, a new setting was added to the `Skins` tab in the options menu. By default, old skin behaviour was used for compatibility and enabling this setting would force the new skin behaviour (e.g. animations) to be in effect instead.
 
-In the [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able to activate `Free Mods`, allowing players to freely choose any mod combination, except ones that change gameplay speed. The "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods")<!-- I have no idea what "game style" is referring to. -->. The `#userlog` channel was introduced to display the player's recent match result privately.
+In the [multiplayer](/wiki/Client/Interface/Multiplayer) mode, hosts became able to activate `Free Mods`, allowing players to freely choose any mod combination, except ones that change gameplay speed. The "Game Style" was removed (Host can adjust the Game Style in Song Selection now under "Mods"). The `#userlog` channel was introduced to display the player's recent match result privately.
 
 When hovering over the [performance graph](/wiki/Gameplay/Accuracy#performance-graph) in the [results screen](/wiki/Client/Interface#results-screen), players became able to know how far off their early hits and their late hits were on average. Do note that these values will disappear and can not be saved.<!-- upon exiting the result screen? --> Online leaderboard information in the ranking popup dialog became part of the extended results screen which can be reached by scrolling down in the results screen, or by clicking the button at the bottom of the screen.[^week-in-osu-13]
-
-<!--
-What about mentioning auto-scroll? Another feature that people were irritated by was that the scoreboard would automatically scroll {to the personal best?}.
-
-https://osu.ppy.sh/community/forums/topics/124366?n=1
--->
 
 At the end of March, "unified scoreboards" were added which displayed plays with the same mods, scores from friends and local scores in consecutive sections directly below each other in a scrollable list. This feature was only available to [osu!supporters](/wiki/osu!supporter), as peppy wanted to test how the server performance would be affected. The difference between scores was displayed below the accuracy in the respective score panel.
 
@@ -67,8 +71,6 @@ Lastly, the player's profile picture had been added beside the [grade](/wiki/Gam
 Besides publishing patches for the previous major update, the initial support for "collections" enabled users to group beatmaps in as many batches as they wanted, instead of just two like in the "Favourites A/B" feature. This also made it simpler for users to share their favorite beatmaps with others.
 
 The shortcuts `Ctrl` + `1`, `2`, `3` or `4` were added to easily switch in the song select screen to the [osu!](/wiki/Game_mode/osu!), [Taiko](/wiki/Game_mode/osu!taiko), [osu!mania](/wiki/Game_mode/osu!mania) or [Catch the Beat](/wiki/Game_mode/osu!catch) [game mode](/wiki/Game_mode) respectively. osu!mania received the game modifier [Random](/wiki/Gameplay/Game_modifier/Random), which would shuffle the note placement every time a beatmap is played. When using the `Quick Join` button in the multiplayer mode, the room selection was adjusted to take the average pp of all room participants in comparison to the player into consideration.
-
-<!-- Alternative: Comments in beatmap replays imitated the comment style from Niconico, where they would move across the screen in accordance to when they were made. -->
 
 Comments in beatmap [replays](/wiki/Gameplay/Replay) were styled as [danmaku subtitles](https://en.wikipedia.org/wiki/Danmaku_subtitling) where they would move across the screen in accordance to when they were made, similar to the video sharing platform [Niconico](https://en.wikipedia.org/wiki/Niconico). osu!supporters received the ability to set a custom colour for their comments.
 
@@ -84,7 +86,7 @@ Following the promotion of all active members of the MAT to the BAT in April, th
 
 Game modifiers were shortened to their two-letter acronym (e.g. [Hard Rock](/wiki/Gameplay/Game_modifier/Hard_Rock) became "HR") in the result screen to not clutter the limited space too much. A bug in replays causing misses to be displayed incorrectly was fixed. The spectator system was improved by allowing the user to follow the spectated person if they were spectating someone else. Unless required, the game would no longer force a restart when updating.[^stable-b20130509]
 
-When watching [replays](/wiki/Gameplay/Replay), users received the ability to set the playback speed to 50% by clicking the speed button twice. The playfield would not flash out the background anymore when fully dimmed. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support<!-- Taiko too? --> in the song selection menu (`Up`/`Down`: Change song, `Right`: Select, `Left`: Exit).
+When watching [replays](/wiki/Gameplay/Replay), users received the ability to set the playback speed to 50% by clicking the speed button twice. The playfield would not flash out the background anymore when fully dimmed. [Catch the Beat](/wiki/Game_mode/osu!catch) received joystick support in the song selection menu (`Up`/`Down`: Change song, `Right`: Select, `Left`: Exit).
 
 To address glaring issues in the [forum-based modding](/wiki/Modding/Forum_modding) threads, such as beatmaps becoming [Ranked](/wiki/Beatmap/Category#ranked) even though they were not adhering to the [ranking criteria](/wiki/Ranking_criteria), peppy started working on a new [ranking/modding system](https://osu.ppy.sh/community/forums/topics/129625), which would later become known as [Modding v2](/wiki/Beatmap_discussion).
 
@@ -100,7 +102,7 @@ To discourage players from creating several accounts for personal reasons, poten
 
 ![A warning was shown when attempting to create multiple accounts](img/multiple-accounts.jpg "A warning was shown when attempting to create multiple accounts")
 
-Users became able to choose their primary game mode which would be shown by default when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days<!-- source?--> was added.
+Users became able to choose their primary game mode which would be shown by default when visiting their profile. Additionally, a new feature allowed users to link their [last.fm](https://last.fm) account on their osu! profile. Moreover, a country performance rank and a pp graph visualising the player performance in the last 90 days was added.
 
 If available, the personal best rank would be shown in the leaderboard section on the [beatmap information](/wiki/Beatmap_information) page next to the first place score.[^best-rank-comparison] A Disqus comment feature coupled with [single sign-on](https://en.wikipedia.org/wiki/Single_sign-on) was added to the beatmap information page, allowing for a simple and integrated way of exchanging ideas and opinions about a beatmap.[^may-june-in-osu]
 
@@ -171,8 +173,6 @@ From 21 to 22 December, peppy was invited as a guest speaker to the 2013's [Comi
 One topic heavily discussed at the time was a potential fifth game mode. peppy teasered in his presentation that he was testing a proof of concept inspired by the [Touhou Project](https://en.wikipedia.org/wiki/Touhou_Project), where players would be required to dodge lots of small projectiles, basically the inverse of [Catch the Beat](/wiki/Game_mode/osu!catch).[^CF-new-mode] Many users had voiced over the years that they would like to see such a concept being implemented.[^touhosu]
 
 Furthermore, peppy gave several interviews at the convention,[^CF-interview-1][^CF-interview-2] and showcased the [osu!tablet](/wiki/Past_osu!store_items#osu!tablet) to the public, an [input device](/wiki/Gameplay/Input_device) which would be used to control the in-game cursor movement.
-
-- [Comic Fiesta 2013 Impressions & osu! Q&A Panel Session with peppy (ppy) | INFONOCHIKARA 「インフォノチカラ」 Blogotopia](https://infonochikara.wordpress.com/2013/12/30/comic-fiesta-2013-impressions-osu-qa-panel-session-with-peppy-ppy/)<!-- link is dead and wayback machine does not have anthing saved -->
 
 ## Notes and references
 
